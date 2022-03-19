@@ -1,6 +1,7 @@
 # libgiwscli
-Library for Genshin Impact Wish Simulator CLI
+Library for Genshin Impact Wish Simulator CLI\
+Current version: 2.6.0
 
-# Applications
+## Applications
 CLI: https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-CLI \
 Fileout: https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-Fileout
