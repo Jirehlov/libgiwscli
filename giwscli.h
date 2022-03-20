@@ -34,7 +34,6 @@ extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,
     ave_fives, ach_count[12];
 extern signed int error_code, full_q;
 extern void ini_ams(size_t *in, size_t ins, const size_t *out);
-extern void full_quit_e [[noreturn]] ();
 
 extern void set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
                        const size_t *nup_four_cgm);

@@ -366,7 +366,6 @@ void giwscli::pool_stair_1(ptrdiff_t chosen_event_p) {
     set_pool_1(chosen_event_p, 20, nup_four_cg9);
   } else {
     error_code = 5;
-    full_quit_e();
   }
 }
 
@@ -379,7 +378,6 @@ void giwscli::pool_stair_2(ptrdiff_t chosen_event_p) {
     set_pool_3(chosen_event_p, 20, nup_four_cg9);
   } else {
     error_code = 5;
-    full_quit_e();
   }
 }
 
@@ -404,7 +402,6 @@ void giwscli::pool_stair_3(ptrdiff_t chosen_event_p) {
     set_pool_3(chosen_event_p, 20, nup_four_cg9);
   } else {
     error_code = 5;
-    full_quit_e();
   }
 }
 void giwscli::pool_stair_4(ptrdiff_t chosen_event_p) {
@@ -446,7 +443,7 @@ void giwscli::pool_stair_4(ptrdiff_t chosen_event_p) {
       ini_ams(nup_four_c, 23, nup_four_cg39);
     } break;
     default: {
-      full_quit_e();
+      error_code = 102;
     }
   }
 }
@@ -494,13 +491,6 @@ unsigned int giwscli::WRSpick(const ptrdiff_t *weightx, size_t nom) {
   return results;
 }
 // weighted random sampling
-
-void giwscli::full_quit_e [[noreturn]] () {
-  std::cin.clear();
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  full_q = std::cin.get();
-  std::exit(error_code);
-}
 
 void giwscli::tri() {
   star = 3;
@@ -628,7 +618,6 @@ void giwscli::core_f_1() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         } else if (unmet4_c > 16) {
@@ -657,7 +646,6 @@ void giwscli::core_f_1() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         } else {
@@ -686,7 +674,6 @@ void giwscli::core_f_1() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         }
@@ -705,7 +692,6 @@ void giwscli::core_f_1() {
       break;
     default: {
       error_code = 3;
-      full_quit_e();
     }
   }
 }
@@ -806,7 +792,6 @@ void giwscli::core_f_3() {
         }
       } else {
         error_code = 2;
-        full_quit_e();
       }
     } break;
     case 1: {
@@ -852,7 +837,6 @@ void giwscli::core_f_3() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         } else if (unmet4_c > 14) {
@@ -881,7 +865,6 @@ void giwscli::core_f_3() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         } else {
@@ -910,7 +893,6 @@ void giwscli::core_f_3() {
             } break;
             default: {
               error_code = 4;
-              full_quit_e();
             }
           }
         }
@@ -929,7 +911,6 @@ void giwscli::core_f_3() {
       break;
     default: {
       error_code = 3;
-      full_quit_e();
     }
   }
 }
@@ -984,7 +965,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       } else if (unmet5_c > 146) {
@@ -1005,7 +985,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       } else {
@@ -1026,7 +1005,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       }
@@ -1059,7 +1037,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       } else if (unmet4_c > 16) {
@@ -1080,7 +1057,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       } else {
@@ -1101,7 +1077,6 @@ void giwscli::core_f_4() {
           } break;
           default: {
             error_code = 4;
-            full_quit_e();
           }
         }
       }
@@ -1119,7 +1094,6 @@ void giwscli::core_f_4() {
       break;
     default: {
       error_code = 3;
-      full_quit_e();
     }
   }
 }
@@ -1296,7 +1270,6 @@ void giwscli::set_banner_f(ptrdiff_t chosen_banner_p,
     } break;
     default: {
       error_code = 7;
-      full_quit_e();
     }
   }
 }
@@ -1329,7 +1302,6 @@ void giwscli::gipull(ptrdiff_t chosen_banner_p, ptrdiff_t chosen_event_p) {
     } break;
     default: {
       error_code = 7;
-      full_quit_e();
     }
   }
   post_add();
