@@ -319,15 +319,142 @@ ptrdiff_t giwscli::ave_fives = 0;
 ptrdiff_t giwscli::ach_count[12] = {0};
 signed int giwscli::error_code = 0;
 signed int giwscli::full_q = 0;
+#if CN_ITEM_H
+const char* giwscli::s_pname_cn[128] = {
+    CN_C_0,   CN_C_1,   CN_C_2,   CN_C_3,   CN_C_4,   CN_C_5,   CN_C_6,
+    CN_C_7,   CN_C_8,   CN_C_9,   CN_C_10,  CN_C_11,  CN_C_12,  CN_C_13,
+    CN_C_14,  CN_C_15,  CN_C_16,  CN_C_17,  CN_C_18,  CN_C_19,  CN_C_20,
+    CN_C_21,  CN_C_22,  CN_C_23,  CN_C_24,  CN_C_25,  CN_C_26,  CN_C_27,
+    CN_C_28,  CN_C_29,  CN_C_30,  CN_C_31,  CN_C_32,  CN_C_33,  CN_C_34,
+    CN_C_35,  CN_C_36,  CN_C_37,  CN_C_38,  CN_C_39,  CN_C_40,  CN_C_41,
+    CN_C_42,  CN_C_43,  CN_C_44,  CN_C_45,  CN_C_46,  CN_C_47,  CN_C_48,
+    CN_C_49,  CN_C_50,  CN_C_51,  CN_C_52,  CN_C_53,  CN_C_54,  CN_C_55,
+    CN_C_56,  CN_C_57,  CN_C_58,  CN_C_59,  CN_C_60,  CN_C_61,  CN_C_62,
+    CN_C_63,  CN_C_64,  CN_C_65,  CN_C_66,  CN_C_67,  CN_C_68,  CN_C_69,
+    CN_C_70,  CN_C_71,  CN_C_72,  CN_C_73,  CN_C_74,  CN_C_75,  CN_C_76,
+    CN_C_77,  CN_C_78,  CN_C_79,  CN_C_80,  CN_C_81,  CN_C_82,  CN_C_83,
+    CN_C_84,  CN_C_85,  CN_C_86,  CN_C_87,  CN_C_88,  CN_C_89,  CN_C_90,
+    CN_C_91,  CN_C_92,  CN_C_93,  CN_C_94,  CN_C_95,  CN_C_96,  CN_C_97,
+    CN_C_98,  CN_C_99,  CN_C_100, CN_C_101, CN_C_102, CN_C_103, CN_C_104,
+    CN_C_105, CN_C_106, CN_C_107, CN_C_108, CN_C_109, CN_C_110, CN_C_111,
+    CN_C_112, CN_C_113, CN_C_114, CN_C_115, CN_C_116, CN_C_117, CN_C_118,
+    CN_C_119, CN_C_120, CN_C_121, CN_C_122, CN_C_123, CN_C_124, CN_C_125,
+    CN_C_126, CN_C_127};
 
-void giwscli::ini_ams(size_t *in, size_t ins, const size_t *out) {
+const char* giwscli::s_pnameshort_cn[128] = {
+    CN_X_0,   CN_X_1,   CN_X_2,   CN_X_3,   CN_X_4,   CN_X_5,   CN_X_6,
+    CN_X_7,   CN_X_8,   CN_X_9,   CN_X_10,  CN_X_11,  CN_X_12,  CN_X_13,
+    CN_X_14,  CN_X_15,  CN_X_16,  CN_X_17,  CN_X_18,  CN_X_19,  CN_X_20,
+    CN_X_21,  CN_X_22,  CN_X_23,  CN_X_24,  CN_X_25,  CN_X_26,  CN_X_27,
+    CN_X_28,  CN_X_29,  CN_X_30,  CN_X_31,  CN_X_32,  CN_X_33,  CN_X_34,
+    CN_X_35,  CN_X_36,  CN_X_37,  CN_X_38,  CN_X_39,  CN_X_40,  CN_X_41,
+    CN_X_42,  CN_X_43,  CN_X_44,  CN_X_45,  CN_X_46,  CN_X_47,  CN_X_48,
+    CN_X_49,  CN_X_50,  CN_X_51,  CN_X_52,  CN_X_53,  CN_X_54,  CN_X_55,
+    CN_X_56,  CN_X_57,  CN_X_58,  CN_X_59,  CN_X_60,  CN_X_61,  CN_X_62,
+    CN_X_63,  CN_X_64,  CN_X_65,  CN_X_66,  CN_X_67,  CN_X_68,  CN_X_69,
+    CN_X_70,  CN_X_71,  CN_X_72,  CN_X_73,  CN_X_74,  CN_X_75,  CN_X_76,
+    CN_X_77,  CN_X_78,  CN_X_79,  CN_X_80,  CN_X_81,  CN_X_82,  CN_X_83,
+    CN_X_84,  CN_X_85,  CN_X_86,  CN_X_87,  CN_X_88,  CN_X_89,  CN_X_90,
+    CN_X_91,  CN_X_92,  CN_X_93,  CN_X_94,  CN_X_95,  CN_X_96,  CN_X_97,
+    CN_X_98,  CN_X_99,  CN_X_100, CN_X_101, CN_X_102, CN_X_103, CN_X_104,
+    CN_X_105, CN_X_106, CN_X_107, CN_X_108, CN_X_109, CN_X_110, CN_X_111,
+    CN_X_112, CN_X_113, CN_X_114, CN_X_115, CN_X_116, CN_X_117, CN_X_118,
+    CN_X_119, CN_X_120, CN_X_121, CN_X_122, CN_X_123, CN_X_124, CN_X_125,
+    CN_X_126, CN_X_127};
+
+const char* giwscli::s_pdetails_cn[128] = {
+    CN_D_0,   CN_D_1,   CN_D_2,   CN_D_3,   CN_D_4,   CN_D_5,   CN_D_6,
+    CN_D_7,   CN_D_8,   CN_D_9,   CN_D_10,  CN_D_11,  CN_D_12,  CN_D_13,
+    CN_D_14,  CN_D_15,  CN_D_16,  CN_D_17,  CN_D_18,  CN_D_19,  CN_D_20,
+    CN_D_21,  CN_D_22,  CN_D_23,  CN_D_24,  CN_D_25,  CN_D_26,  CN_D_27,
+    CN_D_28,  CN_D_29,  CN_D_30,  CN_D_31,  CN_D_32,  CN_D_33,  CN_D_34,
+    CN_D_35,  CN_D_36,  CN_D_37,  CN_D_38,  CN_D_39,  CN_D_40,  CN_D_41,
+    CN_D_42,  CN_D_43,  CN_D_44,  CN_D_45,  CN_D_46,  CN_D_47,  CN_D_48,
+    CN_D_49,  CN_D_50,  CN_D_51,  CN_D_52,  CN_D_53,  CN_D_54,  CN_D_55,
+    CN_D_56,  CN_D_57,  CN_D_58,  CN_D_59,  CN_D_60,  CN_D_61,  CN_D_62,
+    CN_D_63,  CN_D_64,  CN_D_65,  CN_D_66,  CN_D_67,  CN_D_68,  CN_D_69,
+    CN_D_70,  CN_D_71,  CN_D_72,  CN_D_73,  CN_D_74,  CN_D_75,  CN_D_76,
+    CN_D_77,  CN_D_78,  CN_D_79,  CN_D_80,  CN_D_81,  CN_D_82,  CN_D_83,
+    CN_D_84,  CN_D_85,  CN_D_86,  CN_D_87,  CN_D_88,  CN_D_89,  CN_D_90,
+    CN_D_91,  CN_D_92,  CN_D_93,  CN_D_94,  CN_D_95,  CN_D_96,  CN_D_97,
+    CN_D_98,  CN_D_99,  CN_D_100, CN_D_101, CN_D_102, CN_D_103, CN_D_104,
+    CN_D_105, CN_D_106, CN_D_107, CN_D_108, CN_D_109, CN_D_110, CN_D_111,
+    CN_D_112, CN_D_113, CN_D_114, CN_D_115, CN_D_116, CN_D_117, CN_D_118,
+    CN_D_119, CN_D_120, CN_D_121, CN_D_122, CN_D_123, CN_D_124, CN_D_125,
+    CN_D_126, CN_D_127};
+#endif
+#if EN_ITEM_H
+const char* giwscli::s_pname_en[128] = {
+    EN_C_0,   EN_C_1,   EN_C_2,   EN_C_3,   EN_C_4,   EN_C_5,   EN_C_6,
+    EN_C_7,   EN_C_8,   EN_C_9,   EN_C_10,  EN_C_11,  EN_C_12,  EN_C_13,
+    EN_C_14,  EN_C_15,  EN_C_16,  EN_C_17,  EN_C_18,  EN_C_19,  EN_C_20,
+    EN_C_21,  EN_C_22,  EN_C_23,  EN_C_24,  EN_C_25,  EN_C_26,  EN_C_27,
+    EN_C_28,  EN_C_29,  EN_C_30,  EN_C_31,  EN_C_32,  EN_C_33,  EN_C_34,
+    EN_C_35,  EN_C_36,  EN_C_37,  EN_C_38,  EN_C_39,  EN_C_40,  EN_C_41,
+    EN_C_42,  EN_C_43,  EN_C_44,  EN_C_45,  EN_C_46,  EN_C_47,  EN_C_48,
+    EN_C_49,  EN_C_50,  EN_C_51,  EN_C_52,  EN_C_53,  EN_C_54,  EN_C_55,
+    EN_C_56,  EN_C_57,  EN_C_58,  EN_C_59,  EN_C_60,  EN_C_61,  EN_C_62,
+    EN_C_63,  EN_C_64,  EN_C_65,  EN_C_66,  EN_C_67,  EN_C_68,  EN_C_69,
+    EN_C_70,  EN_C_71,  EN_C_72,  EN_C_73,  EN_C_74,  EN_C_75,  EN_C_76,
+    EN_C_77,  EN_C_78,  EN_C_79,  EN_C_80,  EN_C_81,  EN_C_82,  EN_C_83,
+    EN_C_84,  EN_C_85,  EN_C_86,  EN_C_87,  EN_C_88,  EN_C_89,  EN_C_90,
+    EN_C_91,  EN_C_92,  EN_C_93,  EN_C_94,  EN_C_95,  EN_C_96,  EN_C_97,
+    EN_C_98,  EN_C_99,  EN_C_100, EN_C_101, EN_C_102, EN_C_103, EN_C_104,
+    EN_C_105, EN_C_106, EN_C_107, EN_C_108, EN_C_109, EN_C_110, EN_C_111,
+    EN_C_112, EN_C_113, EN_C_114, EN_C_115, EN_C_116, EN_C_117, EN_C_118,
+    EN_C_119, EN_C_120, EN_C_121, EN_C_122, EN_C_123, EN_C_124, EN_C_125,
+    EN_C_126, EN_C_127};
+
+const char* giwscli::s_pnameshort_en[128] = {
+    EN_X_0,   EN_X_1,   EN_X_2,   EN_X_3,   EN_X_4,   EN_X_5,   EN_X_6,
+    EN_X_7,   EN_X_8,   EN_X_9,   EN_X_10,  EN_X_11,  EN_X_12,  EN_X_13,
+    EN_X_14,  EN_X_15,  EN_X_16,  EN_X_17,  EN_X_18,  EN_X_19,  EN_X_20,
+    EN_X_21,  EN_X_22,  EN_X_23,  EN_X_24,  EN_X_25,  EN_X_26,  EN_X_27,
+    EN_X_28,  EN_X_29,  EN_X_30,  EN_X_31,  EN_X_32,  EN_X_33,  EN_X_34,
+    EN_X_35,  EN_X_36,  EN_X_37,  EN_X_38,  EN_X_39,  EN_X_40,  EN_X_41,
+    EN_X_42,  EN_X_43,  EN_X_44,  EN_X_45,  EN_X_46,  EN_X_47,  EN_X_48,
+    EN_X_49,  EN_X_50,  EN_X_51,  EN_X_52,  EN_X_53,  EN_X_54,  EN_X_55,
+    EN_X_56,  EN_X_57,  EN_X_58,  EN_X_59,  EN_X_60,  EN_X_61,  EN_X_62,
+    EN_X_63,  EN_X_64,  EN_X_65,  EN_X_66,  EN_X_67,  EN_X_68,  EN_X_69,
+    EN_X_70,  EN_X_71,  EN_X_72,  EN_X_73,  EN_X_74,  EN_X_75,  EN_X_76,
+    EN_X_77,  EN_X_78,  EN_X_79,  EN_X_80,  EN_X_81,  EN_X_82,  EN_X_83,
+    EN_X_84,  EN_X_85,  EN_X_86,  EN_X_87,  EN_X_88,  EN_X_89,  EN_X_90,
+    EN_X_91,  EN_X_92,  EN_X_93,  EN_X_94,  EN_X_95,  EN_X_96,  EN_X_97,
+    EN_X_98,  EN_X_99,  EN_X_100, EN_X_101, EN_X_102, EN_X_103, EN_X_104,
+    EN_X_105, EN_X_106, EN_X_107, EN_X_108, EN_X_109, EN_X_110, EN_X_111,
+    EN_X_112, EN_X_113, EN_X_114, EN_X_115, EN_X_116, EN_X_117, EN_X_118,
+    EN_X_119, EN_X_120, EN_X_121, EN_X_122, EN_X_123, EN_X_124, EN_X_125,
+    EN_X_126, EN_X_127};
+
+const char* giwscli::s_pdetails_en[128] = {
+    EN_D_0,   EN_D_1,   EN_D_2,   EN_D_3,   EN_D_4,   EN_D_5,   EN_D_6,
+    EN_D_7,   EN_D_8,   EN_D_9,   EN_D_10,  EN_D_11,  EN_D_12,  EN_D_13,
+    EN_D_14,  EN_D_15,  EN_D_16,  EN_D_17,  EN_D_18,  EN_D_19,  EN_D_20,
+    EN_D_21,  EN_D_22,  EN_D_23,  EN_D_24,  EN_D_25,  EN_D_26,  EN_D_27,
+    EN_D_28,  EN_D_29,  EN_D_30,  EN_D_31,  EN_D_32,  EN_D_33,  EN_D_34,
+    EN_D_35,  EN_D_36,  EN_D_37,  EN_D_38,  EN_D_39,  EN_D_40,  EN_D_41,
+    EN_D_42,  EN_D_43,  EN_D_44,  EN_D_45,  EN_D_46,  EN_D_47,  EN_D_48,
+    EN_D_49,  EN_D_50,  EN_D_51,  EN_D_52,  EN_D_53,  EN_D_54,  EN_D_55,
+    EN_D_56,  EN_D_57,  EN_D_58,  EN_D_59,  EN_D_60,  EN_D_61,  EN_D_62,
+    EN_D_63,  EN_D_64,  EN_D_65,  EN_D_66,  EN_D_67,  EN_D_68,  EN_D_69,
+    EN_D_70,  EN_D_71,  EN_D_72,  EN_D_73,  EN_D_74,  EN_D_75,  EN_D_76,
+    EN_D_77,  EN_D_78,  EN_D_79,  EN_D_80,  EN_D_81,  EN_D_82,  EN_D_83,
+    EN_D_84,  EN_D_85,  EN_D_86,  EN_D_87,  EN_D_88,  EN_D_89,  EN_D_90,
+    EN_D_91,  EN_D_92,  EN_D_93,  EN_D_94,  EN_D_95,  EN_D_96,  EN_D_97,
+    EN_D_98,  EN_D_99,  EN_D_100, EN_D_101, EN_D_102, EN_D_103, EN_D_104,
+    EN_D_105, EN_D_106, EN_D_107, EN_D_108, EN_D_109, EN_D_110, EN_D_111,
+    EN_D_112, EN_D_113, EN_D_114, EN_D_115, EN_D_116, EN_D_117, EN_D_118,
+    EN_D_119, EN_D_120, EN_D_121, EN_D_122, EN_D_123, EN_D_124, EN_D_125,
+    EN_D_126, EN_D_127};
+#endif
+void giwscli::ini_ams(size_t* in, size_t ins, const size_t* out) {
   for (size_t i = 0; i < ins; i++) {
     in[i] = out[i];
   }
 }  // for of the same size
 
 void giwscli::set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
-                         const size_t *nup_four_cgm) {
+                         const size_t* nup_four_cgm) {
   up_five = tempga3[sw];
   size_nup_four_c = size_nup_four_c_p;
   ini_ams(up_four_g, 3, tempga1[sw]);
@@ -336,7 +463,7 @@ void giwscli::set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
 }
 
 void giwscli::set_pool_3(const ptrdiff_t sw, size_t size_nup_four_c_p,
-                         const size_t *nup_four_cgm) {
+                         const size_t* nup_four_cgm) {
   ini_ams(up_five_g, 2, tempgc1[sw]);
   size_nup_four_c = size_nup_four_c_p;
   ini_ams(up_four_g, 5, tempgc2[sw]);
@@ -447,7 +574,7 @@ void giwscli::pool_stair_4(ptrdiff_t chosen_event_p) {
     }
   }
 }
-size_t giwscli::rspick(const size_t *kindx, size_t sizekind) {
+size_t giwscli::rspick(const size_t* kindx, size_t sizekind) {
   size_t kindout = kindx[0];
   size_t index = 1;
   for (; index < sizekind; ++index) {
@@ -461,7 +588,7 @@ size_t giwscli::rspick(const size_t *kindx, size_t sizekind) {
 }
 // randomly pick an element among kindx which size is sizekind
 
-unsigned int giwscli::WRSpick(const ptrdiff_t *weightx, size_t nom) {
+unsigned int giwscli::WRSpick(const ptrdiff_t* weightx, size_t nom) {
   ptrdiff_t ceilling = 1;
   for (size_t inin = 0; inin < nom; inin++) {
     ceilling += weightx[inin];

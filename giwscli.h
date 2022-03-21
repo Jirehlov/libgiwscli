@@ -4,8 +4,9 @@
 #include <cstddef>
 #include <iostream>
 
+#include "cn_item.h"
+#include "en_item.h"
 #include "random_gen.h"
-
 #define MAX_ITEMS 117
 
 namespace giwscli {
@@ -33,6 +34,13 @@ extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,
     max_fives, min_fives, five_weight, four_weight, three_weight, fate_weapon,
     ave_fives, ach_count[12];
 extern signed int error_code, full_q;
+#if CN_ITEM_H
+extern const char *s_pname_cn[128], *s_pnameshort_cn[128], *s_pdetails_cn[128];
+#endif
+#if EN_ITEM_H
+extern const char *s_pname_en[128], *s_pnameshort_en[128], *s_pdetails_en[128];
+#endif
+
 extern void ini_ams(size_t *in, size_t ins, const size_t *out);
 
 extern void set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
