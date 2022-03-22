@@ -1,3 +1,5 @@
+/*Version 2.6.0*/
+
 #include <random>
 #include <chrono>
 #include "random_gen.h"

@@ -1,3 +1,5 @@
+/*Version 2.6.0*/
+
 #include "giwscli.h"
 
 bool giwscli::quit = true;
@@ -293,7 +295,6 @@ const ptrdiff_t giwscli::tempga4[9] = {0, 1, 0, 2, 3, 0, 4, 5, 0};
 const ptrdiff_t giwscli::tempgb4[6] = {0, 22, 24, 25, 27, 28};
 unsigned int giwscli::resultt = 0;
 unsigned int giwscli::resultu = 0;
-unsigned int giwscli::lang_status = 0;
 unsigned int giwscli::star = 0;
 unsigned int giwscli::type = 0;
 ptrdiff_t giwscli::chosen_event = 0;
@@ -302,11 +303,8 @@ ptrdiff_t giwscli::unmet4_c = 0;
 ptrdiff_t giwscli::unmet4_w = 0;
 ptrdiff_t giwscli::unmet5_c = 0;
 ptrdiff_t giwscli::unmet5_w = 0;
-ptrdiff_t giwscli::switch_b_should_be = 0;
 ptrdiff_t giwscli::switch_e_should_be = 0;
-ptrdiff_t giwscli::switch_b_sav = 0;
 ptrdiff_t giwscli::switch_e_sav = 0;
-ptrdiff_t giwscli::e_sav = 0;
 ptrdiff_t giwscli::four_star_assurance_number = 1;
 ptrdiff_t giwscli::five_star_assurance_number = 1;
 ptrdiff_t giwscli::max_fives = 1;
@@ -318,7 +316,6 @@ ptrdiff_t giwscli::fate_weapon = 0;
 ptrdiff_t giwscli::ave_fives = 0;
 ptrdiff_t giwscli::ach_count[12] = {0};
 signed int giwscli::error_code = 0;
-signed int giwscli::full_q = 0;
 #if CN_ITEM_H
 const char* giwscli::s_pname_cn[128] = {
     CN_C_0,   CN_C_1,   CN_C_2,   CN_C_3,   CN_C_4,   CN_C_5,   CN_C_6,

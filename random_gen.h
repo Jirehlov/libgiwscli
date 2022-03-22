@@ -1,3 +1,5 @@
+/*Version 2.6.0*/
+
 #ifndef RANDOM_GEN_H
 #define RANDOM_GEN_H 1
 #include <random>

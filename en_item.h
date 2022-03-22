@@ -1,3 +1,5 @@
+/*Version 2.6.0*/
+
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1
 #define EN_C_0 "\"Driving Thunder\" Keqing (Electro)"

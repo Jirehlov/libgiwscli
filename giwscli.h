@@ -1,3 +1,5 @@
+/*Version 2.6.0*/
+
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
 #include <chrono>
@@ -27,13 +29,12 @@ extern const size_t nup_five_c[5], nup_five_w[10], nup_four_w[32], three_g[13],
     nup_four_cg33[17], nup_four_cg34[18], nup_four_cg35[19], nup_four_cg36[20],
     nup_four_cg37[21], nup_four_cg38[22], nup_four_cg39[23];
 extern const ptrdiff_t tempga4[9], tempgb4[6];
-extern unsigned int resultt, resultu, lang_status, star, type;
+extern unsigned int resultt, resultu, star, type;
 extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,
-    unmet5_w, switch_b_should_be, switch_e_should_be, switch_b_sav,
-    switch_e_sav, e_sav, four_star_assurance_number, five_star_assurance_number,
-    max_fives, min_fives, five_weight, four_weight, three_weight, fate_weapon,
-    ave_fives, ach_count[12];
-extern signed int error_code, full_q;
+    unmet5_w, switch_e_should_be, switch_e_sav, four_star_assurance_number,
+    five_star_assurance_number, max_fives, min_fives, five_weight, four_weight,
+    three_weight, fate_weapon, ave_fives, ach_count[12];
+extern signed int error_code;
 #if CN_ITEM_H
 extern const char *s_pname_cn[128], *s_pnameshort_cn[128], *s_pdetails_cn[128];
 #endif
