@@ -1,7 +1,8 @@
 /*Version 2.6.0*/
 
 #ifndef EN_ITEM_H
-#define EN_ITEM_H 1
+#define EN_ITEM_H 1 // mark it 0 if encoding error occurs
+#if EN_ITEM_H
 #define EN_C_0 "\"Driving Thunder\" Keqing (Electro)"
 #define EN_C_1 "\"Astral Reflection\" Mona (Hydro)"
 #define EN_C_2 "\"Icy Resurrection\" Qiqi (Cryo)"
@@ -641,5 +642,7 @@
 #define EN_D_125 "Placeholder"
 #define EN_D_126 "Placeholder"
 #define EN_D_127 "Placeholder"
+
+#endif
 
 #endif

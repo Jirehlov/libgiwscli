@@ -2,6 +2,7 @@
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1 // mark it 0 if encoding error occurs
+#if CN_ITEM_H
 #define CN_C_0 "霆霓快雨·刻晴(雷)"
 #define CN_C_1 "星天水镜·莫娜(水)"
 #define CN_C_2 "冻冻回魂夜·七七(冰)"
@@ -459,5 +460,7 @@
 #define CN_D_125 "Placeholder"
 #define CN_D_126 "Placeholder"
 #define CN_D_127 "Placeholder"
+
+#endif
 
 #endif
