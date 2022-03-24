@@ -1,7 +1,7 @@
-/*Version 2.6.0*/
+/*Version 2.6.1*/
 
 #ifndef CN_ITEM_H
-#define CN_ITEM_H 1 // mark it 0 if encoding error occurs
+#define CN_ITEM_H 1  // mark it 0 if encoding error occurs
 #if CN_ITEM_H
 #define CN_C_0 "霆霓快雨·刻晴(雷)"
 #define CN_C_1 "星天水镜·莫娜(水)"

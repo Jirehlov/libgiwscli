@@ -1,4 +1,4 @@
-/*Version 2.6.0*/
+/*Version 2.6.1*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -45,6 +45,8 @@ extern const char *s_pname_en[128], *s_pnameshort_en[128], *s_pdetails_en[128];
 extern void ini_ams(size_t *in, size_t ins, const size_t *out);
 
 extern void set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
+                       const size_t *nup_four_cgm);
+extern void set_pool_2(const ptrdiff_t sw, const size_t size_nup_four_c_p,
                        const size_t *nup_four_cgm);
 extern void set_pool_3(const ptrdiff_t sw, size_t size_nup_four_c_p,
                        const size_t *nup_four_cgm);

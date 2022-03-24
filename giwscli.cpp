@@ -1,4 +1,4 @@
-/*Version 2.6.0*/
+/*Version 2.6.1*/
 
 #include "giwscli.h"
 
@@ -92,8 +92,8 @@ const size_t giwscli::tempga1[30][3] = {
     {24, 25, 71},   // 25
     {18, 22, 100},  // 26
     {16, 21, 95},   // 27
-    {16, 21, 95},   // 28
-    {16, 21, 95}    // 29
+    {17, 26, 108},  // 28
+    {17, 26, 108}   // 29
 };
 const size_t giwscli::tempga2[30][3] = {
     {0, 0, 0},      // 0
@@ -124,8 +124,8 @@ const size_t giwscli::tempga2[30][3] = {
     {24, 25, 71},   // 25
     {18, 22, 100},  // 26
     {16, 21, 95},   // 27
-    {16, 21, 95},   // 28
-    {16, 21, 95}    // 29
+    {17, 26, 108},  // 28
+    {17, 26, 108}   // 29
 };
 const size_t giwscli::tempga3[30] = {
     MAX_ITEMS, 63, 64, 65, 66, 67, 68, 69, 0,   70,  63, 65, 66, 72,  64,
@@ -136,16 +136,16 @@ const size_t giwscli::tempgb1[6][3] = {
     {15, 20, 21},   // 1
     {19, 23, 108},  // 2
     {24, 25, 71},   // 3
-    {16, 21, 95},   // 4
-    {16, 21, 95},   // 5
+    {17, 26, 108},  // 4
+    {17, 26, 108},  // 5
 };
 const size_t giwscli::tempgb2[6][3] = {
-    {0, 0, 0},     // 0
-    {15, 20, 21},  // 1
-    {19, 23, 0},   // 2
-    {24, 25, 71},  // 3
-    {16, 21, 95},  // 4
-    {16, 21, 95},  // 5
+    {0, 0, 0},      // 0
+    {15, 20, 21},   // 1
+    {19, 23, 0},    // 2
+    {24, 25, 71},   // 3
+    {17, 26, 108},  // 4
+    {17, 26, 108},  // 5
 };
 const size_t giwscli::tempgb3[6] = {MAX_ITEMS, 72, 69, 68, 94, 63};
 
@@ -207,7 +207,7 @@ const size_t giwscli::tempgc2[28][5] = {
     {33, 39, 41, 49, 79},    // 24
     {34, 36, 42, 47, 103},   // 25
     {37, 40, 46, 102, 104},  // 26
-    {37, 40, 46, 102, 104}   // 27
+    {32, 38, 41, 43, 48}     // 27
 };
 const size_t giwscli::tempgc3[28][5] = {
     {0, 0, 0, 0, 0},       // 0
@@ -237,7 +237,7 @@ const size_t giwscli::tempgc3[28][5] = {
     {33, 39, 41, 49, 0},   // 24
     {34, 36, 42, 47, 0},   // 25
     {37, 40, 46, 0, 0},    // 26
-    {37, 40, 46, 0, 0}     // 27
+    {32, 38, 41, 43, 48}   // 27
 };
 const size_t giwscli::tempgc4[28][2] = {
     {0, 0},   // 0
@@ -459,6 +459,15 @@ void giwscli::set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
   ini_ams(four_check, 3, tempga2[sw]);
 }
 
+void giwscli::set_pool_2(const ptrdiff_t sw, const size_t size_nup_four_c_p,
+                         const size_t* nup_four_cgm) {
+  up_five = tempgb3[sw];
+  size_nup_four_c = size_nup_four_c_p;
+  ini_ams(up_four_g, 3, tempgb1[sw]);
+  ini_ams(nup_four_c, size_nup_four_c, nup_four_cgm);
+  ini_ams(four_check, 3, tempgb2[sw]);
+}
+
 void giwscli::set_pool_3(const ptrdiff_t sw, size_t size_nup_four_c_p,
                          const size_t* nup_four_cgm) {
   ini_ams(up_five_g, 2, tempgc1[sw]);
@@ -495,11 +504,11 @@ void giwscli::pool_stair_1(ptrdiff_t chosen_event_p) {
 
 void giwscli::pool_stair_2(ptrdiff_t chosen_event_p) {
   if (chosen_event_p > 0 && chosen_event_p < 2) {
-    set_pool_3(chosen_event_p, 18, nup_four_cg7);
+    set_pool_2(chosen_event_p, 18, nup_four_cg7);
   } else if (chosen_event_p < 4) {
-    set_pool_3(chosen_event_p, 19, nup_four_cg8);
+    set_pool_2(chosen_event_p, 19, nup_four_cg8);
   } else if (chosen_event_p < 6) {
-    set_pool_3(chosen_event_p, 20, nup_four_cg9);
+    set_pool_2(chosen_event_p, 20, nup_four_cg9);
   } else {
     error_code = 5;
   }

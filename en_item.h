@@ -1,7 +1,7 @@
-/*Version 2.6.0*/
+/*Version 2.6.1*/
 
 #ifndef EN_ITEM_H
-#define EN_ITEM_H 1 // mark it 0 if encoding error occurs
+#define EN_ITEM_H 1  // mark it 0 if encoding error occurs
 #if EN_ITEM_H
 #define EN_C_0 "\"Driving Thunder\" Keqing (Electro)"
 #define EN_C_1 "\"Astral Reflection\" Mona (Hydro)"
