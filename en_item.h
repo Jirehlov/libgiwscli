@@ -117,8 +117,8 @@
 #define EN_C_111 "\"Pillar of Fortitude\" Kamisato Ayato (Hydro)"
 #define EN_C_112 "Kagura's Verity (Catalyst)"
 #define EN_C_113 "Haran Tsukishiro Futsu (Sword)"
-#define EN_C_114 "Yelan (Hydro)"
-#define EN_C_115 "Kuki Shinobu (Electro)"
+#define EN_C_114 "\"Valley Orchid\"Yelan (Hydro)"
+#define EN_C_115 "\"Mender of Tribulations\"Kuki Shinobu (Electro)"
 #define EN_C_116 "Shikanoin Heizou (Anemo)"
 #define EN_C_117 "Placeholder"
 #define EN_C_118 "Placeholder"
@@ -627,7 +627,9 @@
 #define EN_D_112                                                           \
   "The bells used when performing the Kagura Dance, blessed by the Guuji " \
   "herself. The scent of the Sacred Sakura tree lingers on it."
-#define EN_D_113 "Haran Tsukishiro Futsu"
+#define EN_D_113                                                             \
+  "A famed work by the Futsu line of smiths. The name \"Haran\" comes from " \
+  "the manner in which it resembles the violent, roiling waves."
 #define EN_D_114 "Yelan"
 #define EN_D_115 "Kuki Shinobu"
 #define EN_D_116 "Shikanoin Heizou"
