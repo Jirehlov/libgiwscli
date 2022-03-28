@@ -1,4 +1,4 @@
-/*Version 2.6.1*/
+/*Version 2.6.2*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
