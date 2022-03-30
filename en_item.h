@@ -1,4 +1,4 @@
-/*Version 2.6.2*/
+/*Version 2.6.3*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -120,7 +120,7 @@
 #define EN_C_114 "\"Valley Orchid\"Yelan (Hydro)"
 #define EN_C_115 "\"Mender of Tribulations\"Kuki Shinobu (Electro)"
 #define EN_C_116 "Shikanoin Heizou (Anemo)"
-#define EN_C_117 "Placeholder"
+#define EN_C_117 "Aqua Simulacra (Bow)"
 #define EN_C_118 "Placeholder"
 #define EN_C_119 "Placeholder"
 #define EN_C_120 "Placeholder"
@@ -248,7 +248,7 @@
 #define EN_X_114 "Yelan"
 #define EN_X_115 "Kuki Shinobu"
 #define EN_X_116 "Shikanoin Heizou"
-#define EN_X_117 "Placeholder"
+#define EN_X_117 "Aqua Simulacra"
 #define EN_X_118 "Placeholder"
 #define EN_X_119 "Placeholder"
 #define EN_X_120 "Placeholder"
@@ -633,7 +633,7 @@
 #define EN_D_114 "Yelan"
 #define EN_D_115 "Kuki Shinobu"
 #define EN_D_116 "Shikanoin Heizou"
-#define EN_D_117 "Placeholder"
+#define EN_D_117 "Aqua Simulacra"
 #define EN_D_118 "Placeholder"
 #define EN_D_119 "Placeholder"
 #define EN_D_120 "Placeholder"

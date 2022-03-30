@@ -1,4 +1,4 @@
-/*Version 2.6.2*/
+/*Version 2.6.3*/
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -120,7 +120,7 @@
 #define CN_C_114 "兰生幽谷·夜兰(水)"
 #define CN_C_115 "烦恼刈除·久岐忍(雷)"
 #define CN_C_116 "鹿野院平藏(风)"
-#define CN_C_117 "Placeholder"
+#define CN_C_117 "弓·若水"
 #define CN_C_118 "Placeholder"
 #define CN_C_119 "Placeholder"
 #define CN_C_120 "Placeholder"
@@ -248,7 +248,7 @@
 #define CN_X_114 "夜兰"
 #define CN_X_115 "久岐忍"
 #define CN_X_116 "鹿野院平藏"
-#define CN_X_117 "Placeholder"
+#define CN_X_117 "若水"
 #define CN_X_118 "Placeholder"
 #define CN_X_119 "Placeholder"
 #define CN_X_120 "Placeholder"
@@ -450,7 +450,7 @@
 #define CN_D_114 "夜兰"
 #define CN_D_115 "久岐忍"
 #define CN_D_116 "鹿野院平藏"
-#define CN_D_117 "Placeholder"
+#define CN_D_117 "若水"
 #define CN_D_118 "Placeholder"
 #define CN_D_119 "Placeholder"
 #define CN_D_120 "Placeholder"

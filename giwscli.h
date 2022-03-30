@@ -1,4 +1,4 @@
-/*Version 2.6.2*/
+/*Version 2.6.3*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -9,7 +9,7 @@
 #include "cn_item.h"
 #include "en_item.h"
 #include "random_gen.h"
-#define MAX_ITEMS 117
+#define MAX_ITEMS 118
 
 namespace giwscli {
 extern bool quit, is_noelle, five_star_guarantee_number,
