@@ -1,4 +1,4 @@
-/*Version 2.6.4*/
+/*Version 2.6.5*/
 
 #include "giwscli.h"
 

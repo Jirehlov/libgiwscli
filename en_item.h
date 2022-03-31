@@ -1,4 +1,4 @@
-/*Version 2.6.4*/
+/*Version 2.6.5*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -619,7 +619,7 @@
   "time cultivating in isolation in Liyue's mountains, she has become every " \
   "bit as cool and distant as the adepti themselves."
 #define EN_D_110                                                           \
-  " keenly honed weapon forged from some strange crystal. Its faint blue " \
+  "A keenly honed weapon forged from some strange crystal. Its faint blue " \
   "light seems to whisper of countless matters now past."
 #define EN_D_111                                                        \
   "The young but highly accomplished head of the Yashiro Commission's " \
