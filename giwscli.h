@@ -1,10 +1,8 @@
-/*Version 2.6.5*/
+/*Version 2.6.6*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
-#include <chrono>
 #include <cstddef>
-#include <iostream>
 
 #include "cn_item.h"
 #include "en_item.h"
@@ -33,7 +31,7 @@ extern unsigned int resultt, resultu, star, type;
 extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,
     unmet5_w, switch_e_should_be, switch_e_sav, four_star_assurance_number,
     five_star_assurance_number, max_fives, min_fives, five_weight, four_weight,
-    three_weight, fate_weapon, ave_fives, ach_count[12];
+    three_weight, fate_weapon, ave_fives, ach_count[12], hash_out[9];
 extern signed int error_code;
 #if CN_ITEM_H
 extern const char *s_pname_cn[128], *s_pnameshort_cn[128], *s_pdetails_cn[128];
@@ -65,5 +63,9 @@ extern void core_f_5();
 extern void post_add();
 extern void set_banner_f(ptrdiff_t chosen_banner_p, ptrdiff_t chosen_event_p);
 extern void gipull(ptrdiff_t chosen_banner_p, ptrdiff_t chosen_event_p);
+extern void clear_all();
+extern void hash_gen();
+extern int hash_apply(const ptrdiff_t *sav_p);
+extern int set_fw(const unsigned int fw);
 }  // namespace giwscli
 #endif

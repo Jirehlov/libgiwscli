@@ -1,4 +1,4 @@
-/*Version 2.6.5*/
+/*Version 2.6.6*/
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1  // mark it 0 if encoding error occurs

@@ -1,4 +1,4 @@
-/*Version 2.6.5*/
+/*Version 2.6.6*/
 
 #include "giwscli.h"
 
@@ -315,6 +315,7 @@ ptrdiff_t giwscli::three_weight = 0;
 ptrdiff_t giwscli::fate_weapon = 0;
 ptrdiff_t giwscli::ave_fives = 0;
 ptrdiff_t giwscli::ach_count[12] = {0};
+ptrdiff_t giwscli::hash_out[9] = {0};
 signed int giwscli::error_code = 0;
 #if CN_ITEM_H
 const char* giwscli::s_pname_cn[128] = {
@@ -1439,3 +1440,117 @@ void giwscli::gipull(ptrdiff_t chosen_banner_p, ptrdiff_t chosen_event_p) {
   }
   post_add();
 }
+
+void giwscli::clear_all() {
+  four_star_assurance_number = 1;
+  five_star_assurance_number = 1;
+  five_star_guarantee_number = false;
+  four_star_guarantee_number = false;
+  countx = 0;
+  five_count = 0;
+  five_count_c = 0;
+  five_count_w = 0;
+  four_count = 0;
+  four_count_c = 0;
+  four_count_w = 0;
+  is_noelle = true;
+  ave_fives = 0;
+  max_fives = 1;
+  if (chosen_banner == 3) {
+    min_fives = 80;
+  } else if (chosen_banner == 1 || chosen_banner == 2 || chosen_banner == 4) {
+    min_fives = 90;
+  } else if (chosen_banner == 5) {
+    min_fives = PTRDIFF_MAX;
+  } else {
+    error_code = 7;
+  }
+  max_fivesth = 1;
+  min_fivesth = 1;
+  max_fivecount = 1;
+  min_fivecount = 1;
+  unmet4_c = 0;
+  unmet4_w = 0;
+  unmet5_c = 0;
+  unmet5_w = 0;
+  fate_points = 0;
+  for (size_t& ini : pcount) {
+    ini = 0;
+  }
+  for (size_t ini = 0; ini < 10; ini++) {
+    four_pity[ini] = 0;
+  }
+  for (size_t& ini : five_pity) {
+    ini = 0;
+  }
+  for (size_t& ini : five_pity_w) {
+    ini = 0;
+  }
+  for (size_t ini = 0; ini < 12; ini++) {
+    ach_count[ini] = 0;
+  }
+  for (size_t ini = 0; ini < 12; ini++) {
+    ach[ini] = false;
+  }
+  kind_r_ach_8 = 0;
+  kind_r_ach_11 = 0;
+}
+
+void giwscli::hash_gen() {
+  giwscli::hash_out[0] =
+      static_cast<ptrdiff_t>(giwscli::five_star_guarantee_number);
+  giwscli::hash_out[1] = giwscli::five_star_assurance_number;
+  giwscli::hash_out[2] =
+      static_cast<ptrdiff_t>(giwscli::four_star_guarantee_number);
+  giwscli::hash_out[3] = giwscli::four_star_assurance_number;
+  giwscli::hash_out[4] = giwscli::unmet5_c + 1;
+  giwscli::hash_out[5] = giwscli::unmet5_w + 1;
+  giwscli::hash_out[6] = giwscli::unmet4_c + 1;
+  giwscli::hash_out[7] = giwscli::unmet4_w + 1;
+  giwscli::hash_out[8] = giwscli::fate_weapon;
+}
+
+int giwscli::hash_apply(const ptrdiff_t* sav_p) {
+  if (((four_count > 0 || five_count > 0) && sav_p[1] == sav_p[3]) ||
+      (chosen_banner == 4 && sav_p[4] != sav_p[1] && sav_p[5] != sav_p[1]) ||
+      (sav_p[6] != sav_p[3] && sav_p[7] != sav_p[3]) ||
+      (chosen_banner != 3 && sav_p[4] > 89 && sav_p[5] > 89) ||
+      (chosen_banner == 3 && sav_p[4] > 79 && sav_p[5] > 79) ||
+      (sav_p[8] > 2)) {
+    return 2;
+  }
+  five_star_guarantee_number = static_cast<bool>(sav_p[0]);
+  five_star_assurance_number = sav_p[1];
+  four_star_guarantee_number = static_cast<bool>(sav_p[2]);
+  four_star_assurance_number = sav_p[3];
+  if (sav_p[4] > 0) {
+    unmet5_c = sav_p[4] - 1;
+  } else {
+    unmet5_c = 0;
+  }
+  if (sav_p[5] > 0) {
+    unmet5_w = sav_p[5] - 1;
+  } else {
+    unmet5_w = 0;
+  }
+  if (sav_p[6] > 0) {
+    unmet4_c = sav_p[6] - 1;
+  } else {
+    unmet4_c = 0;
+  }
+  if (sav_p[7] > 0) {
+    unmet4_w = sav_p[7] - 1;
+  } else {
+    unmet4_w = 0;
+  }
+  fate_weapon = sav_p[8];
+  return 0;
+}
+
+int giwscli::set_fw(const unsigned int fw) {
+  if (fw != 0 && fw != 1 && fw != 2) {
+    return 1;
+  }
+  fate_weapon = static_cast<ptrdiff_t>(fw);
+  return 0;
+} // for function-based lib usages

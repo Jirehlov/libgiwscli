@@ -1,4 +1,4 @@
-/*Version 2.6.5*/
+/*Version 2.6.6*/
 
 #ifndef RANDOM_GEN_H
 #define RANDOM_GEN_H 1

@@ -1,4 +1,4 @@
-/*Version 2.6.5*/
+/*Version 2.6.6*/
 
 #include "random_gen.h"
 
