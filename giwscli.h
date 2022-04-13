@@ -1,4 +1,4 @@
-/*Version 2.6.6*/
+/*Version 2.6.7*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -22,8 +22,8 @@ extern const size_t nup_five_c[5], nup_five_w[10], nup_four_w[32], three_g[13],
     nup_four_cg1[11], nup_four_cg2[13], nup_four_cg3[14], nup_four_cg4[15],
     nup_four_cg5[16], nup_four_cg6[17], nup_four_cg7[18], nup_four_cg8[19],
     nup_four_cg9[20], tempga1[30][3], tempga2[30][3], tempga3[30],
-    tempgb1[6][3], tempgb2[6][3], tempgb3[6], tempgc1[28][2], tempgc2[28][5],
-    tempgc3[28][5], tempgc4[28][2], nup_four_cg31[14], nup_four_cg32[16],
+    tempgb1[6][3], tempgb2[6][3], tempgb3[6], tempgc1[29][2], tempgc2[29][5],
+    tempgc3[29][5], tempgc4[29][2], nup_four_cg31[14], nup_four_cg32[16],
     nup_four_cg33[17], nup_four_cg34[18], nup_four_cg35[19], nup_four_cg36[20],
     nup_four_cg37[21], nup_four_cg38[22], nup_four_cg39[23];
 extern const ptrdiff_t tempga4[9], tempgb4[6];
