@@ -119,7 +119,7 @@
 #define CN_C_113 "单手剑·波乱月白经津"
 #define CN_C_114 "兰生幽谷·夜兰(水)"
 #define CN_C_115 "烦恼刈除·久岐忍(雷)"
-#define CN_C_116 "鹿野院平藏(风)"
+#define CN_C_116 "心朝乂安·鹿野院平藏(风)"
 #define CN_C_117 "弓·若水"
 #define CN_C_118 "Placeholder"
 #define CN_C_119 "Placeholder"

@@ -119,7 +119,7 @@
 #define EN_C_113 "Haran Tsukishiro Futsu (Sword)"
 #define EN_C_114 "\"Valley Orchid\"Yelan (Hydro)"
 #define EN_C_115 "\"Mender of Tribulations\"Kuki Shinobu (Electro)"
-#define EN_C_116 "Shikanoin Heizou (Anemo)"
+#define EN_C_116 "\"Analytical Harmony\"Shikanoin Heizou (Anemo)"
 #define EN_C_117 "Aqua Simulacra (Bow)"
 #define EN_C_118 "Placeholder"
 #define EN_C_119 "Placeholder"

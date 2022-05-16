@@ -321,6 +321,7 @@ ptrdiff_t giwscli::ave_fives = 0;
 ptrdiff_t giwscli::ach_count[12] = {0};
 ptrdiff_t giwscli::hash_out[9] = {0};
 signed int giwscli::error_code = 0;
+
 #if CN_ITEM_H
 const char* giwscli::s_pname_cn[128] = {
     CN_C_0,   CN_C_1,   CN_C_2,   CN_C_3,   CN_C_4,   CN_C_5,   CN_C_6,
@@ -385,6 +386,7 @@ const char* giwscli::s_pdetails_cn[128] = {
     CN_D_119, CN_D_120, CN_D_121, CN_D_122, CN_D_123, CN_D_124, CN_D_125,
     CN_D_126, CN_D_127};
 #endif
+
 #if EN_ITEM_H
 const char* giwscli::s_pname_en[128] = {
     EN_C_0,   EN_C_1,   EN_C_2,   EN_C_3,   EN_C_4,   EN_C_5,   EN_C_6,
@@ -449,6 +451,7 @@ const char* giwscli::s_pdetails_en[128] = {
     EN_D_119, EN_D_120, EN_D_121, EN_D_122, EN_D_123, EN_D_124, EN_D_125,
     EN_D_126, EN_D_127};
 #endif
+
 void giwscli::ini_ams(size_t* in, size_t ins, const size_t* out) {
   for (size_t i = 0; i < ins; i++) {
     in[i] = out[i];
