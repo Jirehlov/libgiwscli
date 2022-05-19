@@ -6,8 +6,6 @@ bool giwscli::quit = true;
 bool giwscli::is_noelle = true;
 bool giwscli::five_star_guarantee_number = false;
 bool giwscli::four_star_guarantee_number = false;
-bool giwscli::ach[12] = {false, false, false, false, false, false,
-                         false, false, false, false, false, false};
 size_t giwscli::kind = 0;
 size_t giwscli::temp1 = 0;
 size_t giwscli::fate_points = 0;
@@ -25,8 +23,6 @@ size_t giwscli::min_fivesth = 1;
 size_t giwscli::max_fivecount = 1;
 size_t giwscli::min_fivecount = 1;
 size_t giwscli::size_nup_four_w = 18;
-size_t giwscli::kind_r_ach_11 = 0;
-size_t giwscli::kind_r_ach_8 = 0;
 size_t giwscli::up_five_g[2] = {0};
 size_t giwscli::up_four_g[5] = {0};
 size_t giwscli::nup_four_c[32] = {0};
@@ -318,10 +314,8 @@ ptrdiff_t giwscli::four_weight = 0;
 ptrdiff_t giwscli::three_weight = 0;
 ptrdiff_t giwscli::fate_weapon = 0;
 ptrdiff_t giwscli::ave_fives = 0;
-ptrdiff_t giwscli::ach_count[12] = {0};
 ptrdiff_t giwscli::hash_out[9] = {0};
 signed int giwscli::error_code = 0;
-
 #if CN_ITEM_H
 const char* giwscli::s_pname_cn[128] = {
     CN_C_0,   CN_C_1,   CN_C_2,   CN_C_3,   CN_C_4,   CN_C_5,   CN_C_6,
@@ -386,7 +380,6 @@ const char* giwscli::s_pdetails_cn[128] = {
     CN_D_119, CN_D_120, CN_D_121, CN_D_122, CN_D_123, CN_D_124, CN_D_125,
     CN_D_126, CN_D_127};
 #endif
-
 #if EN_ITEM_H
 const char* giwscli::s_pname_en[128] = {
     EN_C_0,   EN_C_1,   EN_C_2,   EN_C_3,   EN_C_4,   EN_C_5,   EN_C_6,
@@ -451,7 +444,6 @@ const char* giwscli::s_pdetails_en[128] = {
     EN_D_119, EN_D_120, EN_D_121, EN_D_122, EN_D_123, EN_D_124, EN_D_125,
     EN_D_126, EN_D_127};
 #endif
-
 void giwscli::ini_ams(size_t* in, size_t ins, const size_t* out) {
   for (size_t i = 0; i < ins; i++) {
     in[i] = out[i];
@@ -636,29 +628,7 @@ unsigned int giwscli::WRSpick(const ptrdiff_t* weightx, size_t nom) {
 void giwscli::tri() {
   star = 3;
   kind = rspick(three_g, 13);
-  if (ach_count[8] < 7) {
-    if (kind_r_ach_8 != kind) {
-      kind_r_ach_8 = kind;
-      ach_count[8] = 0;
-    } else {
-      ach_count[8]++;
-    }
-  }
 }  // 3-star kind settler for all banners
-
-void giwscli::mpcheck() {
-  if (countx == 2 || countx == 6 || countx == 30 || countx == 126 ||
-      countx == 8190 || countx == 131070 || countx == 524286 ||
-      countx == 2147483646 || countx == 2305843009213693950) {
-    ach[7] = true;
-  }
-  if (countx == 20192977) {
-    ach[9] = true;
-  }
-  if (countx == 157087284) {
-    ach[10] = true;
-  }
-}
 
 void giwscli::core_f_1() {
   if (five_star_assurance_number < 74) {
@@ -678,7 +648,6 @@ void giwscli::core_f_1() {
     case 0: {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -696,10 +665,6 @@ void giwscli::core_f_1() {
         type = 1;
         five_count_c++;
         kind = up_five;
-        if (!five_star_guarantee_number) {
-          ach_count[0] = 0;
-          ach_count[1]++;
-        }
         five_star_guarantee_number = false;
       } else {
         type = 2;
@@ -707,12 +672,8 @@ void giwscli::core_f_1() {
         kind = rspick(nup_five_c, 5);
         if (kind == five_check[0]) {
           five_star_guarantee_number = false;
-          ach_count[0] = 0;
-          ach_count[1]++;
         } else {
           five_star_guarantee_number = true;
-          ach_count[0]++;
-          ach_count[1] = 0;
         }
       }  // 5-star kind settler for banner I
     } break;
@@ -723,7 +684,6 @@ void giwscli::core_f_1() {
         four_pity[four_star_assurance_number - 1]++;
       } else {
         four_pity[10]++;
-        ach[2] = true;
       }
       four_star_assurance_number = 0;
       if (four_star_guarantee_number || temp1 < 1) {
@@ -819,14 +779,6 @@ void giwscli::core_f_1() {
           }
         }
       }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
-      }
     } break;
     case 2:
       tri();
@@ -859,7 +811,6 @@ void giwscli::core_f_3() {
     case 0: {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -880,21 +831,14 @@ void giwscli::core_f_3() {
           kind = up_five_g[fate_weapon - 1];
           fate_points = 0;
           five_star_guarantee_number = false;
-          ach_count[4]++;
-          ach_count[5] = 0;
         } else if (five_star_guarantee_number || temp1 < 3) {
           type = 1;
           five_count_w++;
           kind = rspick(up_five_g, 2);
           if (kind == up_five_g[fate_weapon - 1]) {
             fate_points = 0;
-            ach_count[4] = 0;
-            if (!five_star_guarantee_number) {
-              ach_count[5]++;
-            }
           } else {
             fate_points++;
-            ach_count[5] = 0;
           }
           five_star_guarantee_number = false;
         } else {
@@ -903,11 +847,8 @@ void giwscli::core_f_3() {
           kind = rspick(nup_five_w, 10);
           if (kind == up_five_g[fate_weapon - 1]) {
             fate_points = 0;
-            ach_count[4] = 0;
-            ach_count[5]++;
           } else {
             fate_points++;
-            ach_count[5] = 0;
           }
           if ((kind == five_check[0] || kind == five_check[1])) {
             five_star_guarantee_number = false;
@@ -942,7 +883,6 @@ void giwscli::core_f_3() {
         four_pity[four_star_assurance_number - 1]++;
       } else {
         four_pity[10]++;
-        ach[2] = true;
       }
       four_star_assurance_number = 0;
       if (four_star_guarantee_number || temp1 < 3) {
@@ -1038,14 +978,6 @@ void giwscli::core_f_3() {
           }
         }
       }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
-      }
     } break;
     case 2:
       tri();
@@ -1074,7 +1006,6 @@ void giwscli::core_f_4() {
     case 0: {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -1157,7 +1088,6 @@ void giwscli::core_f_4() {
         four_pity[four_star_assurance_number - 1]++;
       } else {
         four_pity[10]++;
-        ach[2] = true;
       }
       four_star_assurance_number = 0;
       if (unmet4_c < 17 && unmet4_w < 17) {
@@ -1221,14 +1151,6 @@ void giwscli::core_f_4() {
           }
         }
       }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
-      }
     } break;
     case 2:
       tri();
@@ -1247,19 +1169,10 @@ void giwscli::core_f_5() {
     kind = 20;
     four_count_c++;
     is_noelle = false;
-    if (ach_count[11] < 7) {
-      if (kind_r_ach_11 != kind) {
-        kind_r_ach_11 = kind;
-        ach_count[11] = 0;
-      } else {
-        ach_count[11]++;
-      }
-    }
   } else if (four_star_assurance_number < 9) {
     if (temp1 < 6) {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -1283,21 +1196,12 @@ void giwscli::core_f_5() {
       if (kind == 20) {
         is_noelle = false;
       }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
-      }
     } else
       tri();
   } else if (four_star_assurance_number == 9) {
     if (temp1 < 6) {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -1321,21 +1225,12 @@ void giwscli::core_f_5() {
       if (kind == 20) {
         is_noelle = false;
       }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
-      }
     } else
       tri();
   } else {
     if (temp1 < 6) {
       star = 5;
       five_count++;
-      mpcheck();
       ave_fives += five_star_assurance_number;
       if (five_star_assurance_number > max_fives) {
         max_fives = five_star_assurance_number;
@@ -1353,22 +1248,11 @@ void giwscli::core_f_5() {
     } else {
       star = 4;
       four_count++;
-      if (four_star_assurance_number > 11) {
-        ach[2] = true;
-      }
       four_star_assurance_number = 0;
       four_count_c++;
       kind = rspick(nup_four_c, 11);
       if (kind == 20) {
         is_noelle = false;
-      }
-      if (ach_count[11] < 7) {
-        if (kind_r_ach_11 != kind) {
-          kind_r_ach_11 = kind;
-          ach_count[11] = 0;
-        } else {
-          ach_count[11]++;
-        }
       }
     }
   }
@@ -1378,6 +1262,28 @@ void giwscli::post_add() {
   countx++;
   five_star_assurance_number++;
   four_star_assurance_number++;
+  if (chosen_event == 1 || chosen_event == 2 || chosen_event == 3) {
+    if (star != 4 || type == 3) {
+      unmet4_c++;
+    }
+    if (star != 4 || type != 3) {
+      unmet4_w++;
+    }
+  } else if (chosen_event == 4) {
+    if (!(star == 5 && type == 1)) {
+      unmet5_c++;
+    }
+    if (!(star == 5 && type == 2)) {
+      unmet5_w++;
+    }
+    if (!(star == 4 && type == 1)) {
+      unmet4_c++;
+    }
+    if (!(star == 4 && type == 2)) {
+      unmet4_w++;
+    }
+  } else {
+  }
 }
 
 void giwscli::set_banner_f(ptrdiff_t chosen_banner_p,
@@ -1493,14 +1399,6 @@ void giwscli::clear_all() {
   for (size_t& ini : five_pity_w) {
     ini = 0;
   }
-  for (size_t ini = 0; ini < 12; ini++) {
-    ach_count[ini] = 0;
-  }
-  for (size_t ini = 0; ini < 12; ini++) {
-    ach[ini] = false;
-  }
-  kind_r_ach_8 = 0;
-  kind_r_ach_11 = 0;
 }
 
 void giwscli::hash_gen() {
