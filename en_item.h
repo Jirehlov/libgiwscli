@@ -1,4 +1,4 @@
-/*Version 2.6.7*/
+/*Version 2.8.1*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -117,13 +117,13 @@
 #define EN_C_111 "\"Pillar of Fortitude\" Kamisato Ayato (Hydro)"
 #define EN_C_112 "Kagura's Verity (Catalyst)"
 #define EN_C_113 "Haran Tsukishiro Futsu (Sword)"
-#define EN_C_114 "\"Valley Orchid\"Yelan (Hydro)"
-#define EN_C_115 "\"Mender of Tribulations\"Kuki Shinobu (Electro)"
-#define EN_C_116 "\"Analytical Harmony\"Shikanoin Heizou (Anemo)"
+#define EN_C_114 "\"Valley Orchid\" Yelan (Hydro)"
+#define EN_C_115 "\"Mender of Tribulations\" Kuki Shinobu (Electro)"
+#define EN_C_116 "\"Analytical Harmony\" Shikanoin Heizou (Anemo)"
 #define EN_C_117 "Aqua Simulacra (Bow)"
-#define EN_C_118 "Placeholder"
-#define EN_C_119 "Placeholder"
-#define EN_C_120 "Placeholder"
+#define EN_C_118 "\"Sprout of Rebirth\" Collei (Dendro)"
+#define EN_C_119 "\"Verdant Strider\" Tighnari (Dendro)"
+#define EN_C_120 "\"Treasure of Dream Garden\" Dori (Electro)"
 #define EN_C_121 "Placeholder"
 #define EN_C_122 "Placeholder"
 #define EN_C_123 "Placeholder"
@@ -131,6 +131,134 @@
 #define EN_C_125 "Placeholder"
 #define EN_C_126 "Placeholder"
 #define EN_C_127 "Placeholder"
+#define EN_C_128 "Placeholder"
+#define EN_C_129 "Placeholder"
+#define EN_C_130 "Placeholder"
+#define EN_C_131 "Placeholder"
+#define EN_C_132 "Placeholder"
+#define EN_C_133 "Placeholder"
+#define EN_C_134 "Placeholder"
+#define EN_C_135 "Placeholder"
+#define EN_C_136 "Placeholder"
+#define EN_C_137 "Placeholder"
+#define EN_C_138 "Placeholder"
+#define EN_C_139 "Placeholder"
+#define EN_C_140 "Placeholder"
+#define EN_C_141 "Placeholder"
+#define EN_C_142 "Placeholder"
+#define EN_C_143 "Placeholder"
+#define EN_C_144 "Placeholder"
+#define EN_C_145 "Placeholder"
+#define EN_C_146 "Placeholder"
+#define EN_C_147 "Placeholder"
+#define EN_C_148 "Placeholder"
+#define EN_C_149 "Placeholder"
+#define EN_C_150 "Placeholder"
+#define EN_C_151 "Placeholder"
+#define EN_C_152 "Placeholder"
+#define EN_C_153 "Placeholder"
+#define EN_C_154 "Placeholder"
+#define EN_C_155 "Placeholder"
+#define EN_C_156 "Placeholder"
+#define EN_C_157 "Placeholder"
+#define EN_C_158 "Placeholder"
+#define EN_C_159 "Placeholder"
+#define EN_C_160 "Placeholder"
+#define EN_C_161 "Placeholder"
+#define EN_C_162 "Placeholder"
+#define EN_C_163 "Placeholder"
+#define EN_C_164 "Placeholder"
+#define EN_C_165 "Placeholder"
+#define EN_C_166 "Placeholder"
+#define EN_C_167 "Placeholder"
+#define EN_C_168 "Placeholder"
+#define EN_C_169 "Placeholder"
+#define EN_C_170 "Placeholder"
+#define EN_C_171 "Placeholder"
+#define EN_C_172 "Placeholder"
+#define EN_C_173 "Placeholder"
+#define EN_C_174 "Placeholder"
+#define EN_C_175 "Placeholder"
+#define EN_C_176 "Placeholder"
+#define EN_C_177 "Placeholder"
+#define EN_C_178 "Placeholder"
+#define EN_C_179 "Placeholder"
+#define EN_C_180 "Placeholder"
+#define EN_C_181 "Placeholder"
+#define EN_C_182 "Placeholder"
+#define EN_C_183 "Placeholder"
+#define EN_C_184 "Placeholder"
+#define EN_C_185 "Placeholder"
+#define EN_C_186 "Placeholder"
+#define EN_C_187 "Placeholder"
+#define EN_C_188 "Placeholder"
+#define EN_C_189 "Placeholder"
+#define EN_C_190 "Placeholder"
+#define EN_C_191 "Placeholder"
+#define EN_C_192 "Placeholder"
+#define EN_C_193 "Placeholder"
+#define EN_C_194 "Placeholder"
+#define EN_C_195 "Placeholder"
+#define EN_C_196 "Placeholder"
+#define EN_C_197 "Placeholder"
+#define EN_C_198 "Placeholder"
+#define EN_C_199 "Placeholder"
+#define EN_C_200 "Placeholder"
+#define EN_C_201 "Placeholder"
+#define EN_C_202 "Placeholder"
+#define EN_C_203 "Placeholder"
+#define EN_C_204 "Placeholder"
+#define EN_C_205 "Placeholder"
+#define EN_C_206 "Placeholder"
+#define EN_C_207 "Placeholder"
+#define EN_C_208 "Placeholder"
+#define EN_C_209 "Placeholder"
+#define EN_C_210 "Placeholder"
+#define EN_C_211 "Placeholder"
+#define EN_C_212 "Placeholder"
+#define EN_C_213 "Placeholder"
+#define EN_C_214 "Placeholder"
+#define EN_C_215 "Placeholder"
+#define EN_C_216 "Placeholder"
+#define EN_C_217 "Placeholder"
+#define EN_C_218 "Placeholder"
+#define EN_C_219 "Placeholder"
+#define EN_C_220 "Placeholder"
+#define EN_C_221 "Placeholder"
+#define EN_C_222 "Placeholder"
+#define EN_C_223 "Placeholder"
+#define EN_C_224 "Placeholder"
+#define EN_C_225 "Placeholder"
+#define EN_C_226 "Placeholder"
+#define EN_C_227 "Placeholder"
+#define EN_C_228 "Placeholder"
+#define EN_C_229 "Placeholder"
+#define EN_C_230 "Placeholder"
+#define EN_C_231 "Placeholder"
+#define EN_C_232 "Placeholder"
+#define EN_C_233 "Placeholder"
+#define EN_C_234 "Placeholder"
+#define EN_C_235 "Placeholder"
+#define EN_C_236 "Placeholder"
+#define EN_C_237 "Placeholder"
+#define EN_C_238 "Placeholder"
+#define EN_C_239 "Placeholder"
+#define EN_C_240 "Placeholder"
+#define EN_C_241 "Placeholder"
+#define EN_C_242 "Placeholder"
+#define EN_C_243 "Placeholder"
+#define EN_C_244 "Placeholder"
+#define EN_C_245 "Placeholder"
+#define EN_C_246 "Placeholder"
+#define EN_C_247 "Placeholder"
+#define EN_C_248 "Placeholder"
+#define EN_C_249 "Placeholder"
+#define EN_C_250 "Placeholder"
+#define EN_C_251 "Placeholder"
+#define EN_C_252 "Placeholder"
+#define EN_C_253 "Placeholder"
+#define EN_C_254 "Placeholder"
+#define EN_C_255 "Placeholder"
 #define EN_X_0 "Keqing"
 #define EN_X_1 "Mona"
 #define EN_X_2 "Qiqi"
@@ -249,9 +377,9 @@
 #define EN_X_115 "Kuki Shinobu"
 #define EN_X_116 "Shikanoin Heizou"
 #define EN_X_117 "Aqua Simulacra"
-#define EN_X_118 "Placeholder"
-#define EN_X_119 "Placeholder"
-#define EN_X_120 "Placeholder"
+#define EN_X_118 "Collei"
+#define EN_X_119 "Tighnari"
+#define EN_X_120 "Dori"
 #define EN_X_121 "Placeholder"
 #define EN_X_122 "Placeholder"
 #define EN_X_123 "Placeholder"
@@ -259,6 +387,134 @@
 #define EN_X_125 "Placeholder"
 #define EN_X_126 "Placeholder"
 #define EN_X_127 "Placeholder"
+#define EN_X_128 "Placeholder"
+#define EN_X_129 "Placeholder"
+#define EN_X_130 "Placeholder"
+#define EN_X_131 "Placeholder"
+#define EN_X_132 "Placeholder"
+#define EN_X_133 "Placeholder"
+#define EN_X_134 "Placeholder"
+#define EN_X_135 "Placeholder"
+#define EN_X_136 "Placeholder"
+#define EN_X_137 "Placeholder"
+#define EN_X_138 "Placeholder"
+#define EN_X_139 "Placeholder"
+#define EN_X_140 "Placeholder"
+#define EN_X_141 "Placeholder"
+#define EN_X_142 "Placeholder"
+#define EN_X_143 "Placeholder"
+#define EN_X_144 "Placeholder"
+#define EN_X_145 "Placeholder"
+#define EN_X_146 "Placeholder"
+#define EN_X_147 "Placeholder"
+#define EN_X_148 "Placeholder"
+#define EN_X_149 "Placeholder"
+#define EN_X_150 "Placeholder"
+#define EN_X_151 "Placeholder"
+#define EN_X_152 "Placeholder"
+#define EN_X_153 "Placeholder"
+#define EN_X_154 "Placeholder"
+#define EN_X_155 "Placeholder"
+#define EN_X_156 "Placeholder"
+#define EN_X_157 "Placeholder"
+#define EN_X_158 "Placeholder"
+#define EN_X_159 "Placeholder"
+#define EN_X_160 "Placeholder"
+#define EN_X_161 "Placeholder"
+#define EN_X_162 "Placeholder"
+#define EN_X_163 "Placeholder"
+#define EN_X_164 "Placeholder"
+#define EN_X_165 "Placeholder"
+#define EN_X_166 "Placeholder"
+#define EN_X_167 "Placeholder"
+#define EN_X_168 "Placeholder"
+#define EN_X_169 "Placeholder"
+#define EN_X_170 "Placeholder"
+#define EN_X_171 "Placeholder"
+#define EN_X_172 "Placeholder"
+#define EN_X_173 "Placeholder"
+#define EN_X_174 "Placeholder"
+#define EN_X_175 "Placeholder"
+#define EN_X_176 "Placeholder"
+#define EN_X_177 "Placeholder"
+#define EN_X_178 "Placeholder"
+#define EN_X_179 "Placeholder"
+#define EN_X_180 "Placeholder"
+#define EN_X_181 "Placeholder"
+#define EN_X_182 "Placeholder"
+#define EN_X_183 "Placeholder"
+#define EN_X_184 "Placeholder"
+#define EN_X_185 "Placeholder"
+#define EN_X_186 "Placeholder"
+#define EN_X_187 "Placeholder"
+#define EN_X_188 "Placeholder"
+#define EN_X_189 "Placeholder"
+#define EN_X_190 "Placeholder"
+#define EN_X_191 "Placeholder"
+#define EN_X_192 "Placeholder"
+#define EN_X_193 "Placeholder"
+#define EN_X_194 "Placeholder"
+#define EN_X_195 "Placeholder"
+#define EN_X_196 "Placeholder"
+#define EN_X_197 "Placeholder"
+#define EN_X_198 "Placeholder"
+#define EN_X_199 "Placeholder"
+#define EN_X_200 "Placeholder"
+#define EN_X_201 "Placeholder"
+#define EN_X_202 "Placeholder"
+#define EN_X_203 "Placeholder"
+#define EN_X_204 "Placeholder"
+#define EN_X_205 "Placeholder"
+#define EN_X_206 "Placeholder"
+#define EN_X_207 "Placeholder"
+#define EN_X_208 "Placeholder"
+#define EN_X_209 "Placeholder"
+#define EN_X_210 "Placeholder"
+#define EN_X_211 "Placeholder"
+#define EN_X_212 "Placeholder"
+#define EN_X_213 "Placeholder"
+#define EN_X_214 "Placeholder"
+#define EN_X_215 "Placeholder"
+#define EN_X_216 "Placeholder"
+#define EN_X_217 "Placeholder"
+#define EN_X_218 "Placeholder"
+#define EN_X_219 "Placeholder"
+#define EN_X_220 "Placeholder"
+#define EN_X_221 "Placeholder"
+#define EN_X_222 "Placeholder"
+#define EN_X_223 "Placeholder"
+#define EN_X_224 "Placeholder"
+#define EN_X_225 "Placeholder"
+#define EN_X_226 "Placeholder"
+#define EN_X_227 "Placeholder"
+#define EN_X_228 "Placeholder"
+#define EN_X_229 "Placeholder"
+#define EN_X_230 "Placeholder"
+#define EN_X_231 "Placeholder"
+#define EN_X_232 "Placeholder"
+#define EN_X_233 "Placeholder"
+#define EN_X_234 "Placeholder"
+#define EN_X_235 "Placeholder"
+#define EN_X_236 "Placeholder"
+#define EN_X_237 "Placeholder"
+#define EN_X_238 "Placeholder"
+#define EN_X_239 "Placeholder"
+#define EN_X_240 "Placeholder"
+#define EN_X_241 "Placeholder"
+#define EN_X_242 "Placeholder"
+#define EN_X_243 "Placeholder"
+#define EN_X_244 "Placeholder"
+#define EN_X_245 "Placeholder"
+#define EN_X_246 "Placeholder"
+#define EN_X_247 "Placeholder"
+#define EN_X_248 "Placeholder"
+#define EN_X_249 "Placeholder"
+#define EN_X_250 "Placeholder"
+#define EN_X_251 "Placeholder"
+#define EN_X_252 "Placeholder"
+#define EN_X_253 "Placeholder"
+#define EN_X_254 "Placeholder"
+#define EN_X_255 "Placeholder"
 #define EN_D_0                                                                  \
   "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' "    \
   "unilateral approach to policymaking in Liyue — but in truth, gods admire " \
@@ -618,7 +874,7 @@
   "An adepti disciple with a most unusual air about her. Having spent much "  \
   "time cultivating in isolation in Liyue's mountains, she has become every " \
   "bit as cool and distant as the adepti themselves."
-#define EN_D_110                                                           \
+#define EN_D_110                                                            \
   "A keenly honed weapon forged from some strange crystal. Its faint blue " \
   "light seems to whisper of countless matters now past."
 #define EN_D_111                                                        \
@@ -630,13 +886,22 @@
 #define EN_D_113                                                             \
   "A famed work by the Futsu line of smiths. The name \"Haran\" comes from " \
   "the manner in which it resembles the violent, roiling waves."
-#define EN_D_114 "Yelan"
-#define EN_D_115 "Kuki Shinobu"
-#define EN_D_116 "Shikanoin Heizou"
-#define EN_D_117 "Aqua Simulacra"
-#define EN_D_118 "Placeholder"
-#define EN_D_119 "Placeholder"
-#define EN_D_120 "Placeholder"
+#define EN_D_114                                                               \
+  "A mysterious person who claims to work for the Ministry of Civil Affairs, " \
+  "but is a \"non-entity\" on the Ministry of Civil Affairs' list."
+#define EN_D_115                                                               \
+  "The capable and reliable deputy leader of the \"Arataki Gang.\" Please "    \
+  "note: capable and reliable are not appellations for the \"Arataki Gang,\" " \
+  "but for their deputy leader in specific."
+#define EN_D_116                                                           \
+  "A young prodigy detective from the Tenryou Commission. His senses are " \
+  "sharp and his thoughts are clear."
+#define EN_D_117                                                           \
+  "This longbow's color is unpredictable. Under the light, it takes on a " \
+  "lustrous, watery blue."
+#define EN_D_118 "Collei"
+#define EN_D_119 "Tighnari"
+#define EN_D_120 "Dori"
 #define EN_D_121 "Placeholder"
 #define EN_D_122 "Placeholder"
 #define EN_D_123 "Placeholder"
@@ -644,6 +909,508 @@
 #define EN_D_125 "Placeholder"
 #define EN_D_126 "Placeholder"
 #define EN_D_127 "Placeholder"
+#define EN_D_128 "Placeholder"
+#define EN_D_129 "Placeholder"
+#define EN_D_130 "Placeholder"
+#define EN_D_131 "Placeholder"
+#define EN_D_132 "Placeholder"
+#define EN_D_133 "Placeholder"
+#define EN_D_134 "Placeholder"
+#define EN_D_135 "Placeholder"
+#define EN_D_136 "Placeholder"
+#define EN_D_137 "Placeholder"
+#define EN_D_138 "Placeholder"
+#define EN_D_139 "Placeholder"
+#define EN_D_140 "Placeholder"
+#define EN_D_141 "Placeholder"
+#define EN_D_142 "Placeholder"
+#define EN_D_143 "Placeholder"
+#define EN_D_144 "Placeholder"
+#define EN_D_145 "Placeholder"
+#define EN_D_146 "Placeholder"
+#define EN_D_147 "Placeholder"
+#define EN_D_148 "Placeholder"
+#define EN_D_149 "Placeholder"
+#define EN_D_150 "Placeholder"
+#define EN_D_151 "Placeholder"
+#define EN_D_152 "Placeholder"
+#define EN_D_153 "Placeholder"
+#define EN_D_154 "Placeholder"
+#define EN_D_155 "Placeholder"
+#define EN_D_156 "Placeholder"
+#define EN_D_157 "Placeholder"
+#define EN_D_158 "Placeholder"
+#define EN_D_159 "Placeholder"
+#define EN_D_160 "Placeholder"
+#define EN_D_161 "Placeholder"
+#define EN_D_162 "Placeholder"
+#define EN_D_163 "Placeholder"
+#define EN_D_164 "Placeholder"
+#define EN_D_165 "Placeholder"
+#define EN_D_166 "Placeholder"
+#define EN_D_167 "Placeholder"
+#define EN_D_168 "Placeholder"
+#define EN_D_169 "Placeholder"
+#define EN_D_170 "Placeholder"
+#define EN_D_171 "Placeholder"
+#define EN_D_172 "Placeholder"
+#define EN_D_173 "Placeholder"
+#define EN_D_174 "Placeholder"
+#define EN_D_175 "Placeholder"
+#define EN_D_176 "Placeholder"
+#define EN_D_177 "Placeholder"
+#define EN_D_178 "Placeholder"
+#define EN_D_179 "Placeholder"
+#define EN_D_180 "Placeholder"
+#define EN_D_181 "Placeholder"
+#define EN_D_182 "Placeholder"
+#define EN_D_183 "Placeholder"
+#define EN_D_184 "Placeholder"
+#define EN_D_185 "Placeholder"
+#define EN_D_186 "Placeholder"
+#define EN_D_187 "Placeholder"
+#define EN_D_188 "Placeholder"
+#define EN_D_189 "Placeholder"
+#define EN_D_190 "Placeholder"
+#define EN_D_191 "Placeholder"
+#define EN_D_192 "Placeholder"
+#define EN_D_193 "Placeholder"
+#define EN_D_194 "Placeholder"
+#define EN_D_195 "Placeholder"
+#define EN_D_196 "Placeholder"
+#define EN_D_197 "Placeholder"
+#define EN_D_198 "Placeholder"
+#define EN_D_199 "Placeholder"
+#define EN_D_200 "Placeholder"
+#define EN_D_201 "Placeholder"
+#define EN_D_202 "Placeholder"
+#define EN_D_203 "Placeholder"
+#define EN_D_204 "Placeholder"
+#define EN_D_205 "Placeholder"
+#define EN_D_206 "Placeholder"
+#define EN_D_207 "Placeholder"
+#define EN_D_208 "Placeholder"
+#define EN_D_209 "Placeholder"
+#define EN_D_210 "Placeholder"
+#define EN_D_211 "Placeholder"
+#define EN_D_212 "Placeholder"
+#define EN_D_213 "Placeholder"
+#define EN_D_214 "Placeholder"
+#define EN_D_215 "Placeholder"
+#define EN_D_216 "Placeholder"
+#define EN_D_217 "Placeholder"
+#define EN_D_218 "Placeholder"
+#define EN_D_219 "Placeholder"
+#define EN_D_220 "Placeholder"
+#define EN_D_221 "Placeholder"
+#define EN_D_222 "Placeholder"
+#define EN_D_223 "Placeholder"
+#define EN_D_224 "Placeholder"
+#define EN_D_225 "Placeholder"
+#define EN_D_226 "Placeholder"
+#define EN_D_227 "Placeholder"
+#define EN_D_228 "Placeholder"
+#define EN_D_229 "Placeholder"
+#define EN_D_230 "Placeholder"
+#define EN_D_231 "Placeholder"
+#define EN_D_232 "Placeholder"
+#define EN_D_233 "Placeholder"
+#define EN_D_234 "Placeholder"
+#define EN_D_235 "Placeholder"
+#define EN_D_236 "Placeholder"
+#define EN_D_237 "Placeholder"
+#define EN_D_238 "Placeholder"
+#define EN_D_239 "Placeholder"
+#define EN_D_240 "Placeholder"
+#define EN_D_241 "Placeholder"
+#define EN_D_242 "Placeholder"
+#define EN_D_243 "Placeholder"
+#define EN_D_244 "Placeholder"
+#define EN_D_245 "Placeholder"
+#define EN_D_246 "Placeholder"
+#define EN_D_247 "Placeholder"
+#define EN_D_248 "Placeholder"
+#define EN_D_249 "Placeholder"
+#define EN_D_250 "Placeholder"
+#define EN_D_251 "Placeholder"
+#define EN_D_252 "Placeholder"
+#define EN_D_253 "Placeholder"
+#define EN_D_254 "Placeholder"
+#define EN_D_255 "Placeholder"
+#define EN_CBI_0 "Placeholder"
+#define EN_CBI_1 \
+  "Ballad in Goblets_20200928-20201018 (Venti, Barbara, Fischl, Xiangling)"
+#define EN_CBI_2 \
+  "Sparkling Steps_20201020-20201110 (Klee, Xingqiu, Noelle, Sucrose)"
+#define EN_CBI_3                                                        \
+  "Farewell of Snezhnaya_20201111-20201201 (Tartaglia, Diona, Beidou, " \
+  "Ningguang)"
+#define EN_CBI_4 \
+  "Gentry of Hermitage_20201201-20201222 (Zhongli, Xinyan, Razor, Chongyun)"
+#define EN_CBI_5 \
+  "Secretum Secretorum_20201223-20210112 (Albedo, Fischl, Sucrose, Bennett)"
+#define EN_CBI_6 \
+  "Adrift in the Harbor_20210112-20210202 (Ganyu, Xiangling, Xingqiu, Noelle)"
+#define EN_CBI_7 \
+  "Invitation to Mundane Life_20210203-20210217 (Xiao, Diona, Beidou, Xinyan)"
+#define EN_CBI_8 \
+  "Dance of Lanterns_20210217-20210302 (Keqing, Ningguang, Bennett, Barbara)"
+#define EN_CBI_9 \
+  "Moment of Bloom_20210302-20210316 (Hu Tao, Xingqiu, Xiangling, Chongyun)"
+#define EN_CBI_10 \
+  "Ballad in Goblets_20210317-20210406 (Venti, Sucrose, Razor, Noelle)"
+#define EN_CBI_11                                                          \
+  "Farewell of Snezhnaya_20210406-20210427 (Tartaglia, Rosaria, Barbara, " \
+  "Fischl)"
+#define EN_CBI_12 \
+  "Gentry of Hermitage_20210428-20210518 (Zhongli, Yanfei, Noelle, Diona)"
+#define EN_CBI_13 \
+  "Born of Ocean Swell_20210518-20210608 (Eula, Xinyan, Xingqiu, Beidou)"
+#define EN_CBI_14 \
+  "Sparkling Steps_20210608-20210629 (Klee, Sucrose, Fischl, Barbara)"
+#define EN_CBI_15                                                              \
+  "Leaves in the Wind_20210629-20210720 (Kaedehara Kazuha, Rosaria, Bennett, " \
+  "Razor)"
+#define EN_CBI_16                                                            \
+  "The Heron's Court_20210721-20210810 (Kamisato Ayaka, Yanfei, Ningguang, " \
+  "Chongyun)"
+#define EN_CBI_17 \
+  "Tapestry of Golden Flames_20210810-20210831 (Yoimiya, Sayu, Diona, Xinyan)"
+#define EN_CBI_18                                                              \
+  "Reign of Serenity_20210901-20210921 (Raiden Shogun, Kujo Sara, Xiangling, " \
+  "Sucrose)"
+#define EN_CBI_19                                                          \
+  "Drifting Luminescence_20210921-20211012 (Sangonomiya Kokomi, Rosaria, " \
+  "Beidou, Xingqiu)"
+#define EN_CBI_20                                                             \
+  "Farewell of Snezhnaya_20211013-20211102 (Tartaglia, Ningguang, Chongyun, " \
+  "Yanfei)"
+#define EN_CBI_21 \
+  "Moment of Bloom_20211102-20211123 (Hu Tao, Thoma, Diona, Sayu)"
+#define EN_CBI_22 \
+  "Secretum Secretorum_20211124-20211214 (Albedo, Rosaria, Noelle, Bennett)"
+#define EN_CBI_23 \
+  "Oni's Royale_20211214-20220104 (Arataki Itto, Gorou, Xiangling, Barbara)"
+#define EN_CBI_24                                                     \
+  "The Transcendent One Returns_20220105-20220125 (Shenhe, Yun Jin, " \
+  "Ningguang, Chongyun)"
+#define EN_CBI_25 \
+  "Gentry of Hermitage_20220125-20220215 (Zhongli, Yanfei, Xingqiu, Beidou)"
+#define EN_CBI_26 \
+  "Everbloom Violet_20220216-20220308 (Yae Miko, Fischl, Diona, Thoma)"
+#define EN_CBI_27                                                              \
+  "Reign of Serenity_20220308-20220329 (Raiden Shogun, Bennett, Xinyan, Kujo " \
+  "Sara)"
+#define EN_CBI_28                                                         \
+  "Azure Excursion_20220330-20220419 (Kamisato Ayato, Yun Jin, Sucrose, " \
+  "Xiangling)"
+#define EN_CBI_29 \
+  "The Heron's Court_20220419-20220531 (Kamisato Ayaka, Sayu, Razor, Rosaria)"
+#define EN_CBI_30 \
+  "Discerner of Enigmas_20220531-20220621 (Yelan, Barbara, Yanfei, Noelle)"
+#define EN_CBI_31                                                          \
+  "Oni's Royale_20220621-20220712 (Arataki Itto, Kuki Shinobu, Chongyun, " \
+  "Gorou)"
+#define EN_CBI_32                                                              \
+  "Leaves in the Wind_20220713-20220802 (Kaedehara Kazuha, Shikanoin Heizou, " \
+  "Ningguang, Thoma)"
+#define EN_CBI_33 "Tapestry of Golden Flames_20220802- (Yoimiya, , , )"
+#define EN_CBI_34 "Placeholder"
+#define EN_CBI_35 "Placeholder"
+#define EN_CBI_36 "Placeholder"
+#define EN_CBI_37 "Placeholder"
+#define EN_CBI_38 "Placeholder"
+#define EN_CBI_39 "Placeholder"
+#define EN_CBI_40 "Placeholder"
+#define EN_CBI_41 "Placeholder"
+#define EN_CBI_42 "Placeholder"
+#define EN_CBI_43 "Placeholder"
+#define EN_CBI_44 "Placeholder"
+#define EN_CBI_45 "Placeholder"
+#define EN_CBI_46 "Placeholder"
+#define EN_CBI_47 "Placeholder"
+#define EN_CBI_48 "Placeholder"
+#define EN_CBI_49 "Placeholder"
+#define EN_CBI_50 "Placeholder"
+#define EN_CBI_51 "Placeholder"
+#define EN_CBI_52 "Placeholder"
+#define EN_CBI_53 "Placeholder"
+#define EN_CBI_54 "Placeholder"
+#define EN_CBI_55 "Placeholder"
+#define EN_CBI_56 "Placeholder"
+#define EN_CBI_57 "Placeholder"
+#define EN_CBI_58 "Placeholder"
+#define EN_CBI_59 "Placeholder"
+#define EN_CBI_60 "Placeholder"
+#define EN_CBI_61 "Placeholder"
+#define EN_CBI_62 "Placeholder"
+#define EN_CBI_63 "Placeholder"
+#define EN_CBII_0 "Placeholder"
+#define EN_CBII_1 \
+  "Born of Ocean Swell_20211124-20211214 (Eula, Rosaria, Noelle, Bennett)"
+#define EN_CBII_2                                                            \
+  "Invitation to Mundane Life_20220105-20220125 (Xiao, Yun Jin, Ningguang, " \
+  "Chongyun)"
+#define EN_CBII_3 \
+  "Adrift in the Harbor_20220125-20220215 (Ganyu, Yanfei, Xingqiu, Beidou)"
+#define EN_CBII_4                                                          \
+  "Drifting Luminescence_20220308-20220329 (Sangonomiya Kokomi, Bennett, " \
+  "Xinyan, Kujo Sara)"
+#define EN_CBII_5 \
+  "Ballad in Goblets_20220330-20220419 (Venti, Yun Jin, Sucrose, Xiangling)"
+#define EN_CBII_6                                                         \
+  "Invitation to Mundane Life_20220531-20220621 (Xiao, Barbara, Yanfei, " \
+  "Noelle)"
+#define EN_CBII_7                                                          \
+  "Sparkling Steps_20220713-20220802 (Klee, Shikanoin Heizou, Ningguang, " \
+  "Thoma)"
+#define EN_CBII_8 "Placeholder"
+#define EN_CBII_9 "Placeholder"
+#define EN_CBII_10 "Placeholder"
+#define EN_CBII_11 "Placeholder"
+#define EN_CBII_12 "Placeholder"
+#define EN_CBII_13 "Placeholder"
+#define EN_CBII_14 "Placeholder"
+#define EN_CBII_15 "Placeholder"
+#define EN_CBII_16 "Placeholder"
+#define EN_CBII_17 "Placeholder"
+#define EN_CBII_18 "Placeholder"
+#define EN_CBII_19 "Placeholder"
+#define EN_CBII_20 "Placeholder"
+#define EN_CBII_21 "Placeholder"
+#define EN_CBII_22 "Placeholder"
+#define EN_CBII_23 "Placeholder"
+#define EN_CBII_24 "Placeholder"
+#define EN_CBII_25 "Placeholder"
+#define EN_CBII_26 "Placeholder"
+#define EN_CBII_27 "Placeholder"
+#define EN_CBII_28 "Placeholder"
+#define EN_CBII_29 "Placeholder"
+#define EN_CBII_30 "Placeholder"
+#define EN_CBII_31 "Placeholder"
+#define EN_WB_0 "Placeholder"
+#define EN_WB_1                                                           \
+  "Epitome Invocation_20200928-20201018 (Aquila Favonia, Amos' Bow, The " \
+  "Flute, The Bell, The Widsith, The Stringless, Favonius Lance)"
+#define EN_WB_2                                                             \
+  "Epitome Invocation_20201020-20201109 (Lost Prayer to the Sacred Winds, " \
+  "Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial "     \
+  "Greatsword, Sacrificial Fragments, Dragon's Bane)"
+#define EN_WB_3                                                          \
+  "Epitome Invocation_20201111-20201201 (Memory of Dust, Skyward Harp, " \
+  "Rainslasher, Eye of Perception, Rust, Favonius Lance, The Flute)"
+#define EN_WB_4                                                             \
+  "Epitome Invocation_20201201-20201222 (Vortex Vanquisher, The Unforged, " \
+  "Lion's Roar, The Bell, Favonius Codex, Favonius Warbow, Dragon's Bane)"
+#define EN_WB_5                                                          \
+  "Epitome Invocation_20201223-20210112 (Summit Shaper, Skyward Atlas, " \
+  "Favonius Sword, Favonius Greatsword, Favonius Lance, Sacrificial "    \
+  "Fragments, The Stringless)"
+#define EN_WB_6                                                              \
+  "Epitome Invocation_20210112-20210202 (Skyward Pride, Amos' Bow, "         \
+  "Sacrificial Sword, The Bell, Dragon's Bane, Eye of Perception, Favonius " \
+  "Warbow)"
+#define EN_WB_7                                                               \
+  "Epitome Invocation_20210203-20210223 (Primordial Jade Cutter, Primordial " \
+  "Jade Winged-Spear, Rust, Eye of Perception, Favonius Lance, Sacrificial "  \
+  "Greatsword, The Flute)"
+#define EN_WB_8                                                              \
+  "Epitome Invocation_20210223-20210316 (Staff of Homa, Wolf's Gravestone, " \
+  "Lithic Blade, Lithic Spear, Sacrificial Bow, The Widsith, Lion's Roar)"
+#define EN_WB_9                                                              \
+  "Epitome Invocation_20210317-20210406 (Elegy for the End, Skyward Blade, " \
+  "The Alley Flash, Wine and Song, Favonius Greatsword, Favonius Warbow, "   \
+  "Dragon's Bane)"
+#define EN_WB_10                                                            \
+  "Epitome Invocation_20210406-20210427 (Skyward Harp, Lost Prayer to the " \
+  "Sacred Winds, Alley Hunter, Favonius Sword, Sacrificial Greatsword, "    \
+  "Favonius Codex, Favonius Lance)"
+#define EN_WB_11                                                              \
+  "Epitome Invocation_20210428-20210518 (Summit Shaper, Memory of Dust, The " \
+  "Flute, Lithic Blade, Lithic Spear, Eye of Perception, Sacrificial Bow)"
+#define EN_WB_12                                                         \
+  "Epitome Invocation_20210518-20210608 (Song of Broken Pines, Aquila "  \
+  "Favonia, Sacrificial Sword, Rainslasher, Dragon's Bane, Sacrificial " \
+  "Fragments, Rust)"
+#define EN_WB_13                                                              \
+  "Epitome Invocation_20210609-20210629 (Skyward Pride, Lost Prayer to the "  \
+  "Sacred Winds, Mitternachts Waltz, Lion's Roar, The Bell, Favonius Lance, " \
+  "The Widsith)"
+#define EN_WB_14                                                             \
+  "Epitome Invocation_20210629-20210720 (Freedom-Sworn, Skyward Atlas, The " \
+  "Alley Flash, Wine and Song, Alley Hunter, Favonius Greatsword, Dragon's " \
+  "Bane)"
+#define EN_WB_15                                                            \
+  "Epitome Invocation_20210721-20210810 (Mistsplitter Reforged, Skyward "   \
+  "Spine, The Stringless, Favonius Sword, Favonius Lance, Favonius Codex, " \
+  "Sacrificial Greatsword)"
+#define EN_WB_16                                                            \
+  "Epitome Invocation_20210810-20210831 (Thundering Pulse, Skyward Blade, " \
+  "Favonius Warbow, Sacrificial Sword, Dragon's Bane, Rainslasher, "        \
+  "Sacrificial Fragments)"
+#define EN_WB_17                                                              \
+  "Epitome Invocation_20210901-20210921 (Engulfing Lightning, The Unforged, " \
+  "Sacrificial Bow, Lion's Roar, The Widsith, Favonius Lance, The Bell)"
+#define EN_WB_18                                                            \
+  "Epitome Invocation_20210921-20211012 (Everlasting Moonglow, Primordial " \
+  "Jade Cutter, The Flute, Favonius Greatsword, Dragon's Bane, Favonius "   \
+  "Codex, The Stringless)"
+#define EN_WB_19                                                       \
+  "Epitome Invocation_20211013-20211102 (Polar Star, Memory of Dust, " \
+  "Akuoumaru, Favonius Sword, Favonius Lance, Eye of Perception, Rust)"
+#define EN_WB_20                                                             \
+  "Epitome Invocation_20211102-20211123 (Staff of Homa, Elegy for the End, " \
+  "Wavebreaker's Fin, Mouun's Moon, Sacrificial Sword, Rainslasher, The "    \
+  "Widsith)"
+#define EN_WB_21                                                         \
+  "Epitome Invocation_20211124-20211214 (Freedom-Sworn, Song of Broken " \
+  "Pines, Alley Hunter, Lion's Roar, Dragon's Bane, Wine and Song, "     \
+  "Sacrificial Greatsword)"
+#define EN_WB_22                                                            \
+  "Epitome Invocation_20211214-20210104 (Redhorn Stonethresher, Skyward "   \
+  "Harp, The Alley Flash, Mitternachts Waltz, Favonius Lance, Sacrificial " \
+  "Fragments, The Bell)"
+#define EN_WB_23                                                             \
+  "Epitome Invocation_20220105-20220125 (Calamity Queller, Primordial Jade " \
+  "Winged-Spear, Lithic Spear, The Flute, Favonius Warbow, The Widsith, "    \
+  "Favonius Greatsword)"
+#define EN_WB_24                                                              \
+  "Epitome Invocation_20220125-20220215 (Vortex Vanquisher, Amos' Bow, "      \
+  "Lithic Blade, Favonius Sword, Dragon's Bane, Favonius Codex, Sacrificial " \
+  "Bow)"
+#define EN_WB_25                                                            \
+  "Epitome Invocation_20220216-20220308 (Kagura's Verity, Primordial Jade " \
+  "Cutter, Wavebreaker's Fin, The Stringless, Sacrificial Sword, Eye of "   \
+  "Perception, Rainslasher)"
+#define EN_WB_26                                                            \
+  "Epitome Invocation_20220308-20220329 (Engulfing Lightning, Everlasting " \
+  "Moonglow, Akuoumaru, Mouun's Moon, Lion's Roar, Favonius Lance, "        \
+  "Sacrificial Fragments)"
+#define EN_WB_27                                                             \
+  "Epitome Invocation_20220330-20220419 (Haran Tsukishiro Futsu, Elegy for " \
+  "the End, Rust, The Flute, The Widsith, Dragon's Bane, Sacrificial "       \
+  "Greatsword)"
+#define EN_WB_28                                                         \
+  "Epitome Invocation_20220419-20220531 (Mistsplitter Reforged, The "    \
+  "Unforged, Favonius Warbow, Favonius Sword, Favonius Lance, Favonius " \
+  "Codex, The Bell)"
+#define EN_WB_29                                                           \
+  "Epitome Invocation_20220531-20220621 (Aqua Simulacra, Primordial Jade " \
+  "Winged-Spear, Lithic Spear, Eye of Perception, Favonius Greatsword, "   \
+  "Sacrificial Bow, Sacrificial Sword)"
+#define EN_WB_30                                                            \
+  "Epitome Invocation_20220621-20220712 (Redhorn Stonethresher, Memory of " \
+  "Dust, Lithic Blade, Lion's Roar, Dragon's Bane, Sacrificial Fragments, " \
+  "The Stringless)"
+#define EN_WB_31                                                              \
+  "Epitome Invocation_20220713-20220802 (Freedom-Sworn, Lost Prayer to the "  \
+  "Sacred Winds, The Alley Flash, Mitternachts Waltz, Rainslasher, Favonius " \
+  "Lance, The Widsith)"
+#define EN_WB_32 "Placeholder"
+#define EN_WB_33 "Placeholder"
+#define EN_WB_34 "Placeholder"
+#define EN_WB_35 "Placeholder"
+#define EN_WB_36 "Placeholder"
+#define EN_WB_37 "Placeholder"
+#define EN_WB_38 "Placeholder"
+#define EN_WB_39 "Placeholder"
+#define EN_WB_40 "Placeholder"
+#define EN_WB_41 "Placeholder"
+#define EN_WB_42 "Placeholder"
+#define EN_WB_43 "Placeholder"
+#define EN_WB_44 "Placeholder"
+#define EN_WB_45 "Placeholder"
+#define EN_WB_46 "Placeholder"
+#define EN_WB_47 "Placeholder"
+#define EN_WB_48 "Placeholder"
+#define EN_WB_49 "Placeholder"
+#define EN_WB_50 "Placeholder"
+#define EN_WB_51 "Placeholder"
+#define EN_WB_52 "Placeholder"
+#define EN_WB_53 "Placeholder"
+#define EN_WB_54 "Placeholder"
+#define EN_WB_55 "Placeholder"
+#define EN_WB_56 "Placeholder"
+#define EN_WB_57 "Placeholder"
+#define EN_WB_58 "Placeholder"
+#define EN_WB_59 "Placeholder"
+#define EN_WB_60 "Placeholder"
+#define EN_WB_61 "Placeholder"
+#define EN_WB_62 "Placeholder"
+#define EN_WB_63 "Placeholder"
+#define EN_PB_0 "Placeholder"
+#define EN_PB_1 "Wanderlust Invocation_20200928-20201222 (Released)"
+#define EN_PB_2 \
+  "Wanderlust Invocation_20201223-20210427 (Added Diona and Xinyan)"
+#define EN_PB_3 "Wanderlust Invocation_20210428-20210608 (Added Rosaria)"
+#define EN_PB_4 "Wanderlust Invocation_20210609-20210901 (Added Yanfei)"
+#define EN_PB_5 "Wanderlust Invocation_20210901-20211012 (Added Sayu)"
+#define EN_PB_6 "Wanderlust Invocation_20211013-20211123 (Added Kujo Sara)"
+#define EN_PB_7 "Wanderlust Invocation_20211124-20220104 (Added Thoma)"
+#define EN_PB_8 "Wanderlust Invocation_20220105-20220215 (Added Gorou)"
+#define EN_PB_9 "Wanderlust Invocation_20220216-20220712 (Added Yun Jin)"
+#define EN_PB_10 "Wanderlust Invocation_20220713- (Added Kuki Shinobu)"
+#define EN_PB_11 "Placeholder"
+#define EN_PB_12 "Placeholder"
+#define EN_PB_13 "Placeholder"
+#define EN_PB_14 "Placeholder"
+#define EN_PB_15 "Placeholder"
+#define EN_PB_16 "Placeholder"
+#define EN_PB_17 "Placeholder"
+#define EN_PB_18 "Placeholder"
+#define EN_PB_19 "Placeholder"
+#define EN_PB_20 "Placeholder"
+#define EN_PB_21 "Placeholder"
+#define EN_PB_22 "Placeholder"
+#define EN_PB_23 "Placeholder"
+#define EN_PB_24 "Placeholder"
+#define EN_PB_25 "Placeholder"
+#define EN_PB_26 "Placeholder"
+#define EN_PB_27 "Placeholder"
+#define EN_PB_28 "Placeholder"
+#define EN_PB_29 "Placeholder"
+#define EN_PB_30 "Placeholder"
+#define EN_PB_31 "Placeholder"
+#define EN_BW_0 "Placeholder"
+#define EN_BW_1 "Beginners' Wish_20200928-(Released)"
+#define EN_BW_2 "Placeholder"
+#define EN_BW_3 "Placeholder"
+#define EN_BW_4 "Placeholder"
+#define EN_BW_5 "Placeholder"
+#define EN_BW_6 "Placeholder"
+#define EN_BW_7 "Placeholder"
+#define EN_V_0 "Version 1.0 Official Launch"
+#define EN_V_1 "Version 1.1 \"A New Star Approaches\""
+#define EN_V_2 "Version 1.2 \"The Chalk Prince and the Dragon\""
+#define EN_V_3 "Version 1.3 \"All That Glitters\""
+#define EN_V_4 "Version 1.4 \"Invitation of Windblume\""
+#define EN_V_5 "Version 1.5 \"Beneath the Light of Jadeite\""
+#define EN_V_6 "Version 1.6 \"Midsummer Island Adventure\""
+#define EN_V_7 "Version 2.0 \"The Immovable God and the Eternal Euthymia\""
+#define EN_V_8 "Version 2.1 \"Floating World Under the Moonlight\""
+#define EN_V_9 "Version 2.2 \"Into the Perilous Labyrinth of Fog\""
+#define EN_V_10 "Version 2.3 \"hadows Amidst Snowstorms\""
+#define EN_V_11 "Version 2.4 \"Fleeting Colors in Flight\""
+#define EN_V_12 "Version 2.5 \"When the Sakura Bloom\""
+#define EN_V_13 "Version 2.6 \"Zephyr of the Violet Garden\""
+#define EN_V_14 "Version 2.7 \"Hidden Dreams in the Depths\""
+#define EN_V_15 "Version 2.8 \"Summer Fantasia\""
+#define EN_V_16 "Placeholder"
+#define EN_V_17 "Placeholder"
+#define EN_V_18 "Placeholder"
+#define EN_V_19 "Placeholder"
+#define EN_V_20 "Placeholder"
+#define EN_V_21 "Placeholder"
+#define EN_V_22 "Placeholder"
+#define EN_V_23 "Placeholder"
+#define EN_V_24 "Placeholder"
+#define EN_V_25 "Placeholder"
+#define EN_V_26 "Placeholder"
+#define EN_V_27 "Placeholder"
+#define EN_V_28 "Placeholder"
+#define EN_V_29 "Placeholder"
+#define EN_V_30 "Placeholder"
+#define EN_V_31 "Placeholder"
 
 #endif
 
