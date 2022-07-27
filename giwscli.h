@@ -1,4 +1,4 @@
-/*Version 2.8.1*/
+/*Version 2.8.2*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -8,7 +8,7 @@
 
 #include "cn_item.h"
 #include "en_item.h"
-#define MAX_ITEMS 118
+#define MAX_ITEMS 121
 
 namespace giwscli {
 extern std::random_device seed_gen;
@@ -28,13 +28,13 @@ extern size_t kind, temp1, fate_points, up_five, size_nup_four_c, countx,
 extern const size_t nup_five_c[5], nup_five_w[10], nup_four_w[32], three_g[13],
     nup_four_cg1[11], nup_four_cg2[13], nup_four_cg3[14], nup_four_cg4[15],
     nup_four_cg5[16], nup_four_cg6[17], nup_four_cg7[18], nup_four_cg8[19],
-    nup_four_cg9[20], nup_four_cg10[21], tempga1[33][3], tempga2[33][3],
-    tempga3[33], tempgb1[8][3], tempgb2[8][3], tempgb3[8], tempgc1[32][2],
-    tempgc2[32][5], tempgc3[32][5], tempgc4[32][2], nup_four_cg31[14],
-    nup_four_cg32[16], nup_four_cg33[17], nup_four_cg34[18], nup_four_cg35[19],
-    nup_four_cg36[20], nup_four_cg37[21], nup_four_cg38[22], nup_four_cg39[23],
-    nup_four_cg310[24], four_stars_c[25], four_stars_w[27], five_stars_c[24],
-    five_stars_w[29];
+    nup_four_cg9[20], nup_four_cg10[21], nup_four_cg11[22], tempga1[34][3],
+    tempga2[34][3], tempga3[34], tempgb1[8][3], tempgb2[8][3], tempgb3[8],
+    tempgc1[33][2], tempgc2[33][5], tempgc3[33][5], tempgc4[33][2],
+    nup_four_cg31[14], nup_four_cg32[16], nup_four_cg33[17], nup_four_cg34[18],
+    nup_four_cg35[19], nup_four_cg36[20], nup_four_cg37[21], nup_four_cg38[22],
+    nup_four_cg39[23], nup_four_cg310[24], nup_four_cg311[25], four_stars_c[25],
+    four_stars_w[27], five_stars_c[24], five_stars_w[29];
 extern const ptrdiff_t tempga4[12], tempgb4[8];
 extern unsigned int resultt, resultu, star, type;
 extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,

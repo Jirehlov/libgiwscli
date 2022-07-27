@@ -1,4 +1,4 @@
-/*Version 2.8.1*/
+/*Version 2.8.2*/
 
 #include "giwscli.h"
 
@@ -73,19 +73,25 @@ const size_t giwscli::nup_four_cg9[20] = {15, 16, 17, 18,  19,  20, 21,
 const size_t giwscli::nup_four_cg10[21] = {15, 16, 17, 18,  19,  20,  21,
                                            22, 23, 24, 25,  26,  28,  30,
                                            71, 91, 95, 100, 106, 108, 115};
-const size_t giwscli::four_stars_c[25] = {15, 16, 17,  18,  19,  20,  21, 22,
-                                 23, 24, 25, 26,  27,  28,  29,  30, 31, 71,
-                                 91, 95, 100, 106, 108, 115, 116},
-             giwscli::four_stars_w[27] = {32, 33, 34, 35, 36, 37, 38, 39, 40,
-                                 41, 42, 43, 44, 45, 46, 47,  48,  49,
-                                 79, 80, 82, 83, 84, 88, 102, 103, 104},
+const size_t giwscli::nup_four_cg11[22] = {15, 16,  17,  18,  19,  20, 21, 22,
+                                           23, 24,  25,  26,  28,  30, 71, 91,
+                                           95, 100, 106, 108, 115, 116};
+const size_t giwscli::four_stars_c[25] = {15,  16,  17,  18, 19, 20, 21,
+                                          22,  23,  24,  25, 26, 27, 28,
+                                          29,  30,  31,  71, 91, 95, 100,
+                                          106, 108, 115, 116},
+             giwscli::four_stars_w[27] = {32, 33, 34, 35,  36,  37, 38,
+                                          39, 40, 41, 42,  43,  44, 45,
+                                          46, 47, 48, 49,  79,  80, 82,
+                                          83, 84, 88, 102, 103, 104},
              giwscli::five_stars_c[24] = {0,  1,  2,  3,  4,   63,  64,  65,
-                                 66, 67, 68, 69, 70,  72,  86,  89,
-                                 90, 94, 96, 99, 105, 109, 111, 114},
-             giwscli::five_stars_w[29] = {5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-                                 73, 74, 75, 76,  77,  78,  81,  85, 87, 92,
-                                 93, 97, 98, 101, 107, 110, 112, 113, 117};
-const size_t giwscli::tempga1[33][3] = {
+                                          66, 67, 68, 69, 70,  72,  86,  89,
+                                          90, 94, 96, 99, 105, 109, 111, 114},
+             giwscli::five_stars_w[29] = {5,   6,   7,   8,   9,  10, 11, 12,
+                                          13,  14,  73,  74,  75, 76, 77, 78,
+                                          81,  85,  87,  92,  93, 97, 98, 101,
+                                          107, 110, 112, 113, 117};
+const size_t giwscli::tempga1[34][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {22, 26, 30},                       // 1
     {17, 20, 24},                       // 2
@@ -118,10 +124,11 @@ const size_t giwscli::tempga1[33][3] = {
     {15, 28, 91},                       // 29
     {20, 30, 71},                       // 30
     {19, 106, 115},                     // 31
-    {23, 100, 116}                      // 32
+    {23, 100, 116},                     // 32
+    {16, 21, 108}                       // 33
 };                                      // MID_MOD
 
-const size_t giwscli::tempga2[33][3] = {
+const size_t giwscli::tempga2[34][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {22, 26, 30},                       // 1
     {17, 20, 24},                       // 2
@@ -154,13 +161,14 @@ const size_t giwscli::tempga2[33][3] = {
     {15, 28, 91},                       // 29
     {20, 30, 71},                       // 30
     {19, 106, MAX_ITEMS},               // 31
-    {23, 100, MAX_ITEMS}                // 32
+    {23, 100, MAX_ITEMS},               // 32
+    {16, 21, 108}                       // 33
 };
 
-const size_t giwscli::tempga3[33] = {
-    MAX_ITEMS, 63,  64,  65, 66, 67, 68,  69, 0,   70,  63,
-    65,        66,  72,  64, 86, 89, 90,  96, 94,  65,  70,
-    67,        105, 109, 66, 99, 96, 111, 89, 114, 105, 86};
+const size_t giwscli::tempga3[34] = {
+    MAX_ITEMS, 63, 64, 65, 66,  67, 68,  69,  0,  70, 63, 65,
+    66,        72, 64, 86, 89,  90, 96,  94,  65, 70, 67, 105,
+    109,       66, 99, 96, 111, 89, 114, 105, 86, 90};
 
 const size_t giwscli::tempgb1[8][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
@@ -186,7 +194,7 @@ const size_t giwscli::tempgb2[8][3] = {
 
 const size_t giwscli::tempgb3[8] = {MAX_ITEMS, 72, 69, 68, 94, 63, 69, 64};
 
-const size_t giwscli::tempgc1[32][2] = {
+const size_t giwscli::tempgc1[33][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 0
     {5, 14},                 // 1
     {7, 11},                 // 2
@@ -218,10 +226,11 @@ const size_t giwscli::tempgc1[32][2] = {
     {92, 75},                // 28
     {117, 9},                // 29
     {107, 73},               // 30
-    {87, 7}                  // 31
+    {87, 7},                 // 31
+    {76, 93}                 // 32
 };
 
-const size_t giwscli::tempgc2[32][5] = {
+const size_t giwscli::tempgc2[33][5] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {34, 38, 40, 44, 48},                                     // 1
     {33, 37, 41, 43, 49},                                     // 2
@@ -253,10 +262,11 @@ const size_t giwscli::tempgc2[32][5] = {
     {35, 39, 40, 44, 49},                                     // 28
     {33, 36, 45, 47, 80},                                     // 29
     {34, 37, 41, 46, 79},                                     // 30
-    {38, 40, 42, 82, 88}                                      // 31
+    {38, 40, 42, 82, 88},                                     // 31
+    {41, 43, 48, 83, 84}                                      // 32
 };
 
-const size_t giwscli::tempgc3[32][5] = {
+const size_t giwscli::tempgc3[33][5] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {34, 38, 40, 44, 48},                                     // 1
     {33, 37, 41, 43, 49},                                     // 2
@@ -288,10 +298,11 @@ const size_t giwscli::tempgc3[32][5] = {
     {35, 39, 40, 44, 49},                                     // 28
     {33, 36, 45, 47, MAX_ITEMS},                              // 29
     {34, 37, 41, 46, MAX_ITEMS},                              // 30
-    {38, 40, 42, MAX_ITEMS, MAX_ITEMS}                        // 31
+    {38, 40, 42, MAX_ITEMS, MAX_ITEMS},                       // 31
+    {41, 43, 48, MAX_ITEMS, MAX_ITEMS}                        // 32
 };
 
-const size_t giwscli::tempgc4[32][2] = {
+const size_t giwscli::tempgc4[33][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 0
     {5, 14},                 // 1
     {7, 11},                 // 2
@@ -323,7 +334,8 @@ const size_t giwscli::tempgc4[32][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 28
     {MAX_ITEMS, 9},          // 29
     {MAX_ITEMS, MAX_ITEMS},  // 30
-    {MAX_ITEMS, 7}           // 31
+    {MAX_ITEMS, 7},          // 31
+    {MAX_ITEMS, MAX_ITEMS}   // 32
 };
 
 const size_t giwscli::nup_four_cg31[14] = {17, 19, 20, 21, 22, 23, 24,
@@ -351,6 +363,9 @@ const size_t giwscli::nup_four_cg39[23] = {15, 16, 17, 18, 19,  20,  21, 22,
 const size_t giwscli::nup_four_cg310[24] = {15, 16, 17, 18, 19,  20,  21,  22,
                                             23, 24, 25, 26, 27,  28,  29,  30,
                                             31, 71, 91, 95, 100, 106, 108, 115};
+const size_t giwscli::nup_four_cg311[25] = {
+    15, 16, 17, 18, 19, 20, 21, 22,  23,  24,  25,  26, 27,
+    28, 29, 30, 31, 71, 91, 95, 100, 106, 108, 115, 116};
 const ptrdiff_t giwscli::tempga4[12] = {0, 1, 0, 2, 3, 0, 4, 5, 0, 6, 0, 7};
 const ptrdiff_t giwscli::tempgb4[8] = {0, 22, 24, 25, 27, 28, 30, 32};
 unsigned int giwscli::resultt = 0;
@@ -377,7 +392,7 @@ ptrdiff_t giwscli::ave_fives = 0;
 ptrdiff_t giwscli::hash_out[9] = {0};
 signed int giwscli::error_code = 0;
 #if CN_ITEM_H
-const char* giwscli::s_pname_cn[256] = {
+const char *giwscli::s_pname_cn[256] = {
     CN_C_0,   CN_C_1,   CN_C_2,   CN_C_3,   CN_C_4,   CN_C_5,   CN_C_6,
     CN_C_7,   CN_C_8,   CN_C_9,   CN_C_10,  CN_C_11,  CN_C_12,  CN_C_13,
     CN_C_14,  CN_C_15,  CN_C_16,  CN_C_17,  CN_C_18,  CN_C_19,  CN_C_20,
@@ -416,7 +431,7 @@ const char* giwscli::s_pname_cn[256] = {
     CN_C_245, CN_C_246, CN_C_247, CN_C_248, CN_C_249, CN_C_250, CN_C_251,
     CN_C_252, CN_C_253, CN_C_254, CN_C_255};
 
-const char* giwscli::s_pnameshort_cn[256] = {
+const char *giwscli::s_pnameshort_cn[256] = {
     CN_X_0,   CN_X_1,   CN_X_2,   CN_X_3,   CN_X_4,   CN_X_5,   CN_X_6,
     CN_X_7,   CN_X_8,   CN_X_9,   CN_X_10,  CN_X_11,  CN_X_12,  CN_X_13,
     CN_X_14,  CN_X_15,  CN_X_16,  CN_X_17,  CN_X_18,  CN_X_19,  CN_X_20,
@@ -455,7 +470,7 @@ const char* giwscli::s_pnameshort_cn[256] = {
     CN_X_245, CN_X_246, CN_X_247, CN_X_248, CN_X_249, CN_X_250, CN_X_251,
     CN_X_252, CN_X_253, CN_X_254, CN_X_255};
 
-const char* giwscli::s_pdetails_cn[256] = {
+const char *giwscli::s_pdetails_cn[256] = {
     CN_D_0,   CN_D_1,   CN_D_2,   CN_D_3,   CN_D_4,   CN_D_5,   CN_D_6,
     CN_D_7,   CN_D_8,   CN_D_9,   CN_D_10,  CN_D_11,  CN_D_12,  CN_D_13,
     CN_D_14,  CN_D_15,  CN_D_16,  CN_D_17,  CN_D_18,  CN_D_19,  CN_D_20,
@@ -494,7 +509,7 @@ const char* giwscli::s_pdetails_cn[256] = {
     CN_D_245, CN_D_246, CN_D_247, CN_D_248, CN_D_249, CN_D_250, CN_D_251,
     CN_D_252, CN_D_253, CN_D_254, CN_D_255};
 
-const char* giwscli::s_charbanner1_cn[64] = {
+const char *giwscli::s_charbanner1_cn[64] = {
     CN_CBI_0,  CN_CBI_1,  CN_CBI_2,  CN_CBI_3,  CN_CBI_4,  CN_CBI_5,  CN_CBI_6,
     CN_CBI_7,  CN_CBI_8,  CN_CBI_9,  CN_CBI_10, CN_CBI_11, CN_CBI_12, CN_CBI_13,
     CN_CBI_14, CN_CBI_15, CN_CBI_16, CN_CBI_17, CN_CBI_18, CN_CBI_19, CN_CBI_20,
@@ -506,7 +521,7 @@ const char* giwscli::s_charbanner1_cn[64] = {
     CN_CBI_56, CN_CBI_57, CN_CBI_58, CN_CBI_59, CN_CBI_60, CN_CBI_61, CN_CBI_62,
     CN_CBI_63};
 
-const char* giwscli::s_charbanner2_cn[32] = {
+const char *giwscli::s_charbanner2_cn[32] = {
     CN_CBII_0,  CN_CBII_1,  CN_CBII_2,  CN_CBII_3,  CN_CBII_4,  CN_CBII_5,
     CN_CBII_6,  CN_CBII_7,  CN_CBII_8,  CN_CBII_9,  CN_CBII_10, CN_CBII_11,
     CN_CBII_12, CN_CBII_13, CN_CBII_14, CN_CBII_15, CN_CBII_16, CN_CBII_17,
@@ -514,7 +529,7 @@ const char* giwscli::s_charbanner2_cn[32] = {
     CN_CBII_24, CN_CBII_25, CN_CBII_26, CN_CBII_27, CN_CBII_28, CN_CBII_29,
     CN_CBII_30, CN_CBII_31};
 
-const char* giwscli::s_weaponbanner_cn[64] = {
+const char *giwscli::s_weaponbanner_cn[64] = {
     CN_WB_0,  CN_WB_1,  CN_WB_2,  CN_WB_3,  CN_WB_4,  CN_WB_5,  CN_WB_6,
     CN_WB_7,  CN_WB_8,  CN_WB_9,  CN_WB_10, CN_WB_11, CN_WB_12, CN_WB_13,
     CN_WB_14, CN_WB_15, CN_WB_16, CN_WB_17, CN_WB_18, CN_WB_19, CN_WB_20,
@@ -526,24 +541,24 @@ const char* giwscli::s_weaponbanner_cn[64] = {
     CN_WB_56, CN_WB_57, CN_WB_58, CN_WB_59, CN_WB_60, CN_WB_61, CN_WB_62,
     CN_WB_63};
 
-const char* giwscli::s_permbanner_cn[32] = {
+const char *giwscli::s_permbanner_cn[32] = {
     CN_PB_0,  CN_PB_1,  CN_PB_2,  CN_PB_3,  CN_PB_4,  CN_PB_5,  CN_PB_6,
     CN_PB_7,  CN_PB_8,  CN_PB_9,  CN_PB_10, CN_PB_11, CN_PB_12, CN_PB_13,
     CN_PB_14, CN_PB_15, CN_PB_16, CN_PB_17, CN_PB_18, CN_PB_19, CN_PB_20,
     CN_PB_21, CN_PB_22, CN_PB_23, CN_PB_24, CN_PB_25, CN_PB_26, CN_PB_27,
     CN_PB_28, CN_PB_29, CN_PB_30, CN_PB_31};
 
-const char* giwscli::s_beginbanner_cn[8] = {CN_BW_0, CN_BW_1, CN_BW_2, CN_BW_3,
+const char *giwscli::s_beginbanner_cn[8] = {CN_BW_0, CN_BW_1, CN_BW_2, CN_BW_3,
                                             CN_BW_4, CN_BW_5, CN_BW_6, CN_BW_7};
 
-const char* giwscli::s_version_cn[32] = {
+const char *giwscli::s_version_cn[32] = {
     CN_V_0,  CN_V_1,  CN_V_2,  CN_V_3,  CN_V_4,  CN_V_5,  CN_V_6,  CN_V_7,
     CN_V_8,  CN_V_9,  CN_V_10, CN_V_11, CN_V_12, CN_V_13, CN_V_14, CN_V_15,
     CN_V_16, CN_V_17, CN_V_18, CN_V_19, CN_V_20, CN_V_21, CN_V_22, CN_V_23,
     CN_V_24, CN_V_25, CN_V_26, CN_V_27, CN_V_28, CN_V_29, CN_V_30, CN_V_31};
 #endif
 #if EN_ITEM_H
-const char* giwscli::s_pname_en[256] = {
+const char *giwscli::s_pname_en[256] = {
     EN_C_0,   EN_C_1,   EN_C_2,   EN_C_3,   EN_C_4,   EN_C_5,   EN_C_6,
     EN_C_7,   EN_C_8,   EN_C_9,   EN_C_10,  EN_C_11,  EN_C_12,  EN_C_13,
     EN_C_14,  EN_C_15,  EN_C_16,  EN_C_17,  EN_C_18,  EN_C_19,  EN_C_20,
@@ -582,7 +597,7 @@ const char* giwscli::s_pname_en[256] = {
     EN_C_245, EN_C_246, EN_C_247, EN_C_248, EN_C_249, EN_C_250, EN_C_251,
     EN_C_252, EN_C_253, EN_C_254, EN_C_255};
 
-const char* giwscli::s_pnameshort_en[256] = {
+const char *giwscli::s_pnameshort_en[256] = {
     EN_X_0,   EN_X_1,   EN_X_2,   EN_X_3,   EN_X_4,   EN_X_5,   EN_X_6,
     EN_X_7,   EN_X_8,   EN_X_9,   EN_X_10,  EN_X_11,  EN_X_12,  EN_X_13,
     EN_X_14,  EN_X_15,  EN_X_16,  EN_X_17,  EN_X_18,  EN_X_19,  EN_X_20,
@@ -621,7 +636,7 @@ const char* giwscli::s_pnameshort_en[256] = {
     EN_X_245, EN_X_246, EN_X_247, EN_X_248, EN_X_249, EN_X_250, EN_X_251,
     EN_X_252, EN_X_253, EN_X_254, EN_X_255};
 
-const char* giwscli::s_pdetails_en[256] = {
+const char *giwscli::s_pdetails_en[256] = {
     EN_D_0,   EN_D_1,   EN_D_2,   EN_D_3,   EN_D_4,   EN_D_5,   EN_D_6,
     EN_D_7,   EN_D_8,   EN_D_9,   EN_D_10,  EN_D_11,  EN_D_12,  EN_D_13,
     EN_D_14,  EN_D_15,  EN_D_16,  EN_D_17,  EN_D_18,  EN_D_19,  EN_D_20,
@@ -660,7 +675,7 @@ const char* giwscli::s_pdetails_en[256] = {
     EN_D_245, EN_D_246, EN_D_247, EN_D_248, EN_D_249, EN_D_250, EN_D_251,
     EN_D_252, EN_D_253, EN_D_254, EN_D_255};
 
-const char* giwscli::s_charbanner1_en[64] = {
+const char *giwscli::s_charbanner1_en[64] = {
     EN_CBI_0,  EN_CBI_1,  EN_CBI_2,  EN_CBI_3,  EN_CBI_4,  EN_CBI_5,  EN_CBI_6,
     EN_CBI_7,  EN_CBI_8,  EN_CBI_9,  EN_CBI_10, EN_CBI_11, EN_CBI_12, EN_CBI_13,
     EN_CBI_14, EN_CBI_15, EN_CBI_16, EN_CBI_17, EN_CBI_18, EN_CBI_19, EN_CBI_20,
@@ -672,7 +687,7 @@ const char* giwscli::s_charbanner1_en[64] = {
     EN_CBI_56, EN_CBI_57, EN_CBI_58, EN_CBI_59, EN_CBI_60, EN_CBI_61, EN_CBI_62,
     EN_CBI_63};
 
-const char* giwscli::s_charbanner2_en[32] = {
+const char *giwscli::s_charbanner2_en[32] = {
     EN_CBII_0,  EN_CBII_1,  EN_CBII_2,  EN_CBII_3,  EN_CBII_4,  EN_CBII_5,
     EN_CBII_6,  EN_CBII_7,  EN_CBII_8,  EN_CBII_9,  EN_CBII_10, EN_CBII_11,
     EN_CBII_12, EN_CBII_13, EN_CBII_14, EN_CBII_15, EN_CBII_16, EN_CBII_17,
@@ -680,7 +695,7 @@ const char* giwscli::s_charbanner2_en[32] = {
     EN_CBII_24, EN_CBII_25, EN_CBII_26, EN_CBII_27, EN_CBII_28, EN_CBII_29,
     EN_CBII_30, EN_CBII_31};
 
-const char* giwscli::s_weaponbanner_en[64] = {
+const char *giwscli::s_weaponbanner_en[64] = {
     EN_WB_0,  EN_WB_1,  EN_WB_2,  EN_WB_3,  EN_WB_4,  EN_WB_5,  EN_WB_6,
     EN_WB_7,  EN_WB_8,  EN_WB_9,  EN_WB_10, EN_WB_11, EN_WB_12, EN_WB_13,
     EN_WB_14, EN_WB_15, EN_WB_16, EN_WB_17, EN_WB_18, EN_WB_19, EN_WB_20,
@@ -692,30 +707,30 @@ const char* giwscli::s_weaponbanner_en[64] = {
     EN_WB_56, EN_WB_57, EN_WB_58, EN_WB_59, EN_WB_60, EN_WB_61, EN_WB_62,
     EN_WB_63};
 
-const char* giwscli::s_permbanner_en[32] = {
+const char *giwscli::s_permbanner_en[32] = {
     EN_PB_0,  EN_PB_1,  EN_PB_2,  EN_PB_3,  EN_PB_4,  EN_PB_5,  EN_PB_6,
     EN_PB_7,  EN_PB_8,  EN_PB_9,  EN_PB_10, EN_PB_11, EN_PB_12, EN_PB_13,
     EN_PB_14, EN_PB_15, EN_PB_16, EN_PB_17, EN_PB_18, EN_PB_19, EN_PB_20,
     EN_PB_21, EN_PB_22, EN_PB_23, EN_PB_24, EN_PB_25, EN_PB_26, EN_PB_27,
     EN_PB_28, EN_PB_29, EN_PB_30, EN_PB_31};
 
-const char* giwscli::s_beginbanner_en[8] = {EN_BW_0, EN_BW_1, EN_BW_2, EN_BW_3,
+const char *giwscli::s_beginbanner_en[8] = {EN_BW_0, EN_BW_1, EN_BW_2, EN_BW_3,
                                             EN_BW_4, EN_BW_5, EN_BW_6, EN_BW_7};
 
-const char* giwscli::s_version_en[32] = {
+const char *giwscli::s_version_en[32] = {
     EN_V_0,  EN_V_1,  EN_V_2,  EN_V_3,  EN_V_4,  EN_V_5,  EN_V_6,  EN_V_7,
     EN_V_8,  EN_V_9,  EN_V_10, EN_V_11, EN_V_12, EN_V_13, EN_V_14, EN_V_15,
     EN_V_16, EN_V_17, EN_V_18, EN_V_19, EN_V_20, EN_V_21, EN_V_22, EN_V_23,
     EN_V_24, EN_V_25, EN_V_26, EN_V_27, EN_V_28, EN_V_29, EN_V_30, EN_V_31};
 #endif
-void giwscli::ini_ams(size_t* in, size_t ins, const size_t* out) {
+void giwscli::ini_ams(size_t *in, size_t ins, const size_t *out) {
   for (size_t i = 0; i < ins; i++) {
     in[i] = out[i];
   }
 }  // for of the same size
 
 void giwscli::set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
-                         const size_t* nup_four_cgm) {
+                         const size_t *nup_four_cgm) {
   up_five = tempga3[sw];
   size_nup_four_c = size_nup_four_c_p;
   ini_ams(up_four_g, 3, tempga1[sw]);
@@ -724,7 +739,7 @@ void giwscli::set_pool_1(const ptrdiff_t sw, const size_t size_nup_four_c_p,
 }
 
 void giwscli::set_pool_2(const ptrdiff_t sw, const size_t size_nup_four_c_p,
-                         const size_t* nup_four_cgm) {
+                         const size_t *nup_four_cgm) {
   up_five = tempgb3[sw];
   size_nup_four_c = size_nup_four_c_p;
   ini_ams(up_four_g, 3, tempgb1[sw]);
@@ -733,7 +748,7 @@ void giwscli::set_pool_2(const ptrdiff_t sw, const size_t size_nup_four_c_p,
 }
 
 void giwscli::set_pool_3(const ptrdiff_t sw, size_t size_nup_four_c_p,
-                         const size_t* nup_four_cgm) {
+                         const size_t *nup_four_cgm) {
   ini_ams(up_five_g, 2, tempgc1[sw]);
   size_nup_four_c = size_nup_four_c_p;
   ini_ams(up_four_g, 5, tempgc2[sw]);
@@ -761,7 +776,7 @@ void giwscli::pool_stair_1(ptrdiff_t chosen_event_p) {
     set_pool_1(chosen_event_p, 19, nup_four_cg8);
   } else if (chosen_event_p < 32) {
     set_pool_1(chosen_event_p, 20, nup_four_cg9);
-  } else if (chosen_event_p < 33) {
+  } else if (chosen_event_p < 34) {
     set_pool_1(chosen_event_p, 21, nup_four_cg10);
   } else {
     error_code = 5;
@@ -801,7 +816,7 @@ void giwscli::pool_stair_3(ptrdiff_t chosen_event_p) {
     set_pool_3(chosen_event_p, 19, nup_four_cg8);
   } else if (chosen_event_p < 31) {
     set_pool_3(chosen_event_p, 20, nup_four_cg9);
-  } else if (chosen_event_p < 32) {
+  } else if (chosen_event_p < 33) {
     set_pool_3(chosen_event_p, 21, nup_four_cg10);
   } else {
     error_code = 5;
@@ -850,13 +865,17 @@ void giwscli::pool_stair_4(ptrdiff_t chosen_event_p) {
       size_nup_four_c = 23;
       ini_ams(nup_four_c, 23, nup_four_cg310);
     } break;
+    case 11: {
+      size_nup_four_c = 24;
+      ini_ams(nup_four_c, 24, nup_four_cg311);
+    } break;
     default: {
       error_code = 102;
     }
   }
 }
 
-size_t giwscli::rspick(const size_t* kindx, size_t sizekind) {
+size_t giwscli::rspick(const size_t *kindx, size_t sizekind) {
   size_t kindout = kindx[0];
   size_t index = 1;
   for (; index < sizekind; ++index) {
@@ -870,7 +889,7 @@ size_t giwscli::rspick(const size_t* kindx, size_t sizekind) {
 }
 // randomly pick an element among kindx which size is sizekind
 
-unsigned int giwscli::WRSpick(const ptrdiff_t* weightx, size_t nom) {
+unsigned int giwscli::WRSpick(const ptrdiff_t *weightx, size_t nom) {
   ptrdiff_t ceilling = 1;
   for (size_t inin = 0; inin < nom; inin++) {
     ceilling += weightx[inin];
@@ -1561,16 +1580,16 @@ void giwscli::clear_all() {
   unmet5_c = 0;
   unmet5_w = 0;
   fate_points = 0;
-  for (size_t& ini : pcount) {
+  for (size_t &ini : pcount) {
     ini = 0;
   }
   for (size_t ini = 0; ini < 10; ini++) {
     four_pity[ini] = 0;
   }
-  for (size_t& ini : five_pity) {
+  for (size_t &ini : five_pity) {
     ini = 0;
   }
-  for (size_t& ini : five_pity_w) {
+  for (size_t &ini : five_pity_w) {
     ini = 0;
   }
 }
@@ -1589,7 +1608,7 @@ void giwscli::hash_gen() {
   giwscli::hash_out[8] = giwscli::fate_weapon;
 }
 
-int giwscli::hash_apply(const ptrdiff_t* sav_p) {
+int giwscli::hash_apply(const ptrdiff_t *sav_p) {
   if (((four_count > 0 || five_count > 0) && sav_p[1] == sav_p[3]) ||
       (chosen_banner == 4 && sav_p[4] != sav_p[1] && sav_p[5] != sav_p[1]) ||
       (sav_p[6] != sav_p[3] && sav_p[7] != sav_p[3]) ||

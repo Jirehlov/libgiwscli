@@ -1,4 +1,4 @@
-/*Version 2.8.1*/
+/*Version 2.8.2*/
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -888,7 +888,7 @@
 #define CN_CBI_31 "鬼门斗宴_20220621-20220712 (荒泷一斗, 久岐忍, 重云, 五郎)"
 #define CN_CBI_32 \
   "叶落风随_20220713-20220802 (枫原万叶, 鹿野院平藏, 凝光, 托马)"
-#define CN_CBI_33 "焰色天河_20220802- (宵宫, , , )"
+#define CN_CBI_33 "焰色天河_20220802-20220823 (宵宫, 班尼特, 辛焱, 云堇)"
 #define CN_CBI_34 "Placeholder"
 #define CN_CBI_35 "Placeholder"
 #define CN_CBI_36 "Placeholder"
@@ -1046,7 +1046,9 @@
 #define CN_WB_31                                                                                      \
   "神铸赋形_20220713-20220802 (苍古自由之誓, 四风原典, 暗巷闪光, 幽夜华尔兹, " \
   "雨裁, 西风长枪, 流浪乐章)"
-#define CN_WB_32 "Placeholder"
+#define CN_WB_32                                                                                      \
+  "神铸赋形_20220802-20220823 (飞雷之弦振, 斫峰之刃, 暗巷的酒与诗, 暗巷猎手, " \
+  "笛剑, 祭礼大剑, 匣里灭辰)"
 #define CN_WB_33 "Placeholder"
 #define CN_WB_34 "Placeholder"
 #define CN_WB_35 "Placeholder"
@@ -1088,8 +1090,8 @@
 #define CN_PB_7 "奔行世间_20211124-20220104 (新增托马)"
 #define CN_PB_8 "奔行世间_20220105-20220215 (新增五郎)"
 #define CN_PB_9 "奔行世间_20220216-20220712 (新增云堇)"
-#define CN_PB_10 "奔行世间_20220713- (新增久岐忍)"
-#define CN_PB_11 "Placeholder"
+#define CN_PB_10 "奔行世间_20220713-20220823 (新增久岐忍)"
+#define CN_PB_11 "奔行世间_20220824- (新增鹿野院平藏)"
 #define CN_PB_12 "Placeholder"
 #define CN_PB_13 "Placeholder"
 #define CN_PB_14 "Placeholder"

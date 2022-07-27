@@ -1,4 +1,4 @@
-/*Version 2.8.1*/
+/*Version 2.8.2*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -1114,7 +1114,9 @@
 #define EN_CBI_32                                                              \
   "Leaves in the Wind_20220713-20220802 (Kaedehara Kazuha, Shikanoin Heizou, " \
   "Ningguang, Thoma)"
-#define EN_CBI_33 "Tapestry of Golden Flames_20220802- (Yoimiya, , , )"
+#define EN_CBI_33                                                           \
+  "Tapestry of Golden Flames_20220802-20220823 (Yoimiya, Bennett, Xinyan, " \
+  "Yun Jin)"
 #define EN_CBI_34 "Placeholder"
 #define EN_CBI_35 "Placeholder"
 #define EN_CBI_36 "Placeholder"
@@ -1306,7 +1308,10 @@
   "Epitome Invocation_20220713-20220802 (Freedom-Sworn, Lost Prayer to the "  \
   "Sacred Winds, The Alley Flash, Mitternachts Waltz, Rainslasher, Favonius " \
   "Lance, The Widsith)"
-#define EN_WB_32 "Placeholder"
+#define EN_WB_32                                                              \
+  "Epitome Invocation_20220802-20220823 (Thundering Pulse, Summit Shaper, "   \
+  "Wine and Song, Alley Hunter, The Flute, Sacrificial Greatsword, Dragon's " \
+  "Bane)"
 #define EN_WB_33 "Placeholder"
 #define EN_WB_34 "Placeholder"
 #define EN_WB_35 "Placeholder"
@@ -1349,8 +1354,8 @@
 #define EN_PB_7 "Wanderlust Invocation_20211124-20220104 (Added Thoma)"
 #define EN_PB_8 "Wanderlust Invocation_20220105-20220215 (Added Gorou)"
 #define EN_PB_9 "Wanderlust Invocation_20220216-20220712 (Added Yun Jin)"
-#define EN_PB_10 "Wanderlust Invocation_20220713- (Added Kuki Shinobu)"
-#define EN_PB_11 "Placeholder"
+#define EN_PB_10 "Wanderlust Invocation_20220713-20220823 (Added Kuki Shinobu)"
+#define EN_PB_11 "Wanderlust Invocation_20220824- (Added Shikanoin Heizou)"
 #define EN_PB_12 "Placeholder"
 #define EN_PB_13 "Placeholder"
 #define EN_PB_14 "Placeholder"
