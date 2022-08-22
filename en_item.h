@@ -1,4 +1,4 @@
-/*Version 2.8.2*/
+/*Version 3.0*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -126,11 +126,11 @@
 #define EN_C_120 "\"Treasure of Dream Garden\" Dori (Electro)"
 #define EN_C_121 "Alhaitham"
 #define EN_C_122 "Dehya"
-#define EN_C_123 "Nilou"
+#define EN_C_123 "\"Dance of Lotuslight\" Nilou (Hydro)"
 #define EN_C_124 "Nahida"
-#define EN_C_125 "Cyno"
-#define EN_C_126 "Placeholder"
-#define EN_C_127 "Placeholder"
+#define EN_C_125 "\"Judicator of Secrets\" Cyno (Electro)"
+#define EN_C_126 "\"Golden VowCandace\" Candace (Hydro)"
+#define EN_C_127 "Hunter's Path (Bow)"
 #define EN_C_128 "Placeholder"
 #define EN_C_129 "Placeholder"
 #define EN_C_130 "Placeholder"
@@ -385,8 +385,8 @@
 #define EN_X_123 "Nilou"
 #define EN_X_124 "Nahida"
 #define EN_X_125 "Cyno"
-#define EN_X_126 "Placeholder"
-#define EN_X_127 "Placeholder"
+#define EN_X_126 "Candace"
+#define EN_X_127 "Hunter's Path"
 #define EN_X_128 "Placeholder"
 #define EN_X_129 "Placeholder"
 #define EN_X_130 "Placeholder"
@@ -902,13 +902,13 @@
 #define EN_D_118 "Collei"
 #define EN_D_119 "Tighnari"
 #define EN_D_120 "Dori"
-#define EN_D_121 "Placeholder"
-#define EN_D_122 "Placeholder"
-#define EN_D_123 "Placeholder"
-#define EN_D_124 "Placeholder"
-#define EN_D_125 "Placeholder"
-#define EN_D_126 "Placeholder"
-#define EN_D_127 "Placeholder"
+#define EN_D_121 "Alhaitham"
+#define EN_D_122 "Dehya"
+#define EN_D_123 "Nilou"
+#define EN_D_124 "Nahida"
+#define EN_D_125 "Cyno"
+#define EN_D_126 "Candace"
+#define EN_D_127 "Hunter's Path"
 #define EN_D_128 "Placeholder"
 #define EN_D_129 "Placeholder"
 #define EN_D_130 "Placeholder"
@@ -1117,7 +1117,8 @@
 #define EN_CBI_33                                                           \
   "Tapestry of Golden Flames_20220802-20220823 (Yoimiya, Bennett, Xinyan, " \
   "Yun Jin)"
-#define EN_CBI_34 "Placeholder"
+#define EN_CBI_34 \
+  "Viridescent Vigil_20220824-20220909 (Tighnari, Collei, Diona, Fischl)"
 #define EN_CBI_35 "Placeholder"
 #define EN_CBI_36 "Placeholder"
 #define EN_CBI_37 "Placeholder"
@@ -1166,7 +1167,8 @@
 #define EN_CBII_7                                                          \
   "Sparkling Steps_20220713-20220802 (Klee, Shikanoin Heizou, Ningguang, " \
   "Thoma)"
-#define EN_CBII_8 "Placeholder"
+#define EN_CBII_8 \
+  "Gentry of Hermitage_20220824-20220909 (Zhongli, Collei, Diona, Fischl)"
 #define EN_CBII_9 "Placeholder"
 #define EN_CBII_10 "Placeholder"
 #define EN_CBII_11 "Placeholder"
@@ -1312,7 +1314,9 @@
   "Epitome Invocation_20220802-20220823 (Thundering Pulse, Summit Shaper, "   \
   "Wine and Song, Alley Hunter, The Flute, Sacrificial Greatsword, Dragon's " \
   "Bane)"
-#define EN_WB_33 "Placeholder"
+#define EN_WB_33                                                             \
+  "Epitome Invocation_20220824-20220909 (Hunter's Path, Vortex Vanquisher, " \
+  "Favonius Sword, The Bell, Favonius Lance, Favonius Codex, The Stringless)"
 #define EN_WB_34 "Placeholder"
 #define EN_WB_35 "Placeholder"
 #define EN_WB_36 "Placeholder"
@@ -1355,8 +1359,9 @@
 #define EN_PB_8 "Wanderlust Invocation_20220105-20220215 (Added Gorou)"
 #define EN_PB_9 "Wanderlust Invocation_20220216-20220712 (Added Yun Jin)"
 #define EN_PB_10 "Wanderlust Invocation_20220713-20220823 (Added Kuki Shinobu)"
-#define EN_PB_11 "Wanderlust Invocation_20220824- (Added Shikanoin Heizou)"
-#define EN_PB_12 "Placeholder"
+#define EN_PB_11 \
+  "Wanderlust Invocation_20220824-20220927 (Added Shikanoin Heizou)"
+#define EN_PB_12 "Wanderlust Invocation_20220928- (Added Tighnari and Collei)"
 #define EN_PB_13 "Placeholder"
 #define EN_PB_14 "Placeholder"
 #define EN_PB_15 "Placeholder"
@@ -1400,7 +1405,7 @@
 #define EN_V_13 "Version 2.6 \"Zephyr of the Violet Garden\""
 #define EN_V_14 "Version 2.7 \"Hidden Dreams in the Depths\""
 #define EN_V_15 "Version 2.8 \"Summer Fantasia\""
-#define EN_V_16 "Placeholder"
+#define EN_V_16 "Version 3.0 \"The Morn a Thousand Roses Brings\""
 #define EN_V_17 "Placeholder"
 #define EN_V_18 "Placeholder"
 #define EN_V_19 "Placeholder"

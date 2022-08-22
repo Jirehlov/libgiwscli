@@ -1,6 +1,6 @@
 # libgiwscli
 A library for Genshin Impact Wish Simulators written in C++\
-Current version: 2.8.2
+Current version: 3.0
 
 ## Applications
 (dead) CLI: https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-CLI \
