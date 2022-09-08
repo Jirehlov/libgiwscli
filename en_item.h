@@ -1,4 +1,4 @@
-/*Version 3.0*/
+/*Version 3.0.1*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -98,7 +98,7 @@
 #define EN_C_92 "Mistsplitter Reforged (Sword)"
 #define EN_C_93 "Thundering Pulse (Bow)"
 #define EN_C_94 "\"Pearl of Wisdom\" Sangonomiya Kokomi (Hydro)"
-#define EN_C_95 "\"Crowfeather Kaburaya\" Kujo Sara (Electro)"
+#define EN_C_95 "\"Crowfeather Kaburaya\" Kujou Sara (Electro)"
 #define EN_C_96 "\"Plane of Euthymia\" Raiden Shogun (Electro)"
 #define EN_C_97 "Engulfing Lightning (Polearm)"
 #define EN_C_98 "Everlasting Moonglow (Catalyst)"
@@ -131,8 +131,8 @@
 #define EN_C_125 "\"Judicator of Secrets\" Cyno (Electro)"
 #define EN_C_126 "\"Golden VowCandace\" Candace (Hydro)"
 #define EN_C_127 "Hunter's Path (Bow)"
-#define EN_C_128 "Placeholder"
-#define EN_C_129 "Placeholder"
+#define EN_C_128 "Layla"
+#define EN_C_129 "Faruzan"
 #define EN_C_130 "Placeholder"
 #define EN_C_131 "Placeholder"
 #define EN_C_132 "Placeholder"
@@ -354,7 +354,7 @@
 #define EN_X_92 "Mistsplitter Reforged"
 #define EN_X_93 "Thundering Pulse"
 #define EN_X_94 "Sangonomiya Kokomi"
-#define EN_X_95 "Kujo Sara"
+#define EN_X_95 "Kujou Sara"
 #define EN_X_96 "Raiden Shogun"
 #define EN_X_97 "Engulfing Lightning"
 #define EN_X_98 "Everlasting Moonglow"
@@ -387,8 +387,8 @@
 #define EN_X_125 "Cyno"
 #define EN_X_126 "Candace"
 #define EN_X_127 "Hunter's Path"
-#define EN_X_128 "Placeholder"
-#define EN_X_129 "Placeholder"
+#define EN_X_128 "Layla"
+#define EN_X_129 "Faruzan"
 #define EN_X_130 "Placeholder"
 #define EN_X_131 "Placeholder"
 #define EN_X_132 "Placeholder"
@@ -618,9 +618,9 @@
 #define EN_D_30                                                               \
   "Every citizen of Mondstadt adores Barbara. She learned the word \"idol\" " \
   "from a magazine."
-#define EN_D_31                                                               \
-  "The languid but knowledgeable Librarian of the Knights of Favonius, "      \
-  "deemed by Sumeru Academia to be their most distinguished graduate in the " \
+#define EN_D_31                                                                \
+  "The languid but knowledgeable Librarian of the Knights of Favonius, "       \
+  "deemed by Sumeru Akademiya to be their most distinguished graduate in the " \
   "past two centuries."
 #define EN_D_32                                                           \
   "A completely rusted iron greatbow. The average person would lack the " \
@@ -899,18 +899,25 @@
 #define EN_D_117                                                           \
   "This longbow's color is unpredictable. Under the light, it takes on a " \
   "lustrous, watery blue."
-#define EN_D_118 "Collei"
-#define EN_D_119 "Tighnari"
-#define EN_D_120 "Dori"
+#define EN_D_118                                                             \
+  "A trainee ranger active in Avidya Forest. Behind her enthusiastic words " \
+  "and actions hides a slightly introverted personality."
+#define EN_D_119                                                               \
+  "A young researcher well-versed in botany who currently serves as a Forest " \
+  "Watcher in Avidya Forest. He is a straight shooter with a warm heart — "  \
+  "and a dab hand at guiding even the dullest of pupils."
+#define EN_D_120 "An elusive merchant who has a fondness for glittering Mora."
 #define EN_D_121 "Alhaitham"
 #define EN_D_122 "Dehya"
 #define EN_D_123 "Nilou"
 #define EN_D_124 "Nahida"
 #define EN_D_125 "Cyno"
 #define EN_D_126 "Candace"
-#define EN_D_127 "Hunter's Path"
-#define EN_D_128 "Placeholder"
-#define EN_D_129 "Placeholder"
+#define EN_D_127                                                           \
+  "This gilded bow was made using precious white branches. It has felled " \
+  "countless wicked beasts attempting to infiltrate the woods."
+#define EN_D_128 "Layla"
+#define EN_D_129 "Faruzan"
 #define EN_D_130 "Placeholder"
 #define EN_D_131 "Placeholder"
 #define EN_D_132 "Placeholder"
@@ -1076,8 +1083,9 @@
   "Chongyun)"
 #define EN_CBI_17 \
   "Tapestry of Golden Flames_20210810-20210831 (Yoimiya, Sayu, Diona, Xinyan)"
-#define EN_CBI_18                                                              \
-  "Reign of Serenity_20210901-20210921 (Raiden Shogun, Kujo Sara, Xiangling, " \
+#define EN_CBI_18                                                    \
+  "Reign of Serenity_20210901-20210921 (Raiden Shogun, Kujou Sara, " \
+  "Xiangling, "                                                      \
   "Sucrose)"
 #define EN_CBI_19                                                          \
   "Drifting Luminescence_20210921-20211012 (Sangonomiya Kokomi, Rosaria, " \
@@ -1098,9 +1106,9 @@
   "Gentry of Hermitage_20220125-20220215 (Zhongli, Yanfei, Xingqiu, Beidou)"
 #define EN_CBI_26 \
   "Everbloom Violet_20220216-20220308 (Yae Miko, Fischl, Diona, Thoma)"
-#define EN_CBI_27                                                              \
-  "Reign of Serenity_20220308-20220329 (Raiden Shogun, Bennett, Xinyan, Kujo " \
-  "Sara)"
+#define EN_CBI_27                                                         \
+  "Reign of Serenity_20220308-20220329 (Raiden Shogun, Bennett, Xinyan, " \
+  "Kujou Sara)"
 #define EN_CBI_28                                                         \
   "Azure Excursion_20220330-20220419 (Kamisato Ayato, Yun Jin, Sucrose, " \
   "Xiangling)"
@@ -1119,7 +1127,8 @@
   "Yun Jin)"
 #define EN_CBI_34 \
   "Viridescent Vigil_20220824-20220909 (Tighnari, Collei, Diona, Fischl)"
-#define EN_CBI_35 "Placeholder"
+#define EN_CBI_35 \
+  "Adrift in the Harbor_20220909-20220927 (Ganyu, Dori, Sucrose, Xingqiu)"
 #define EN_CBI_36 "Placeholder"
 #define EN_CBI_37 "Placeholder"
 #define EN_CBI_38 "Placeholder"
@@ -1158,7 +1167,7 @@
   "Adrift in the Harbor_20220125-20220215 (Ganyu, Yanfei, Xingqiu, Beidou)"
 #define EN_CBII_4                                                          \
   "Drifting Luminescence_20220308-20220329 (Sangonomiya Kokomi, Bennett, " \
-  "Xinyan, Kujo Sara)"
+  "Xinyan, Kujou Sara)"
 #define EN_CBII_5 \
   "Ballad in Goblets_20220330-20220419 (Venti, Yun Jin, Sucrose, Xiangling)"
 #define EN_CBII_6                                                         \
@@ -1169,7 +1178,9 @@
   "Thoma)"
 #define EN_CBII_8 \
   "Gentry of Hermitage_20220824-20220909 (Zhongli, Collei, Diona, Fischl)"
-#define EN_CBII_9 "Placeholder"
+#define EN_CBII_9                                                       \
+  "Drifting Luminescence_20220909-20220927 (Sangonomiya Kokomi, Dori, " \
+  "Sucrose, Xingqiu)"
 #define EN_CBII_10 "Placeholder"
 #define EN_CBII_11 "Placeholder"
 #define EN_CBII_12 "Placeholder"
@@ -1317,7 +1328,10 @@
 #define EN_WB_33                                                             \
   "Epitome Invocation_20220824-20220909 (Hunter's Path, Vortex Vanquisher, " \
   "Favonius Sword, The Bell, Favonius Lance, Favonius Codex, The Stringless)"
-#define EN_WB_34 "Placeholder"
+#define EN_WB_34                                                               \
+  "Epitome Invocation_20220909-20220927(Everlasting Moonglow, Amos' Bow, "     \
+  "Sacrificial Sword, Favonius Greatsword, Dragon's Bane, Eye of Perception, " \
+  "Rust) "
 #define EN_WB_35 "Placeholder"
 #define EN_WB_36 "Placeholder"
 #define EN_WB_37 "Placeholder"
@@ -1348,20 +1362,21 @@
 #define EN_WB_62 "Placeholder"
 #define EN_WB_63 "Placeholder"
 #define EN_PB_0 "Placeholder"
-#define EN_PB_1 "Wanderlust Invocation_20200928-20201222 (Released)"
+#define EN_PB_1 "Wanderlust Invocation_20200928-20201222"
 #define EN_PB_2 \
   "Wanderlust Invocation_20201223-20210427 (Added Diona and Xinyan)"
 #define EN_PB_3 "Wanderlust Invocation_20210428-20210608 (Added Rosaria)"
 #define EN_PB_4 "Wanderlust Invocation_20210609-20210901 (Added Yanfei)"
 #define EN_PB_5 "Wanderlust Invocation_20210901-20211012 (Added Sayu)"
-#define EN_PB_6 "Wanderlust Invocation_20211013-20211123 (Added Kujo Sara)"
+#define EN_PB_6 "Wanderlust Invocation_20211013-20211123 (Added Kujou Sara)"
 #define EN_PB_7 "Wanderlust Invocation_20211124-20220104 (Added Thoma)"
 #define EN_PB_8 "Wanderlust Invocation_20220105-20220215 (Added Gorou)"
 #define EN_PB_9 "Wanderlust Invocation_20220216-20220712 (Added Yun Jin)"
 #define EN_PB_10 "Wanderlust Invocation_20220713-20220823 (Added Kuki Shinobu)"
 #define EN_PB_11 \
   "Wanderlust Invocation_20220824-20220927 (Added Shikanoin Heizou)"
-#define EN_PB_12 "Wanderlust Invocation_20220928- (Added Tighnari and Collei)"
+#define EN_PB_12 \
+  "Wanderlust Invocation_20220928- (Added Tighnari, Collei and Dori)"
 #define EN_PB_13 "Placeholder"
 #define EN_PB_14 "Placeholder"
 #define EN_PB_15 "Placeholder"
@@ -1382,14 +1397,14 @@
 #define EN_PB_30 "Placeholder"
 #define EN_PB_31 "Placeholder"
 #define EN_BW_0 "Placeholder"
-#define EN_BW_1 "Beginners' Wish_20200928-(Released)"
+#define EN_BW_1 "Beginners' Wish_20200928-"
 #define EN_BW_2 "Placeholder"
 #define EN_BW_3 "Placeholder"
 #define EN_BW_4 "Placeholder"
 #define EN_BW_5 "Placeholder"
 #define EN_BW_6 "Placeholder"
 #define EN_BW_7 "Placeholder"
-#define EN_V_0 "Version 1.0 Official Launch"
+#define EN_V_0 "Version 1.0 \"Welcome to Teyvat\""
 #define EN_V_1 "Version 1.1 \"A New Star Approaches\""
 #define EN_V_2 "Version 1.2 \"The Chalk Prince and the Dragon\""
 #define EN_V_3 "Version 1.3 \"All That Glitters\""
@@ -1399,7 +1414,7 @@
 #define EN_V_7 "Version 2.0 \"The Immovable God and the Eternal Euthymia\""
 #define EN_V_8 "Version 2.1 \"Floating World Under the Moonlight\""
 #define EN_V_9 "Version 2.2 \"Into the Perilous Labyrinth of Fog\""
-#define EN_V_10 "Version 2.3 \"hadows Amidst Snowstorms\""
+#define EN_V_10 "Version 2.3 \"Shadows Amidst Snowstorms\""
 #define EN_V_11 "Version 2.4 \"Fleeting Colors in Flight\""
 #define EN_V_12 "Version 2.5 \"When the Sakura Bloom\""
 #define EN_V_13 "Version 2.6 \"Zephyr of the Violet Garden\""
