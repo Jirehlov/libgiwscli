@@ -1,8 +1,8 @@
-/*Version 3.0.1*/
+/*Version 3.0.2*/
 
 #include "cn_item.h"
 #include "en_item.h"
-#include "jp.item.h"
+#include "jp_item.h"
 
 namespace giwscli {
 

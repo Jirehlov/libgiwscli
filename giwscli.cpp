@@ -1,4 +1,4 @@
-/*Version 3.0.1*/
+/*Version 3.0.2*/
 
 #include "giwscli.h"
 
@@ -1083,7 +1083,9 @@ int giwscli::set_banner_f(ptrdiff_t chosen_banner_p, ptrdiff_t chosen_event_p) {
       pool_stair_check += pool_stair_4(chosen_event_p);
     } break;
     case 5: {
+      size_nup_five_c = 5;
       int ini_ams_check = 0;
+      ini_ams_check += ini_ams(nup_five_c, 5, nup_five_c1);
       ini_ams_check += ini_ams(nup_four_c, 11, nup_four_cg1);
       if (ini_ams_check) {
         return 1;
