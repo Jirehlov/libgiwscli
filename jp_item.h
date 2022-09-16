@@ -1271,7 +1271,7 @@
 #define JP_V_14 "Ver.2.7「虞淵に隠されし夢魘」"
 #define JP_V_15 "Ver.2.8「常夏！幻夜？奇想曲！」"
 #define JP_V_16 "Ver.3.0「黎明を告げる千の薔薇」"
-#define JP_V_17 "Placeholder"
+#define JP_V_17 "Ver.3.1「赤砂の王と三人の巡礼者」"
 #define JP_V_18 "Placeholder"
 #define JP_V_19 "Placeholder"
 #define JP_V_20 "Placeholder"

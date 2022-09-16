@@ -1144,7 +1144,7 @@
 #define CN_V_14 "2.7版本 「荒梦藏虞渊」"
 #define CN_V_15 "2.8版本 「仲夏！幻夜？奇想曲！」"
 #define CN_V_16 "3.0版本 「千朵玫瑰带来的黎明」"
-#define CN_V_17 "Placeholder"
+#define CN_V_17 "3.1版本 「赤土之王与三朝圣者」"
 #define CN_V_18 "Placeholder"
 #define CN_V_19 "Placeholder"
 #define CN_V_20 "Placeholder"

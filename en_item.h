@@ -1421,7 +1421,7 @@
 #define EN_V_14 "Version 2.7 \"Hidden Dreams in the Depths\""
 #define EN_V_15 "Version 2.8 \"Summer Fantasia\""
 #define EN_V_16 "Version 3.0 \"The Morn a Thousand Roses Brings\""
-#define EN_V_17 "Placeholder"
+#define EN_V_17 "Version 3.1 \"King Deshret and the Three Magi\""
 #define EN_V_18 "Placeholder"
 #define EN_V_19 "Placeholder"
 #define EN_V_20 "Placeholder"
