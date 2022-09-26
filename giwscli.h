@@ -1,4 +1,4 @@
-/*Version 3.1*/
+/*Version 3.1.1*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -6,7 +6,7 @@
 #include <cstddef>
 #include <random>
 
-#define MAX_ITEMS 128
+#define MAX_ITEMS 136
 
 namespace giwscli {
 extern std::random_device seed_gen;
