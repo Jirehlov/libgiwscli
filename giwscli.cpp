@@ -329,7 +329,7 @@ const size_t giwscli::tempgc3[36][5] = {
     {41, 43, 48, MAX_ITEMS, MAX_ITEMS},                       // 32
     {34, 39, 40, 44, 49},                                     // 33
     {32, 36, 41, 45, 47},                                     // 34
-    {134, 35, 37, 40, 46}                                     // 35
+    {MAX_ITEMS, 35, 37, 40, 46}                               // 35
 };
 
 const size_t giwscli::tempgc4[36][2] = {
@@ -368,7 +368,7 @@ const size_t giwscli::tempgc4[36][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 32
     {MAX_ITEMS, MAX_ITEMS},  // 33
     {MAX_ITEMS, 5},          // 34
-    {MAX_ITEMS, 81}          // 35
+    {MAX_ITEMS, MAX_ITEMS}   // 35
 };
 
 const size_t giwscli::nup_four_cg31[14] = {17, 19, 20, 21, 22, 23, 24,
