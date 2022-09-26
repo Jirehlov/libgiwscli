@@ -1,4 +1,4 @@
-/*Version 3.0.1*/
+/*Version 3.1*/
 
 #ifndef JP_ITEM_H
 #define JP_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -127,18 +127,18 @@
 #define JP_C_121 "アルハイゼン"
 #define JP_C_122 "ディシア"
 #define JP_C_123 "絨毯に舞い落ちる蓮光・ニィロウ（水）"
-#define JP_C_124 "ナヒーダ"
+#define JP_C_124 "白草浄華・ナヒーダ（草）"
 #define JP_C_125 "緘秘の裁き・セノ（雷）"
 #define JP_C_126 "浮金の誓願・キャンディス（水）"
 #define JP_C_127 "弓・狩人の道"
-#define JP_C_128 "レイラ"
+#define JP_C_128 "綺思と夜星・レイラ（氷）"
 #define JP_C_129 "ファルザン"
-#define JP_C_130 "Placeholder"
-#define JP_C_131 "Placeholder"
-#define JP_C_132 "Placeholder"
-#define JP_C_133 "Placeholder"
-#define JP_C_134 "Placeholder"
-#define JP_C_135 "Placeholder"
+#define JP_C_130 "ミカ"
+#define JP_C_131 "片手剣・聖顕の鍵"
+#define JP_C_132 "長柄武器・赤砂の杖"
+#define JP_C_133 "片手剣・サイフォスの月明かり"
+#define JP_C_134 "両手剣・マカイラの水色"
+#define JP_C_135 "法器・彷徨える星"
 #define JP_C_136 "Placeholder"
 #define JP_C_137 "Placeholder"
 #define JP_C_138 "Placeholder"
@@ -389,12 +389,12 @@
 #define JP_X_127 "狩人の道"
 #define JP_X_128 "レイラ"
 #define JP_X_129 "ファルザン"
-#define JP_X_130 "Placeholder"
-#define JP_X_131 "Placeholder"
-#define JP_X_132 "Placeholder"
-#define JP_X_133 "Placeholder"
-#define JP_X_134 "Placeholder"
-#define JP_X_135 "Placeholder"
+#define JP_X_130 "ミカ"
+#define JP_X_131 "聖顕の鍵"
+#define JP_X_132 "赤砂の杖"
+#define JP_X_133 "サイフォスの月明かり"
+#define JP_X_134 "マカイラの水色"
+#define JP_X_135 "彷徨える星"
 #define JP_X_136 "Placeholder"
 #define JP_X_137 "Placeholder"
 #define JP_X_138 "Placeholder"
@@ -795,21 +795,37 @@
 #define JP_D_120 "神出鬼没の旅商人。一番好きなものは、キラキラと輝くモラ。"
 #define JP_D_121 "アルハイゼン"
 #define JP_D_122 "ディシア"
-#define JP_D_123 "ニィロウ"
+#define JP_D_123                                                                                                    \
+  "「ズバイルシアター」の噂に名高い踊り子。そのダンスはしなやかで美しく、彼女" \
+  "自身も優しく純粋な心で人と接する。"
 #define JP_D_124 "ナヒーダ"
-#define JP_D_125 "セノ"
-#define JP_D_126 "キャンディス"
+#define JP_D_125                                                                                                    \
+  "教令院の学者たちを監督する「大マハマトラ」。クシャレワー学院が作った『大マ" \
+  "ッハマシン』よりも効率よく仕事をこなす。"
+#define JP_D_126                                                                                                    \
+  "琥珀色の左目を持つ、キングデシェレトの末裔。アアル村のガーディアンをしてい" \
+  "る。"
 #define JP_D_127                                                                                                    \
   "貴重な白き枝で作られた金メッキの弓。森に侵入する無数の悪しき獣を倒してきた" \
   "。"
 #define JP_D_128 "レイラ"
 #define JP_D_129 "ファルザン"
-#define JP_D_130 "Placeholder"
-#define JP_D_131 "Placeholder"
-#define JP_D_132 "Placeholder"
-#define JP_D_133 "Placeholder"
-#define JP_D_134 "Placeholder"
-#define JP_D_135 "Placeholder"
+#define JP_D_130 "ミカ"
+#define JP_D_131                                                                                                    \
+  "黒曜石で形作られた一対の杖の片方。伝説によると、砂海の果てに隠された楽園へ" \
+  "の扉がこの秘密の鍵によって開かれたという。"
+#define JP_D_132                                                                                                    \
+  "黒曜石で形作られた一対の杖の片方。伝説によると、砂の民を率いることができる" \
+  "権威を持っていた。しかし、現在はこの王器を見分けられる臣下はいない。"
+#define JP_D_133                                                                                                    \
+  "月色の光に輝く古い両刃の剣。その中には、今は沈黙を保つジンニーが宿っている" \
+  "らしい。"
+#define JP_D_134                                                                                                    \
+  "水のような艶やかさを持つ古い大剣。流砂により磨き上げられ、千年ほど経った今" \
+  "も切れ味は鋭いままである。"
+#define JP_D_135                                                                                                    \
+  "元々は、学者が天象を観測し、計算するために使用していた古い装置。力を伝導で" \
+  "き、法器としても機能する。"
 #define JP_D_136 "Placeholder"
 #define JP_D_137 "Placeholder"
 #define JP_D_138 "Placeholder"
@@ -1007,7 +1023,8 @@
   "深き森の巡回者_20220824-20220909 (ティナリ, コレイ, ディオナ, " \
   "フィッシュル)"
 #define JP_CBI_35 "逸俗逡巡_20220909-20220927 (甘雨, ドリー, スクロース, 行秋)"
-#define JP_CBI_36 "Placeholder"
+#define JP_CBI_36 \
+  "冥昼の裁定_20220928-20221014 (セノ, キャンディス, 久岐忍, 早柚)"
 #define JP_CBI_37 "Placeholder"
 #define JP_CBI_38 "Placeholder"
 #define JP_CBI_39 "Placeholder"
@@ -1057,7 +1074,8 @@
   "大隠朝市_20220824-20220909 (鍾離, コレイ, ディオナ, フィッシュル)"
 #define JP_CBII_9 \
   "海原に浮かぶ虹珠_20220909-20220927 (珊瑚宮心海, ドリー, スクロース, 行秋)"
-#define JP_CBII_10 "Placeholder"
+#define JP_CBII_10 \
+  "杯に注がれた詩_20220928-20221014 (ウェンティ, キャンディス, 久岐忍, 早柚)"
 #define JP_CBII_11 "Placeholder"
 #define JP_CBII_12 "Placeholder"
 #define JP_CBII_13 "Placeholder"
@@ -1185,7 +1203,9 @@
 #define JP_WB_34                                                                                   \
   "神鋳賦形_20220909-20220927 (不滅の月華, アモスの弓, 祭礼の剣, 西風大剣, " \
   "匣中滅龍, 昭心, 弓蔵)"
-#define JP_WB_35 "Placeholder"
+#define JP_WB_35                                                                              \
+  "神鋳賦形_20220928-20221014 (赤砂の杖, 終焉を嘆く詩, マカイラの水色, " \
+  "匣中龍吟, 西風長槍, 祭礼の断片, 西風猟弓)"
 #define JP_WB_36 "Placeholder"
 #define JP_WB_37 "Placeholder"
 #define JP_WB_38 "Placeholder"
@@ -1226,8 +1246,8 @@
 #define JP_PB_9 "奔走世間_20220216-20220712 (雲菫を追加)"
 #define JP_PB_10 "奔走世間_20220713-20220823 (久岐忍を追加)"
 #define JP_PB_11 "奔走世間_20220824-20220927 (鹿野院平蔵を追加)"
-#define JP_PB_12 "奔走世間_20220928- (ティナリとコレイとドリーを追加)"
-#define JP_PB_13 "Placeholder"
+#define JP_PB_12 "奔走世間_20220928-20221101 (ティナリとコレイとドリーを追加)"
+#define JP_PB_13 "奔走世間_20221102- (キャンディスを追加)"
 #define JP_PB_14 "Placeholder"
 #define JP_PB_15 "Placeholder"
 #define JP_PB_16 "Placeholder"

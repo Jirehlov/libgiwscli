@@ -1,4 +1,4 @@
-/*Version 3.0.2*/
+/*Version 3.1*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -127,18 +127,18 @@
 #define EN_C_121 "Alhaitham"
 #define EN_C_122 "Dehya"
 #define EN_C_123 "\"Dance of Lotuslight\" Nilou (Hydro)"
-#define EN_C_124 "Nahida"
+#define EN_C_124 "\"Physic of Purity\" Nahida (Dendro)"
 #define EN_C_125 "\"Judicator of Secrets\" Cyno (Electro)"
 #define EN_C_126 "\"Golden VowCandace\" Candace (Hydro)"
 #define EN_C_127 "Hunter's Path (Bow)"
-#define EN_C_128 "Layla"
+#define EN_C_128 "\"Fantastical Evening Star\" Layla (Cryo)"
 #define EN_C_129 "Faruzan"
-#define EN_C_130 "Placeholder"
-#define EN_C_131 "Placeholder"
-#define EN_C_132 "Placeholder"
-#define EN_C_133 "Placeholder"
-#define EN_C_134 "Placeholder"
-#define EN_C_135 "Placeholder"
+#define EN_C_130 "Mika"
+#define EN_C_131 "Key of Khaj-Nisut (Sword)"
+#define EN_C_132 "Staff of the Scarlet Sands (Polearm)"
+#define EN_C_133 "Xiphos' Moonlight (Sword)"
+#define EN_C_134 "Makhaira Aquamarine (Claymore)"
+#define EN_C_135 "Wandering Evenstar (Catalyst)"
 #define EN_C_136 "Placeholder"
 #define EN_C_137 "Placeholder"
 #define EN_C_138 "Placeholder"
@@ -389,12 +389,12 @@
 #define EN_X_127 "Hunter's Path"
 #define EN_X_128 "Layla"
 #define EN_X_129 "Faruzan"
-#define EN_X_130 "Placeholder"
-#define EN_X_131 "Placeholder"
-#define EN_X_132 "Placeholder"
-#define EN_X_133 "Placeholder"
-#define EN_X_134 "Placeholder"
-#define EN_X_135 "Placeholder"
+#define EN_X_130 "Mika"
+#define EN_X_131 "Key of Khaj-Nisut"
+#define EN_X_132 "Staff of the Scarlet Sands"
+#define EN_X_133 "Xiphos' Moonlight"
+#define EN_X_134 "Makhaira Aquamarine"
+#define EN_X_135 "Wandering Evenstar"
 #define EN_X_136 "Placeholder"
 #define EN_X_137 "Placeholder"
 #define EN_X_138 "Placeholder"
@@ -909,21 +909,42 @@
 #define EN_D_120 "An elusive merchant who has a fondness for glittering Mora."
 #define EN_D_121 "Alhaitham"
 #define EN_D_122 "Dehya"
-#define EN_D_123 "Nilou"
+#define EN_D_123                                                              \
+  "The star of the Zubayr Theater. She is full of warmth and innocence, and " \
+  "her dances are lively and elegant."
 #define EN_D_124 "Nahida"
-#define EN_D_125 "Cyno"
-#define EN_D_126 "Candace"
+#define EN_D_125                                                                   \
+  "The General Mahamatra in charge of supervising the researchers of the "         \
+  "Akademiya. It is said that when he gets down to work, the General "             \
+  "Mahamatra is even more efficient than the “Great Vayuvyastra” made by the " \
+  "Kshahrewar."
+#define EN_D_126                                                               \
+  "A descendant of King Deshret with an amber left eye. The defender of Aaru " \
+  "Village."
 #define EN_D_127                                                           \
   "This gilded bow was made using precious white branches. It has felled " \
   "countless wicked beasts attempting to infiltrate the woods."
 #define EN_D_128 "Layla"
 #define EN_D_129 "Faruzan"
-#define EN_D_130 "Placeholder"
-#define EN_D_131 "Placeholder"
-#define EN_D_132 "Placeholder"
-#define EN_D_133 "Placeholder"
-#define EN_D_134 "Placeholder"
-#define EN_D_135 "Placeholder"
+#define EN_D_130 "Mika"
+#define EN_D_131                                                               \
+  "One of a paired set of scepters fashioned from obsidian. They say that "    \
+  "this can be used as a key to open the gate to a paradise that lies at the " \
+  "end of the ocean of sand."
+#define EN_D_132                                                             \
+  "One of a paired set of scepters fashioned from obsidian. Legend has it "  \
+  "that these staves grant the right to lead the people of the desert, but " \
+  "no retainer now lives who can verify the proper appearance of these "     \
+  "regalia."
+#define EN_D_133                                                              \
+  "This ancient double-edged sword glimmers with moonlight. It is said that " \
+  "a now-silent Jinni dwells within it."
+#define EN_D_134                                                              \
+  "An ancient greatsword that gleams like the waters themselves. A thousand " \
+  "years of sand erosion has not dulled its unnaturally sharp edge one bit."
+#define EN_D_135                                                             \
+  "This was originally a device used by researchers to observe and perform " \
+  "calculations on celestial phenomena. It serves as a conduit and catalyst."
 #define EN_D_136 "Placeholder"
 #define EN_D_137 "Placeholder"
 #define EN_D_138 "Placeholder"
@@ -1129,7 +1150,8 @@
   "Viridescent Vigil_20220824-20220909 (Tighnari, Collei, Diona, Fischl)"
 #define EN_CBI_35 \
   "Adrift in the Harbor_20220909-20220927 (Ganyu, Dori, Sucrose, Xingqiu)"
-#define EN_CBI_36 "Placeholder"
+#define EN_CBI_36 \
+  "Twilight Arbiter_20220928-20221014 (Cyno, Candace, Kuki Shinobu, Sayu)"
 #define EN_CBI_37 "Placeholder"
 #define EN_CBI_38 "Placeholder"
 #define EN_CBI_39 "Placeholder"
@@ -1181,7 +1203,8 @@
 #define EN_CBII_9                                                       \
   "Drifting Luminescence_20220909-20220927 (Sangonomiya Kokomi, Dori, " \
   "Sucrose, Xingqiu)"
-#define EN_CBII_10 "Placeholder"
+#define EN_CBII_10 \
+  "Ballad in Goblets_20220928-20221014 (Venti, Candace, Kuki Shinobu, Sayu)"
 #define EN_CBII_11 "Placeholder"
 #define EN_CBII_12 "Placeholder"
 #define EN_CBII_13 "Placeholder"
@@ -1332,7 +1355,10 @@
   "Epitome Invocation_20220909-20220927(Everlasting Moonglow, Amos' Bow, "     \
   "Sacrificial Sword, Favonius Greatsword, Dragon's Bane, Eye of Perception, " \
   "Rust) "
-#define EN_WB_35 "Placeholder"
+#define EN_WB_35                                                             \
+  "Epitome Invocation_20220928-20221014 (Staff of the Scarlet Sands, Elegy " \
+  "for the End, Makhaira Aquamarine, Lion's Roar, Favonius Lance, "          \
+  "Sacrificial Fragments, Favonius Warbow)"
 #define EN_WB_36 "Placeholder"
 #define EN_WB_37 "Placeholder"
 #define EN_WB_38 "Placeholder"
@@ -1376,8 +1402,8 @@
 #define EN_PB_11 \
   "Wanderlust Invocation_20220824-20220927 (Added Shikanoin Heizou)"
 #define EN_PB_12 \
-  "Wanderlust Invocation_20220928- (Added Tighnari, Collei and Dori)"
-#define EN_PB_13 "Placeholder"
+  "Wanderlust Invocation_20220928-20221101 (Added Tighnari, Collei and Dori)"
+#define EN_PB_13 "Wanderlust Invocation_20221102- (Added Candace)"
 #define EN_PB_14 "Placeholder"
 #define EN_PB_15 "Placeholder"
 #define EN_PB_16 "Placeholder"
