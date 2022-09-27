@@ -1,4 +1,4 @@
-/*Version 3.1.1*/
+/*Version 3.1.2*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -129,7 +129,7 @@
 #define EN_C_123 "\"Dance of Lotuslight\" Nilou (Hydro)"
 #define EN_C_124 "\"Physic of Purity\" Nahida (Dendro)"
 #define EN_C_125 "\"Judicator of Secrets\" Cyno (Electro)"
-#define EN_C_126 "\"Golden VowCandace\" Candace (Hydro)"
+#define EN_C_126 "\"Golden Vow\" Candace (Hydro)"
 #define EN_C_127 "Hunter's Path (Bow)"
 #define EN_C_128 "\"Fantastical Evening Star\" Layla (Cryo)"
 #define EN_C_129 "Faruzan"

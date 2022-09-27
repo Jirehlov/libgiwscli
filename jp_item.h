@@ -1,4 +1,4 @@
-/*Version 3.1.1*/
+/*Version 3.1.2*/
 
 #ifndef JP_ITEM_H
 #define JP_ITEM_H 1  // mark it 0 if encoding error occurs
