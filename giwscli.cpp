@@ -1,4 +1,4 @@
-/*Version 3.1.2*/
+/*Version 3.1.3*/
 
 #include "giwscli.h"
 
@@ -81,6 +81,9 @@ const size_t giwscli::nup_four_cg12[24] = {
 const size_t giwscli::nup_four_cg13[25] = {
     15, 16, 17, 18, 19,  20,  21,  22,  23,  24,  25,  26, 28,
     30, 71, 91, 95, 100, 106, 108, 115, 116, 118, 120, 126};
+const size_t giwscli::nup_four_cg14[26] = {
+    15, 16, 17, 18, 19,  20,  21,  22,  23,  24,  25,  26,  28,
+    30, 71, 91, 95, 100, 106, 108, 115, 116, 118, 120, 126, 128};
 const size_t giwscli::four_stars_c[31] = {15,  16,  17,  18,  19,  20,  21,
                                           22,  23,  24,  25,  26,  27,  28,
                                           29,  30,  31,  71,  91,  95,  100,
@@ -99,7 +102,7 @@ const size_t giwscli::four_stars_c[31] = {15,  16,  17,  18,  19,  20,  21,
                  5,  6,   7,   8,   9,   10,  11,  12,  13,  14, 73,
                  74, 75,  76,  77,  78,  81,  85,  87,  92,  93, 97,
                  98, 101, 107, 110, 112, 113, 117, 127, 131, 132};
-const size_t giwscli::tempga1[37][3] = {
+const size_t giwscli::tempga1[38][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {22, 26, 30},                       // 1
     {17, 20, 24},                       // 2
@@ -136,10 +139,11 @@ const size_t giwscli::tempga1[37][3] = {
     {16, 21, 108},                      // 33
     {18, 22, 118},                      // 34
     {17, 24, 120},                      // 35
-    {91, 115, 126}                      // 36
+    {91, 115, 126},                     // 36
+    {25, 26, 30}                        // 37
 };                                      // MID_MOD
 
-const size_t giwscli::tempga2[37][3] = {
+const size_t giwscli::tempga2[38][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {22, 26, 30},                       // 1
     {17, 20, 24},                       // 2
@@ -176,15 +180,16 @@ const size_t giwscli::tempga2[37][3] = {
     {16, 21, 108},                      // 33
     {18, 22, MAX_ITEMS},                // 34
     {17, 24, MAX_ITEMS},                // 35
-    {91, 115, MAX_ITEMS}                // 36
+    {91, 115, MAX_ITEMS},               // 36
+    {25, 26, 30}                        // 37
 };
 
-const size_t giwscli::tempga3[37] = {
+const size_t giwscli::tempga3[38] = {
     MAX_ITEMS, 63, 64,  65, 66,  67,  68, 69, 0,   70, 63,  65,  66,
     72,        64, 86,  89, 90,  96,  94, 65, 70,  67, 105, 109, 66,
-    99,        96, 111, 89, 114, 105, 86, 90, 119, 68, 125};
+    99,        96, 111, 89, 114, 105, 86, 90, 119, 68, 125, 123};
 
-const size_t giwscli::tempgb1[11][3] = {
+const size_t giwscli::tempgb1[12][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {15, 20, 21},                       // 1
     {19, 23, 108},                      // 2
@@ -195,10 +200,11 @@ const size_t giwscli::tempgb1[11][3] = {
     {23, 100, 116},                     // 7
     {18, 22, 118},                      // 8
     {17, 24, 120},                      // 9
-    {91, 115, 126}                      // 10
+    {91, 115, 126},                     // 10
+    {25, 26, 30}                        // 11
 };
 
-const size_t giwscli::tempgb2[11][3] = {
+const size_t giwscli::tempgb2[12][3] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {15, 20, 21},                       // 1
     {19, 23, MAX_ITEMS},                // 2
@@ -209,13 +215,14 @@ const size_t giwscli::tempgb2[11][3] = {
     {23, 100, MAX_ITEMS},               // 7
     {18, 22, MAX_ITEMS},                // 8
     {17, 24, MAX_ITEMS},                // 9
-    {91, 115, MAX_ITEMS}                // 10
+    {91, 115, MAX_ITEMS},               // 10
+    {25, 26, 30}                        // 11
 };
 
-const size_t giwscli::tempgb3[11] = {MAX_ITEMS, 72, 69, 68, 94, 63,
-                                     69,        64, 66, 94, 63};
+const size_t giwscli::tempgb3[12] = {MAX_ITEMS, 72, 69, 68, 94, 63,
+                                     69,        64, 66, 94, 63, 67};
 
-const size_t giwscli::tempgc1[36][2] = {
+const size_t giwscli::tempgc1[37][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 0
     {5, 14},                 // 1
     {7, 11},                 // 2
@@ -251,10 +258,11 @@ const size_t giwscli::tempgc1[36][2] = {
     {76, 93},                // 32
     {74, 127},               // 33
     {98, 5},                 // 34
-    {132, 81}                // 35
+    {132, 81},               // 35
+    {131, 77}                // 36
 };
 
-const size_t giwscli::tempgc2[36][5] = {
+const size_t giwscli::tempgc2[37][5] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {34, 38, 40, 44, 48},                                     // 1
     {33, 37, 41, 43, 49},                                     // 2
@@ -290,10 +298,11 @@ const size_t giwscli::tempgc2[36][5] = {
     {41, 43, 48, 83, 84},                                     // 32
     {34, 39, 40, 44, 49},                                     // 33
     {32, 36, 41, 45, 47},                                     // 34
-    {134, 35, 37, 40, 46}                                     // 35
+    {134, 35, 37, 40, 46},                                    // 35
+    {133, 135, 33, 41, 42}                                    // 36
 };
 
-const size_t giwscli::tempgc3[36][5] = {
+const size_t giwscli::tempgc3[37][5] = {
     {MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS, MAX_ITEMS},  // 0
     {34, 38, 40, 44, 48},                                     // 1
     {33, 37, 41, 43, 49},                                     // 2
@@ -329,10 +338,11 @@ const size_t giwscli::tempgc3[36][5] = {
     {41, 43, 48, MAX_ITEMS, MAX_ITEMS},                       // 32
     {34, 39, 40, 44, 49},                                     // 33
     {32, 36, 41, 45, 47},                                     // 34
-    {MAX_ITEMS, 35, 37, 40, 46}                               // 35
+    {MAX_ITEMS, 35, 37, 40, 46},                              // 35
+    {MAX_ITEMS, MAX_ITEMS, 33, 41, 42}                        // 36
 };
 
-const size_t giwscli::tempgc4[36][2] = {
+const size_t giwscli::tempgc4[37][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 0
     {5, 14},                 // 1
     {7, 11},                 // 2
@@ -368,7 +378,8 @@ const size_t giwscli::tempgc4[36][2] = {
     {MAX_ITEMS, MAX_ITEMS},  // 32
     {MAX_ITEMS, MAX_ITEMS},  // 33
     {MAX_ITEMS, 5},          // 34
-    {MAX_ITEMS, MAX_ITEMS}   // 35
+    {MAX_ITEMS, MAX_ITEMS},  // 35
+    {MAX_ITEMS, MAX_ITEMS}   // 36
 };
 
 const size_t giwscli::nup_four_cg31[14] = {17, 19, 20, 21, 22, 23, 24,
@@ -405,10 +416,13 @@ const size_t giwscli::nup_four_cg312[27] = {
 const size_t giwscli::nup_four_cg313[28] = {
     15, 16, 17, 18, 19, 20, 21,  22,  23,  24,  25,  26,  27,  28,
     29, 30, 31, 71, 91, 95, 100, 106, 108, 115, 116, 118, 120, 126};
-const ptrdiff_t giwscli::tempga4[16] = {0, 1, 0, 2, 3, 0, 4, 5,
-                                        0, 6, 0, 7, 0, 8, 9, 10};
-const ptrdiff_t giwscli::tempgb4[11] = {0,  22, 24, 25, 27, 28,
-                                        30, 32, 34, 35, 36};
+const size_t giwscli::nup_four_cg314[29] = {
+    15, 16, 17, 18, 19, 20,  21,  22,  23,  24,  25,  26,  27,  28, 29,
+    30, 31, 71, 91, 95, 100, 106, 108, 115, 116, 118, 120, 126, 128};
+const ptrdiff_t giwscli::tempga4[17] = {0, 1, 0, 2, 3, 0, 4,  5, 0,
+                                        6, 0, 7, 0, 8, 9, 10, 11};
+const ptrdiff_t giwscli::tempgb4[12] = {0,  22, 24, 25, 27, 28,
+                                        30, 32, 34, 35, 36, 37};
 unsigned int giwscli::resultt = 0;
 unsigned int giwscli::resultu = 0;
 unsigned int giwscli::star = 0;
@@ -537,7 +551,7 @@ int giwscli::pool_stair_1(ptrdiff_t chosen_event_p) {
   } else if (chosen_event_p < 36) {
     set_pool_check +=
         set_pool_1(chosen_event_p, 22, 5, nup_four_cg11, nup_five_c1);
-  } else if (chosen_event_p < 37) {
+  } else if (chosen_event_p < 38) {
     set_pool_check +=
         set_pool_1(chosen_event_p, 24, 6, nup_four_cg12, nup_five_c2);
   } else {
@@ -567,7 +581,7 @@ int giwscli::pool_stair_2(ptrdiff_t chosen_event_p) {
   } else if (chosen_event_p < 10) {
     set_pool_check +=
         set_pool_2(chosen_event_p, 22, 5, nup_four_cg11, nup_five_c1);
-  } else if (chosen_event_p < 11) {
+  } else if (chosen_event_p < 12) {
     set_pool_check +=
         set_pool_2(chosen_event_p, 24, 6, nup_four_cg12, nup_five_c2);
   } else {
@@ -615,7 +629,7 @@ int giwscli::pool_stair_3(ptrdiff_t chosen_event_p) {
   } else if (chosen_event_p < 35) {
     set_pool_check +=
         set_pool_3(chosen_event_p, 22, 5, nup_four_cg11, nup_five_c1);
-  } else if (chosen_event_p < 36) {
+  } else if (chosen_event_p < 37) {
     set_pool_check +=
         set_pool_3(chosen_event_p, 24, 6, nup_four_cg12, nup_five_c2);
   } else {
@@ -708,6 +722,12 @@ int giwscli::pool_stair_4(ptrdiff_t chosen_event_p) {
       size_nup_four_c = 28;
       ini_ams_check += ini_ams(nup_five_c, 6, nup_five_c2);
       ini_ams_check += ini_ams(nup_four_c, 28, nup_four_cg313);
+    } break;
+    case 14: {
+      size_nup_five_c = 6;
+      size_nup_four_c = 29;
+      ini_ams_check += ini_ams(nup_five_c, 6, nup_five_c2);
+      ini_ams_check += ini_ams(nup_four_c, 29, nup_four_cg314);
     } break;
     default: {
       error_code = 102;

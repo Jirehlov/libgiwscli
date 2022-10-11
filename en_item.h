@@ -1,4 +1,4 @@
-/*Version 3.1.2*/
+/*Version 3.1.3*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -1152,7 +1152,8 @@
   "Adrift in the Harbor_20220909-20220927 (Ganyu, Dori, Sucrose, Xingqiu)"
 #define EN_CBI_36 \
   "Twilight Arbiter_20220928-20221014 (Cyno, Candace, Kuki Shinobu, Sayu)"
-#define EN_CBI_37 "Placeholder"
+#define EN_CBI_37 \
+  "Twirling Lotus_20221014-20221101 (Nilou, Beidou, Barbara, Xiangling)"
 #define EN_CBI_38 "Placeholder"
 #define EN_CBI_39 "Placeholder"
 #define EN_CBI_40 "Placeholder"
@@ -1205,7 +1206,8 @@
   "Sucrose, Xingqiu)"
 #define EN_CBII_10 \
   "Ballad in Goblets_20220928-20221014 (Venti, Candace, Kuki Shinobu, Sayu)"
-#define EN_CBII_11 "Placeholder"
+#define EN_CBII_11 \
+  "Secretum Secretorum_20221014-20221101 (Albedo, Beidou, Barbara, Xiangling)"
 #define EN_CBII_12 "Placeholder"
 #define EN_CBII_13 "Placeholder"
 #define EN_CBII_14 "Placeholder"
@@ -1359,7 +1361,10 @@
   "Epitome Invocation_20220928-20221014 (Staff of the Scarlet Sands, Elegy " \
   "for the End, Makhaira Aquamarine, Lion's Roar, Favonius Lance, "          \
   "Sacrificial Fragments, Favonius Warbow)"
-#define EN_WB_36 "Placeholder"
+#define EN_WB_36                                                             \
+  "Epitome Invocatio_20221014-20221101 (Key of Khaj-Nisut, Primordial Jade " \
+  "Cutter, Xiphos' Moonlight, Wandering Evenstar, Rainslasher, Dragon's "    \
+  "Bane, Sacrificial Bow)"
 #define EN_WB_37 "Placeholder"
 #define EN_WB_38 "Placeholder"
 #define EN_WB_39 "Placeholder"
@@ -1403,8 +1408,8 @@
   "Wanderlust Invocation_20220824-20220927 (Added Shikanoin Heizou)"
 #define EN_PB_12 \
   "Wanderlust Invocation_20220928-20221101 (Added Tighnari, Collei and Dori)"
-#define EN_PB_13 "Wanderlust Invocation_20221102- (Added Candace)"
-#define EN_PB_14 "Placeholder"
+#define EN_PB_13 "Wanderlust Invocation_20221102-20221206 (Added Candace)"
+#define EN_PB_14 "Wanderlust Invocation_20221207- (Added Layla)"
 #define EN_PB_15 "Placeholder"
 #define EN_PB_16 "Placeholder"
 #define EN_PB_17 "Placeholder"

@@ -1,4 +1,4 @@
-/*Version 3.1.2*/
+/*Version 3.1.3*/
 
 #ifndef JP_ITEM_H
 #define JP_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -1025,7 +1025,8 @@
 #define JP_CBI_35 "逸俗逡巡_20220909-20220927 (甘雨, ドリー, スクロース, 行秋)"
 #define JP_CBI_36 \
   "冥昼の裁定_20220928-20221014 (セノ, キャンディス, 久岐忍, 早柚)"
-#define JP_CBI_37 "Placeholder"
+#define JP_CBI_37 \
+  "優々たる蓮歌の舞_20221014-20221101 (ニィロウ, 北斗, バーバラ, 香菱)"
 #define JP_CBI_38 "Placeholder"
 #define JP_CBI_39 "Placeholder"
 #define JP_CBI_40 "Placeholder"
@@ -1076,7 +1077,8 @@
   "海原に浮かぶ虹珠_20220909-20220927 (珊瑚宮心海, ドリー, スクロース, 行秋)"
 #define JP_CBII_10 \
   "杯に注がれた詩_20220928-20221014 (ウェンティ, キャンディス, 久岐忍, 早柚)"
-#define JP_CBII_11 "Placeholder"
+#define JP_CBII_11 \
+  "深秘の生息_20221014-20221101 (アルベド, 北斗, バーバラ, 香菱)"
 #define JP_CBII_12 "Placeholder"
 #define JP_CBII_13 "Placeholder"
 #define JP_CBII_14 "Placeholder"
@@ -1206,7 +1208,9 @@
 #define JP_WB_35                                                                              \
   "神鋳賦形_20220928-20221014 (赤砂の杖, 終焉を嘆く詩, マカイラの水色, " \
   "匣中龍吟, 西風長槍, 祭礼の断片, 西風猟弓)"
-#define JP_WB_36 "Placeholder"
+#define JP_WB_36                                                                                 \
+  "神鋳賦形_20221014-20221101 (聖顕の鍵, 磐岩結緑, サイフォスの月明かり, " \
+  "彷徨える星, 雨裁, 匣中滅龍, 祭礼の弓)"
 #define JP_WB_37 "Placeholder"
 #define JP_WB_38 "Placeholder"
 #define JP_WB_39 "Placeholder"
@@ -1247,8 +1251,8 @@
 #define JP_PB_10 "奔走世間_20220713-20220823 (久岐忍を追加)"
 #define JP_PB_11 "奔走世間_20220824-20220927 (鹿野院平蔵を追加)"
 #define JP_PB_12 "奔走世間_20220928-20221101 (ティナリとコレイとドリーを追加)"
-#define JP_PB_13 "奔走世間_20221102- (キャンディスを追加)"
-#define JP_PB_14 "Placeholder"
+#define JP_PB_13 "奔走世間_20221102-20221206 (キャンディスを追加)"
+#define JP_PB_14 "奔走世間_20221207- (レイラを追加)"
 #define JP_PB_15 "Placeholder"
 #define JP_PB_16 "Placeholder"
 #define JP_PB_17 "Placeholder"

@@ -1,4 +1,4 @@
-/*Version 3.1.2*/
+/*Version 3.1.3*/
 
 #ifndef GIWSCLI_H
 #define GIWSCLI_H 1
@@ -27,15 +27,15 @@ extern const size_t nup_five_c1[5], nup_five_c2[6], nup_five_w[10],
     nup_four_w[32], three_g[13], nup_four_cg1[11], nup_four_cg2[13],
     nup_four_cg3[14], nup_four_cg4[15], nup_four_cg5[16], nup_four_cg6[17],
     nup_four_cg7[18], nup_four_cg8[19], nup_four_cg9[20], nup_four_cg10[21],
-    nup_four_cg11[22], nup_four_cg12[24], nup_four_cg13[25], tempga1[37][3],
-    tempga2[37][3], tempga3[37], tempgb1[11][3], tempgb2[11][3], tempgb3[11],
-    tempgc1[36][2], tempgc2[36][5], tempgc3[36][5], tempgc4[36][2],
+    nup_four_cg11[22], nup_four_cg12[24], nup_four_cg13[25], nup_four_cg14[26],
+    tempga1[38][3], tempga2[38][3], tempga3[38], tempgb1[12][3], tempgb2[12][3],
+    tempgb3[12], tempgc1[37][2], tempgc2[37][5], tempgc3[37][5], tempgc4[37][2],
     nup_four_cg31[14], nup_four_cg32[16], nup_four_cg33[17], nup_four_cg34[18],
     nup_four_cg35[19], nup_four_cg36[20], nup_four_cg37[21], nup_four_cg38[22],
     nup_four_cg39[23], nup_four_cg310[24], nup_four_cg311[25],
-    nup_four_cg312[27], nup_four_cg313[28], four_stars_c[31], four_stars_w[30],
-    five_stars_c[30], five_stars_w[32];
-extern const ptrdiff_t tempga4[16], tempgb4[11];
+    nup_four_cg312[27], nup_four_cg313[28], nup_four_cg314[29],
+    four_stars_c[31], four_stars_w[30], five_stars_c[30], five_stars_w[32];
+extern const ptrdiff_t tempga4[17], tempgb4[12];
 extern unsigned int resultt, resultu, star, type;
 extern ptrdiff_t chosen_event, chosen_banner, unmet4_c, unmet4_w, unmet5_c,
     unmet5_w, switch_e_should_be, switch_e_sav, four_star_assurance_number,

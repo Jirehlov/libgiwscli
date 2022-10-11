@@ -1,4 +1,4 @@
-/*Version 3.1.2*/
+/*Version 3.1.3*/
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -902,7 +902,7 @@
 #define CN_CBI_34 "巡御蘙荟_20220824-20220909 (提纳里, 柯莱, 迪奥娜, 菲谢尔)"
 #define CN_CBI_35 "浮生孰来_20220909-20220927 (甘雨, 多莉, 砂糖, 行秋)"
 #define CN_CBI_36 "雳裁冥昭_20220928-20221014 (赛诺, 坎蒂丝, 久岐忍, 早柚)"
-#define CN_CBI_37 "Placeholder"
+#define CN_CBI_37 "翩舞歈莲_20221014-20221101 (妮露, 北斗, 芭芭拉, 香菱)"
 #define CN_CBI_38 "Placeholder"
 #define CN_CBI_39 "Placeholder"
 #define CN_CBI_40 "Placeholder"
@@ -941,7 +941,7 @@
 #define CN_CBII_8 "陵薮市朝_20220824-20220909 (钟离, 柯莱, 迪奥娜, 菲谢尔)"
 #define CN_CBII_9 "浮岳虹珠_20220909-20220927 (珊瑚宫心海, 多莉, 砂糖, 行秋)"
 #define CN_CBII_10 "杯装之诗_20220928-20221014 (温迪, 坎蒂丝, 久岐忍, 早柚)"
-#define CN_CBII_11 "Placeholder"
+#define CN_CBII_11 "深秘之息_20221014-20221101 (阿贝多, 北斗, 芭芭拉, 香菱)"
 #define CN_CBII_12 "Placeholder"
 #define CN_CBII_13 "Placeholder"
 #define CN_CBII_14 "Placeholder"
@@ -1068,7 +1068,9 @@
 #define CN_WB_35                                                                           \
   "神铸赋形_20220928-20221014 (赤沙之杖, 终末嗟叹之诗, 玛海菈的水色, " \
   "匣里龙吟, 西风长枪, 祭礼残章, 西风猎弓)"
-#define CN_WB_36 "Placeholder"
+#define CN_WB_36                                                                                      \
+  "神铸赋形_20221014-20221101 (圣显之钥, 磐岩结绿, 西福斯的月光, 流浪的晚星, " \
+  "雨裁, 匣里灭辰, 祭礼弓)"
 #define CN_WB_37 "Placeholder"
 #define CN_WB_38 "Placeholder"
 #define CN_WB_39 "Placeholder"
@@ -1109,8 +1111,8 @@
 #define CN_PB_10 "奔行世间_20220713-20220823 (新增久岐忍)"
 #define CN_PB_11 "奔行世间_20220824-20220927 (新增鹿野院平藏)"
 #define CN_PB_12 "奔行世间_20220928-20221101 (新增提纳里, 柯莱和多莉)"
-#define CN_PB_13 "奔行世间_20221102- (新增坎蒂丝)"
-#define CN_PB_14 "Placeholder"
+#define CN_PB_13 "奔行世间_20221102-20221206 (新增坎蒂丝)"
+#define CN_PB_14 "奔行世间_20221207- (新增莱依拉)"
 #define CN_PB_15 "Placeholder"
 #define CN_PB_16 "Placeholder"
 #define CN_PB_17 "Placeholder"
