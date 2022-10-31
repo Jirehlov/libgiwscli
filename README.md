@@ -1,6 +1,6 @@
 # libgiwscli
 A library for Genshin Impact Wish Simulators written in C++\
-Current version: 3.1.3
+Current version: 3.2
 
 ## Applications
 (dead) CLI: https://github.com/Jirehlov/Genshin-Impact-Wish-Simulator-CLI \
@@ -73,7 +73,8 @@ Notes:
 34 Viridescent Vigil_20220824-20220909 (Tighnari, Collei, Diona, Fischl)\
 35 Adrift in the Harbor_20220909-20220927 (Ganyu, Dori, Sucrose, Xingqiu)\
 36 Twilight Arbiter_20220928-20221014 (Cyno, Candace, Kuki Shinobu, Sayu)\
-37 Twirling Lotus_20221014-20221101 (Nilou, Beidou, Barbara, Xiangling)
+37 Twirling Lotus_20221014-20221101 (Nilou, Beidou, Barbara, Xiangling)\
+38 The Moongrass' Enlightenment_20221102-20221118 (Nahida, Razor, Noelle, Bennett)
 
 1 Born of Ocean Swell_20211124-20211214 (Eula, Rosaria, Noelle, Bennett)\
 2 Invitation to Mundane Life_20220105-20220125 (Xiao, Yun Jin, Ningguang, Chongyun)\
@@ -85,7 +86,8 @@ Notes:
 8 Gentry of Hermitage_20220824-20220909 (Zhongli, Collei, Diona, Fischl)\
 9 Drifting Luminescence_20220909-20220927 (Sangonomiya Kokomi, Dori, Sucrose, Xingqiu)\
 10 Ballad in Goblets_20220928-20221014 (Venti, Candace, Kuki Shinobu, Sayu)\
-11 Secretum Secretorum_20221014-20221101 (Albedo, Beidou, Barbara, Xiangling)
+11 Secretum Secretorum_20221014-20221101 (Albedo, Beidou, Barbara, Xiangling)\
+12 Tapestry of Golden Flames_20221102-20221118 (Yoimiya, Razor, Noelle, Bennett)
 
 1 Epitome Invocation_20200928-20201018 (Aquila Favonia, Amos' Bow, The Flute, The Bell, The Widsith, The Stringless, Favonius Lance)\
 2 Epitome Invocation_20201020-20201109 (Lost Prayer to the Sacred Winds, Wolf's Gravestone, Sacrificial Sword, Sacrificial Bow, Sacrificial Greatsword, Sacrificial Fragments, Dragon's Bane)\
@@ -122,7 +124,8 @@ Notes:
 33 Epitome Invocation_20220824-20220909 (Hunter's Path, Vortex Vanquisher, Favonius Sword, The Bell, Favonius Lance, Favonius Codex, The Stringless)\
 34 Epitome Invocation_20220909-20220927(Everlasting Moonglow, Amos' Bow, Sacrificial Sword, Favonius Greatsword, Dragon's Bane, Eye of Perception, Rust) \
 35 Epitome Invocation_20220928-20221014 (Staff of the Scarlet Sands, Elegy for the End, Makhaira Aquamarine, Lion's Roar, Favonius Lance, Sacrificial Fragments, Favonius Warbow)\
-36 Epitome Invocatio_20221014-20221101 (Key of Khaj-Nisut, Primordial Jade Cutter, Xiphos' Moonlight, Wandering Evenstar, Rainslasher, Dragon's Bane, Sacrificial Bow)
+36 Epitome Invocatio_20221014-20221101 (Key of Khaj-Nisut, Primordial Jade Cutter, Xiphos' Moonlight, Wandering Evenstar, Rainslasher, Dragon's Bane, Sacrificial Bow)\
+37 Epitome Invocatio_20221102-20221118 (A Thousand Floating Dreams, Thundering Pulse, The Flute, Sacrificial Greatsword, Favonius Lance, The Widsith, Rust)
 
 1 Wanderlust Invocation_20200928-20201222\
 2 Wanderlust Invocation_20201223-20210427 (Added Diona and Xinyan)\
@@ -177,7 +180,8 @@ Notes:
 34 巡御蘙荟_20220824-20220909 (提纳里, 柯莱, 迪奥娜, 菲谢尔)\
 35 浮生孰来_20220909-20220927 (甘雨, 多莉, 砂糖, 行秋)\
 36 雳裁冥昭_20220928-20221014 (赛诺, 坎蒂丝, 久岐忍, 早柚)\
-37 翩舞歈莲_20221014-20221101 (妮露, 北斗, 芭芭拉, 香菱)
+37 翩舞歈莲_20221014-20221101 (妮露, 北斗, 芭芭拉, 香菱)\
+38 月草的赐慧_20221102-20221118 (纳西妲, 雷泽, 诺艾尔, 班尼特)
 
 1 浪涌之瞬_20211124-20211214 (优菈, 罗莎莉亚, 诺艾尔, 班尼特)\
 2 烟火之邀_20220105-20220125 (魈, 云堇, 凝光, 重云)\
@@ -189,7 +193,8 @@ Notes:
 8 陵薮市朝_20220824-20220909 (钟离, 柯莱, 迪奥娜, 菲谢尔)\
 9 浮岳虹珠_20220909-20220927 (珊瑚宫心海, 多莉, 砂糖, 行秋)\
 10 杯装之诗_20220928-20221014 (温迪, 坎蒂丝, 久岐忍, 早柚)\
-11 深秘之息_20221014-20221101 (阿贝多, 北斗, 芭芭拉, 香菱)
+11 深秘之息_20221014-20221101 (阿贝多, 北斗, 芭芭拉, 香菱)\
+12 焰色天河_20221102-20221118 (宵宫, 雷泽, 诺艾尔, 班尼特)
 
 1 神铸赋形_20200928-20201018 (风鹰剑, 阿莫斯之弓, 笛剑, 钟剑, 流浪乐章, 绝弦, 西风长枪)\
 2 神铸赋形_20201020-20201109 (四风原典, 狼的末路, 祭礼剑, 祭礼弓, 祭礼大剑, 祭礼残章, 匣里灭辰)\
@@ -226,7 +231,8 @@ Notes:
 33 神铸赋形_20220824-20220909 (猎人之径, 贯虹之槊, 西风剑, 钟剑, 西风长枪, 西风秘典, 绝弦)\
 34 神铸赋形_20220909-20220927 (不灭月华, 阿莫斯之弓, 祭礼剑, 西风大剑, 匣里灭辰, 昭心, 弓藏)\
 35 神铸赋形_20220928-20221014 (赤沙之杖, 终末嗟叹之诗, 玛海菈的水色, 匣里龙吟, 西风长枪, 祭礼残章, 西风猎弓)\
-36 神铸赋形_20221014-20221101 (圣显之钥, 磐岩结绿, 西福斯的月光, 流浪的晚星, 雨裁, 匣里灭辰, 祭礼弓)
+36 神铸赋形_20221014-20221101 (圣显之钥, 磐岩结绿, 西福斯的月光, 流浪的晚星, 雨裁, 匣里灭辰, 祭礼弓)\
+37 神铸赋形_20221102-20221118 (千夜浮梦, 飞雷之弦振, 笛剑, 祭礼大剑, 西风长枪, 流浪乐章, 弓藏)
 
 1 奔行世间_20200928-20201222\
 2 奔行世间_20201223-20210427 (新增迪奥娜和辛焱)\
@@ -281,7 +287,8 @@ Notes:
 34 深き森の巡回者_20220824-20220909 (ティナリ, コレイ, ディオナ, フィッシュル)\
 35 逸俗逡巡_20220909-20220927 (甘雨, ドリー, スクロース, 行秋)\
 36 冥昼の裁定_20220928-20221014 (セノ, キャンディス, 久岐忍, 早柚)\
-37 優々たる蓮歌の舞_20221014-20221101 (ニィロウ, 北斗, バーバラ, 香菱)
+37 優々たる蓮歌の舞_20221014-20221101 (ニィロウ, 北斗, バーバラ, 香菱)\
+38 叡智を恵む月見草_20221102-20221118 (ナヒーダ, レザー, ノエル, ベネット)
 
 1 波折りの刹那_20211124-20211214 (エウルア, ロサリア, ノエル, ベネット)\
 2 灯宴の招き_20220105-20220125 (魈, 雲菫, 凝光, 重雲)\
@@ -293,7 +300,8 @@ Notes:
 8 大隠朝市_20220824-20220909 (鍾離, コレイ, ディオナ, フィッシュル)\
 9 海原に浮かぶ虹珠_20220909-20220927 (珊瑚宮心海, ドリー, スクロース, 行秋)\
 10 杯に注がれた詩_20220928-20221014 (ウェンティ, キャンディス, 久岐忍, 早柚)\
-11 深秘の生息_20221014-20221101 (アルベド, 北斗, バーバラ, 香菱)
+11 深秘の生息_20221014-20221101 (アルベド, 北斗, バーバラ, 香菱)\
+12 天の川に咲きし大輪_20221102-20221118 (宵宮, レザー, ノエル, ベネット)
 
 1 神鋳賦形_20200928-20201018 (風鷹剣, アモスの弓, 笛の剣, 鐘の剣, 流浪楽章, 絶弦, 西風長槍)\
 2 神鋳賦形_20201020-20201109 (四風原典, 狼の末路, 祭礼の剣, 祭礼の弓, 祭礼の大剣, 祭礼の断片, 匣中滅龍)\
@@ -330,7 +338,8 @@ Notes:
 33 神鋳賦形_20220824-20220909 (狩人の道, 破天の槍, 西風剣, 鐘の剣, 西風長槍, 西風秘典, 絶弦)\
 34 神鋳賦形_20220909-20220927 (不滅の月華, アモスの弓, 祭礼の剣, 西風大剣, 匣中滅龍, 昭心, 弓蔵)\
 35 神鋳賦形_20220928-20221014 (赤砂の杖, 終焉を嘆く詩, マカイラの水色, 匣中龍吟, 西風長槍, 祭礼の断片, 西風猟弓)\
-36 神鋳賦形_20221014-20221101 (聖顕の鍵, 磐岩結緑, サイフォスの月明かり, 彷徨える星, 雨裁, 匣中滅龍, 祭礼の弓)
+36 神鋳賦形_20221014-20221101 (聖顕の鍵, 磐岩結緑, サイフォスの月明かり, 彷徨える星, 雨裁, 匣中滅龍, 祭礼の弓)\
+37 神鋳賦形_20221102-20221118 (千夜に浮かぶ夢, 飛雷の鳴弦, 笛の剣, 祭礼の大剣, 西風長槍, 流浪楽章, 弓蔵)
 
 1 奔走世間_20200928-20201222\
 2 奔走世間_20201223-20210427 (ディオナと辛炎を追加)\

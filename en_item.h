@@ -1,4 +1,4 @@
-/*Version 3.1.3*/
+/*Version 3.2*/
 
 #ifndef EN_ITEM_H
 #define EN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -132,16 +132,16 @@
 #define EN_C_126 "\"Golden Vow\" Candace (Hydro)"
 #define EN_C_127 "Hunter's Path (Bow)"
 #define EN_C_128 "\"Fantastical Evening Star\" Layla (Cryo)"
-#define EN_C_129 "Faruzan"
+#define EN_C_129 "\"Enigmatic Machinist\" Faruzan (Anemo)"
 #define EN_C_130 "Mika"
 #define EN_C_131 "Key of Khaj-Nisut (Sword)"
 #define EN_C_132 "Staff of the Scarlet Sands (Polearm)"
 #define EN_C_133 "Xiphos' Moonlight (Sword)"
 #define EN_C_134 "Makhaira Aquamarine (Claymore)"
 #define EN_C_135 "Wandering Evenstar (Catalyst)"
-#define EN_C_136 "Placeholder"
-#define EN_C_137 "Placeholder"
-#define EN_C_138 "Placeholder"
+#define EN_C_136 "A Thousand Floating Dreams (Catalyst)"
+#define EN_C_137 "\"Eons Adrift\" Wanderer (Anemo)"
+#define EN_C_138 "Kaveh"
 #define EN_C_139 "Placeholder"
 #define EN_C_140 "Placeholder"
 #define EN_C_141 "Placeholder"
@@ -395,9 +395,9 @@
 #define EN_X_133 "Xiphos' Moonlight"
 #define EN_X_134 "Makhaira Aquamarine"
 #define EN_X_135 "Wandering Evenstar"
-#define EN_X_136 "Placeholder"
-#define EN_X_137 "Placeholder"
-#define EN_X_138 "Placeholder"
+#define EN_X_136 "A Thousand Floating Dreams"
+#define EN_X_137 "Wanderer"
+#define EN_X_138 "Kaveh"
 #define EN_X_139 "Placeholder"
 #define EN_X_140 "Placeholder"
 #define EN_X_141 "Placeholder"
@@ -912,7 +912,9 @@
 #define EN_D_123                                                              \
   "The star of the Zubayr Theater. She is full of warmth and innocence, and " \
   "her dances are lively and elegant."
-#define EN_D_124 "Nahida"
+#define EN_D_124                                                              \
+  "A caged bird secluded within the confines of the Sanctuary of Surasthana " \
+  "who can only see the world in her dreams."
 #define EN_D_125                                                                   \
   "The General Mahamatra in charge of supervising the researchers of the "         \
   "Akademiya. It is said that when he gets down to work, the General "             \
@@ -924,7 +926,11 @@
 #define EN_D_127                                                           \
   "This gilded bow was made using precious white branches. It has felled " \
   "countless wicked beasts attempting to infiltrate the woods."
-#define EN_D_128 "Layla"
+#define EN_D_128                                                            \
+  "A Rtawahist student who specializes in Theoretical Astrology. Heavily "  \
+  "prone to somnambulism and locked in a grinding war with sleep "          \
+  "deprivation, the problem of restful slumber is a most troubling one to " \
+  "her."
 #define EN_D_129 "Faruzan"
 #define EN_D_130 "Mika"
 #define EN_D_131                                                               \
@@ -945,9 +951,11 @@
 #define EN_D_135                                                             \
   "This was originally a device used by researchers to observe and perform " \
   "calculations on celestial phenomena. It serves as a conduit and catalyst."
-#define EN_D_136 "Placeholder"
-#define EN_D_137 "Placeholder"
-#define EN_D_138 "Placeholder"
+#define EN_D_136                                                            \
+  "This lamp illuminates the dreams that float up over a thousand nights, " \
+  "and in its emerald-green light flows a song of ancient days."
+#define EN_D_137 "Wanderer"
+#define EN_D_138 "Kaveh"
 #define EN_D_139 "Placeholder"
 #define EN_D_140 "Placeholder"
 #define EN_D_141 "Placeholder"
@@ -1154,7 +1162,9 @@
   "Twilight Arbiter_20220928-20221014 (Cyno, Candace, Kuki Shinobu, Sayu)"
 #define EN_CBI_37 \
   "Twirling Lotus_20221014-20221101 (Nilou, Beidou, Barbara, Xiangling)"
-#define EN_CBI_38 "Placeholder"
+#define EN_CBI_38                                                           \
+  "The Moongrass' Enlightenment_20221102-20221118 (Nahida, Razor, Noelle, " \
+  "Bennett)"
 #define EN_CBI_39 "Placeholder"
 #define EN_CBI_40 "Placeholder"
 #define EN_CBI_41 "Placeholder"
@@ -1208,7 +1218,9 @@
   "Ballad in Goblets_20220928-20221014 (Venti, Candace, Kuki Shinobu, Sayu)"
 #define EN_CBII_11 \
   "Secretum Secretorum_20221014-20221101 (Albedo, Beidou, Barbara, Xiangling)"
-#define EN_CBII_12 "Placeholder"
+#define EN_CBII_12                                                        \
+  "Tapestry of Golden Flames_20221102-20221118 (Yoimiya, Razor, Noelle, " \
+  "Bennett)"
 #define EN_CBII_13 "Placeholder"
 #define EN_CBII_14 "Placeholder"
 #define EN_CBII_15 "Placeholder"
@@ -1365,7 +1377,10 @@
   "Epitome Invocatio_20221014-20221101 (Key of Khaj-Nisut, Primordial Jade " \
   "Cutter, Xiphos' Moonlight, Wandering Evenstar, Rainslasher, Dragon's "    \
   "Bane, Sacrificial Bow)"
-#define EN_WB_37 "Placeholder"
+#define EN_WB_37                                                              \
+  "Epitome Invocatio_20221102-20221118 (A Thousand Floating Dreams, "         \
+  "Thundering Pulse, The Flute, Sacrificial Greatsword, Favonius Lance, The " \
+  "Widsith, Rust)"
 #define EN_WB_38 "Placeholder"
 #define EN_WB_39 "Placeholder"
 #define EN_WB_40 "Placeholder"
@@ -1453,7 +1468,7 @@
 #define EN_V_15 "Version 2.8 \"Summer Fantasia\""
 #define EN_V_16 "Version 3.0 \"The Morn a Thousand Roses Brings\""
 #define EN_V_17 "Version 3.1 \"King Deshret and the Three Magi\""
-#define EN_V_18 "Placeholder"
+#define EN_V_18 "Version 3.2 \"Akasha Pulses, the Kalpa Flame Rises\""
 #define EN_V_19 "Placeholder"
 #define EN_V_20 "Placeholder"
 #define EN_V_21 "Placeholder"

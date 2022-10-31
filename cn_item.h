@@ -1,4 +1,4 @@
-/*Version 3.1.3*/
+/*Version 3.2*/
 
 #ifndef CN_ITEM_H
 #define CN_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -132,16 +132,16 @@
 #define CN_C_126 "浮金的誓愿·坎蒂丝(水)"
 #define CN_C_127 "弓·猎人之径"
 #define CN_C_128 "绮思晚星·莱依拉(冰)"
-#define CN_C_129 "珐露珊"
+#define CN_C_129 "机逐封秘·珐露珊(风)"
 #define CN_C_130 "米卡"
 #define CN_C_131 "单手剑·圣显之钥"
 #define CN_C_132 "长柄武器·赤沙之杖"
 #define CN_C_133 "单手剑·西福斯的月光"
 #define CN_C_134 "双手剑·玛海菈的水色"
 #define CN_C_135 "法器·流浪的晚星"
-#define CN_C_136 "Placeholder"
-#define CN_C_137 "Placeholder"
-#define CN_C_138 "Placeholder"
+#define CN_C_136 "法器·千夜浮梦"
+#define CN_C_137 "久世浮倾·流浪者(风)"
+#define CN_C_138 "卡维"
 #define CN_C_139 "Placeholder"
 #define CN_C_140 "Placeholder"
 #define CN_C_141 "Placeholder"
@@ -395,9 +395,9 @@
 #define CN_X_133 "西福斯的月光"
 #define CN_X_134 "玛海菈的水色"
 #define CN_X_135 "流浪的晚星"
-#define CN_X_136 "Placeholder"
-#define CN_X_137 "Placeholder"
-#define CN_X_138 "Placeholder"
+#define CN_X_136 "千夜浮梦"
+#define CN_X_137 "流浪者"
+#define CN_X_138 "卡维"
 #define CN_X_139 "Placeholder"
 #define CN_X_140 "Placeholder"
 #define CN_X_141 "Placeholder"
@@ -719,13 +719,14 @@
 #define CN_D_121 "艾尔海森"
 #define CN_D_122 "迪希雅"
 #define CN_D_123 "祖拜尔剧场的知名舞者，舞姿灵动优美，为人纯真亲善。"
-#define CN_D_124 "纳西妲"
+#define CN_D_124 "深居净善宫的笼中之鸟，只能在梦中将世界尽收眼底。"
 #define CN_D_125                                                                                                    \
   "教令院内负责监管学者们的「大风纪官」。工作时比刹诃伐罗学院制作的「大风机关" \
   "」更有效率。"
 #define CN_D_126 "有着琥珀色左眼的赤王后裔，阿如村的守护者。"
 #define CN_D_127 "以珍贵的白枝制成的饰金猎弓，曾经射落无数侵入森林的恶兽。"
-#define CN_D_128 "莱依拉"
+#define CN_D_128 \
+  "专攻理论星相学的梨多梵谛学院学生。时常梦游，长期缺觉，饱受睡眠问题困扰。"
 #define CN_D_129 "珐露珊"
 #define CN_D_130 "米卡"
 #define CN_D_131                                                                                                    \
@@ -738,9 +739,9 @@
 #define CN_D_134 "一柄光泽如水的古老大剑，经过千年流沙磨洗，锋刃依然锐利异常。"
 #define CN_D_135 \
   "原本是学者用于观测与计算天象的古老仪器。具有传导力量，作为法器的能力。"
-#define CN_D_136 "Placeholder"
-#define CN_D_137 "Placeholder"
-#define CN_D_138 "Placeholder"
+#define CN_D_136 "浮映千夜之梦的灯盏，苍翠的光中流溢着遥世的歌。"
+#define CN_D_137 "流浪者"
+#define CN_D_138 "卡维"
 #define CN_D_139 "Placeholder"
 #define CN_D_140 "Placeholder"
 #define CN_D_141 "Placeholder"
@@ -903,7 +904,7 @@
 #define CN_CBI_35 "浮生孰来_20220909-20220927 (甘雨, 多莉, 砂糖, 行秋)"
 #define CN_CBI_36 "雳裁冥昭_20220928-20221014 (赛诺, 坎蒂丝, 久岐忍, 早柚)"
 #define CN_CBI_37 "翩舞歈莲_20221014-20221101 (妮露, 北斗, 芭芭拉, 香菱)"
-#define CN_CBI_38 "Placeholder"
+#define CN_CBI_38 "月草的赐慧_20221102-20221118 (纳西妲, 雷泽, 诺艾尔, 班尼特)"
 #define CN_CBI_39 "Placeholder"
 #define CN_CBI_40 "Placeholder"
 #define CN_CBI_41 "Placeholder"
@@ -942,7 +943,7 @@
 #define CN_CBII_9 "浮岳虹珠_20220909-20220927 (珊瑚宫心海, 多莉, 砂糖, 行秋)"
 #define CN_CBII_10 "杯装之诗_20220928-20221014 (温迪, 坎蒂丝, 久岐忍, 早柚)"
 #define CN_CBII_11 "深秘之息_20221014-20221101 (阿贝多, 北斗, 芭芭拉, 香菱)"
-#define CN_CBII_12 "Placeholder"
+#define CN_CBII_12 "焰色天河_20221102-20221118 (宵宫, 雷泽, 诺艾尔, 班尼特)"
 #define CN_CBII_13 "Placeholder"
 #define CN_CBII_14 "Placeholder"
 #define CN_CBII_15 "Placeholder"
@@ -1071,7 +1072,9 @@
 #define CN_WB_36                                                                                      \
   "神铸赋形_20221014-20221101 (圣显之钥, 磐岩结绿, 西福斯的月光, 流浪的晚星, " \
   "雨裁, 匣里灭辰, 祭礼弓)"
-#define CN_WB_37 "Placeholder"
+#define CN_WB_37                                                                          \
+  "神铸赋形_20221102-20221118 (千夜浮梦, 飞雷之弦振, 笛剑, 祭礼大剑, " \
+  "西风长枪, 流浪乐章, 弓藏)"
 #define CN_WB_38 "Placeholder"
 #define CN_WB_39 "Placeholder"
 #define CN_WB_40 "Placeholder"
@@ -1156,7 +1159,7 @@
 #define CN_V_15 "2.8版本 「仲夏！幻夜？奇想曲！」"
 #define CN_V_16 "3.0版本 「千朵玫瑰带来的黎明」"
 #define CN_V_17 "3.1版本 「赤土之王与三朝圣者」"
-#define CN_V_18 "Placeholder"
+#define CN_V_18 "3.2版本 「虚空鼓动，劫火高扬」"
 #define CN_V_19 "Placeholder"
 #define CN_V_20 "Placeholder"
 #define CN_V_21 "Placeholder"

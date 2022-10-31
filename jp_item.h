@@ -1,4 +1,4 @@
-/*Version 3.1.3*/
+/*Version 3.2*/
 
 #ifndef JP_ITEM_H
 #define JP_ITEM_H 1  // mark it 0 if encoding error occurs
@@ -132,16 +132,16 @@
 #define JP_C_126 "浮金の誓願・キャンディス（水）"
 #define JP_C_127 "弓・狩人の道"
 #define JP_C_128 "綺思と夜星・レイラ（氷）"
-#define JP_C_129 "ファルザン"
+#define JP_C_129 "機求封秘・ファルザン（風）"
 #define JP_C_130 "ミカ"
 #define JP_C_131 "片手剣・聖顕の鍵"
 #define JP_C_132 "長柄武器・赤砂の杖"
 #define JP_C_133 "片手剣・サイフォスの月明かり"
 #define JP_C_134 "両手剣・マカイラの水色"
 #define JP_C_135 "法器・彷徨える星"
-#define JP_C_136 "Placeholder"
-#define JP_C_137 "Placeholder"
-#define JP_C_138 "Placeholder"
+#define JP_C_136 "法器・千夜に浮かぶ夢"
+#define JP_C_137 "久世浮傾・放浪者（風）"
+#define JP_C_138 "カーヴェ"
 #define JP_C_139 "Placeholder"
 #define JP_C_140 "Placeholder"
 #define JP_C_141 "Placeholder"
@@ -395,9 +395,9 @@
 #define JP_X_133 "サイフォスの月明かり"
 #define JP_X_134 "マカイラの水色"
 #define JP_X_135 "彷徨える星"
-#define JP_X_136 "Placeholder"
-#define JP_X_137 "Placeholder"
-#define JP_X_138 "Placeholder"
+#define JP_X_136 "千夜に浮かぶ夢"
+#define JP_X_137 "放浪者"
+#define JP_X_138 "カーヴェ"
 #define JP_X_139 "Placeholder"
 #define JP_X_140 "Placeholder"
 #define JP_X_141 "Placeholder"
@@ -798,7 +798,9 @@
 #define JP_D_123                                                                                                    \
   "「ズバイルシアター」の噂に名高い踊り子。そのダンスはしなやかで美しく、彼女" \
   "自身も優しく純粋な心で人と接する。"
-#define JP_D_124 "ナヒーダ"
+#define JP_D_124                                                                                                    \
+  "スラサタンナ聖処に幽棲する籠の中の鳥。夢の中でしか世界を眺めることができな" \
+  "い。"
 #define JP_D_125                                                                                                    \
   "教令院の学者たちを監督する「大マハマトラ」。クシャレワー学院が作った『大マ" \
   "ッハマシン』よりも効率よく仕事をこなす。"
@@ -808,7 +810,9 @@
 #define JP_D_127                                                                                                    \
   "貴重な白き枝で作られた金メッキの弓。森に侵入する無数の悪しき獣を倒してきた" \
   "。"
-#define JP_D_128 "レイラ"
+#define JP_D_128                                                                                                    \
+  "理論占星学を専攻するルタワヒスト学院の学生。時々夢遊状態になる。寝不足が長" \
+  "期にわたり続いており、睡眠障害に悩まされている。"
 #define JP_D_129 "ファルザン"
 #define JP_D_130 "ミカ"
 #define JP_D_131                                                                                                    \
@@ -826,9 +830,10 @@
 #define JP_D_135                                                                                                    \
   "元々は、学者が天象を観測し、計算するために使用していた古い装置。力を伝導で" \
   "き、法器としても機能する。"
-#define JP_D_136 "Placeholder"
-#define JP_D_137 "Placeholder"
-#define JP_D_138 "Placeholder"
+#define JP_D_136 \
+  "千夜の夢を映して浮かぶランプ。蒼翠の光から遥かなる世の歌が溢れ出す。"
+#define JP_D_137 "放浪者"
+#define JP_D_138 "カーヴェ"
 #define JP_D_139 "Placeholder"
 #define JP_D_140 "Placeholder"
 #define JP_D_141 "Placeholder"
@@ -1027,7 +1032,8 @@
   "冥昼の裁定_20220928-20221014 (セノ, キャンディス, 久岐忍, 早柚)"
 #define JP_CBI_37 \
   "優々たる蓮歌の舞_20221014-20221101 (ニィロウ, 北斗, バーバラ, 香菱)"
-#define JP_CBI_38 "Placeholder"
+#define JP_CBI_38 \
+  "叡智を恵む月見草_20221102-20221118 (ナヒーダ, レザー, ノエル, ベネット)"
 #define JP_CBI_39 "Placeholder"
 #define JP_CBI_40 "Placeholder"
 #define JP_CBI_41 "Placeholder"
@@ -1079,7 +1085,8 @@
   "杯に注がれた詩_20220928-20221014 (ウェンティ, キャンディス, 久岐忍, 早柚)"
 #define JP_CBII_11 \
   "深秘の生息_20221014-20221101 (アルベド, 北斗, バーバラ, 香菱)"
-#define JP_CBII_12 "Placeholder"
+#define JP_CBII_12 \
+  "天の川に咲きし大輪_20221102-20221118 (宵宮, レザー, ノエル, ベネット)"
 #define JP_CBII_13 "Placeholder"
 #define JP_CBII_14 "Placeholder"
 #define JP_CBII_15 "Placeholder"
@@ -1211,7 +1218,9 @@
 #define JP_WB_36                                                                                 \
   "神鋳賦形_20221014-20221101 (聖顕の鍵, 磐岩結緑, サイフォスの月明かり, " \
   "彷徨える星, 雨裁, 匣中滅龍, 祭礼の弓)"
-#define JP_WB_37 "Placeholder"
+#define JP_WB_37                                                                        \
+  "神鋳賦形_20221102-20221118 (千夜に浮かぶ夢, 飛雷の鳴弦, 笛の剣, " \
+  "祭礼の大剣, 西風長槍, 流浪楽章, 弓蔵)"
 #define JP_WB_38 "Placeholder"
 #define JP_WB_39 "Placeholder"
 #define JP_WB_40 "Placeholder"
@@ -1296,7 +1305,7 @@
 #define JP_V_15 "Ver.2.8「常夏！幻夜？奇想曲！」"
 #define JP_V_16 "Ver.3.0「黎明を告げる千の薔薇」"
 #define JP_V_17 "Ver.3.1「赤砂の王と三人の巡礼者」"
-#define JP_V_18 "Placeholder"
+#define JP_V_18 "Ver.3.2「虚空の鼓動、熾盛の劫火」"
 #define JP_V_19 "Placeholder"
 #define JP_V_20 "Placeholder"
 #define JP_V_21 "Placeholder"
